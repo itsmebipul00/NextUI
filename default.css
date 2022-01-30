@@ -6,6 +6,7 @@
   --clr-dark: 230 35% 7%;
   --clr-light: 40, 38%, 92%;
   --clr-white: 0 0% 100%;
+  --clr-red: 338, 81%, 41%;
 
   /* font-sizes */
   --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
@@ -94,6 +95,10 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Make images easier to work with */
 img,
 picture {
@@ -131,14 +136,12 @@ select {
 
 /* general */
 
-.flex {
+.d-flex {
   display: flex;
-  gap: var(--gap, 1rem);
 }
 
-.grid {
+.d-grid {
   display: grid;
-  gap: var(--gap, 1rem);
 }
 
 .d-block {
@@ -150,7 +153,7 @@ select {
 }
 
 .container {
-  padding-inline: 2em;
+  padding-inline: 2rem;
   margin-inline: auto;
   max-width: 80rem;
 }
@@ -190,16 +193,6 @@ select {
 }
 
 /* typography */
-
-.ff-serif {
-  font-family: var(--ff-serif);
-}
-.ff-sans-cond {
-  font-family: var(--ff-sans-cond);
-}
-.ff-sans-normal {
-  font-family: var(--ff-sans-normal);
-}
 
 .letter-spacing-1 {
   letter-spacing: 4.75px;

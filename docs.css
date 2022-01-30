@@ -1,1 +1,23 @@
 @import "./default.css";
+@import "./Components/Navigation/Navigation.css";
+@import "./Components/Aside/Aside.css";
+
+header {
+  background: hsl(var(--clr-light));
+}
+
+.header-container {
+  position: relative;
+  padding: 1rem 2rem;
+}
+
+.header-title {
+  width: fit-content;
+  z-index: 9999;
+}
+
+@media (min-width: 60em) {
+  header {
+    background: hsl(var(--clr-white));
+  }
+}
