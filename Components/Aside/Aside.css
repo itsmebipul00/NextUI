@@ -37,6 +37,7 @@ article {
   aside ul::-webkit-scrollbar-thumb {
     background: hsl(var(--clr-dark));
   }
+
   article::-webkit-scrollbar-thumb {
     background: hsl(var(--clr-red));
   }
