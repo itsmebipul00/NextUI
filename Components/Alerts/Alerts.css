@@ -1,0 +1,45 @@
+.alerts h2 {
+  margin: 1rem;
+  text-decoration: underline;
+}
+
+.alert {
+  max-width: 70%;
+  padding: 1rem;
+  display: flex;
+}
+
+.alert > span {
+  margin: 0 1rem;
+}
+
+.alert .fa-times {
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.code {
+  height: 40vh;
+  overflow: auto;
+  padding: 5rem;
+  margin: 2rem 5rem 2rem auto;
+  width: fit-content;
+  background: hsl(var(--clr-white));
+  border: 3px solid hsl(var(--clr-dark));
+}
+
+code {
+  font-family: inherit;
+}
+
+.code::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.code::-webkit-scrollbar-track {
+  background: hsl(var(--clr-white));
+}
+
+.code::-webkit-scrollbar-thumb {
+  background: hsl(var(--clr-dark));
+}

@@ -1,0 +1,68 @@
+aside {
+  display: none;
+}
+
+article {
+  margin-top: 4rem;
+  width: 100%;
+}
+
+@media (min-width: 60em) {
+  aside {
+    position: fixed;
+    display: block;
+    background: hsl(var(--clr-white));
+    width: 18%;
+    height: auto;
+  }
+
+  aside ul {
+    height: 90vh;
+    overflow: auto;
+  }
+
+  aside ul::-webkit-scrollbar,
+  article::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  aside ul::-webkit-scrollbar-track {
+    background: hsl(var(--clr-red));
+  }
+
+  article::-webkit-scrollbar-track {
+    background: hsl(var(--clr-white));
+  }
+
+  aside ul::-webkit-scrollbar-thumb {
+    background: hsl(var(--clr-dark));
+  }
+  article::-webkit-scrollbar-thumb {
+    background: hsl(var(--clr-red));
+  }
+
+  aside ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  aside li:hover {
+    cursor: pointer;
+    background: hsl(var(--clr-light));
+  }
+
+  article {
+    width: 82%;
+    position: fixed;
+    inset: 13% 0 0 18%;
+    overflow: auto;
+  }
+
+  .secondary-navigation li {
+    padding: 1.5rem 0 1.5rem 1rem;
+  }
+
+  .secondary-navigation a {
+    color: hsl(var(--clr-dark));
+  }
+}

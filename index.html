@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextUI Documentation</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="docs.css">
+    <script defer src="https://kit.fontawesome.com/8c1231c9b8.js" crossorigin="anonymous"></script>
+    <script defer src="docs.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container d-grid">
+            <h1 class="header-title letter-spacing-2">NextUI</h1>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only"
+                aria-expanded="false">Menu</span></button>
+            <nav>
+              <ul id="primary-navigation" data-visible="false" class="primary-navigation uppercase letter-spacing-1" role="list">
+                <li><a href="#"><span aria-hidden="true">Colors</span></a></li>
+                <li><a href="#"><span aria-hidden="true">Typography</span></a></li>
+                <li><a href="#"><span aria-hidden="true">Utilities</span></a></li>
+                <li><a href="#"><span aria-hidden="true">Avatar</span></a></li>
+                <li><a href="#"><span aria-hidden="true">Alert</span></a></li>
+                <li><a href="#"><span aria-hidden="true">Badge</span></a></li>
+                <li><a href="#"><span aria-hidden="true">Button</span></a></li>
+                <li><a href="#"><span aria-hidden="true">Card</span></a></li>
+                <li><a href="#"><span aria-hidden="true">Input</span></a></li>
+                <li><a href="#"><span aria-hidden="true">List</span></a></li>
+                <li><a href="#"><span aria-hidden="true">Toast</span></a></li>
+                <li><a href="#"><span aria-hidden="true">Modal</span></a></li>
+                <li><a href="#"><span aria-hidden="true">Slider</span></a></li>
+                
+              </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="d-flex">
+        <aside>
+            <ul id="secondary-navigation"  class="secondary-navigation uppercase letter-spacing-2 d-grid" role="list">
+                <li><a href="#"><span>Colors</span></a></li>
+                <li><a href="#"><span>Typography</span></a></li>
+                <li><a href="#"><span>Utilities</span></a></li>
+                <li><a href="#"><span>Avatar</span></a></li>
+                <li><a href="#"><span>Alert</span></a></li>
+                <li><a href="#"><span>Badge</span></a></li>
+                <li><a href="#"><span>Button</span></a></li>
+                <li><a href="#"><span>Card</span></a></li>
+                <li><a href="#"><span>Input</span></a></li>
+                <li><a href="#"><span>List</span></a></li>
+                <li><a href="#"><span>Toast</span></a></li>
+                <li><a href="#"><span>Modal</span></a></li>
+                <li><a href="#"><span>Slider</span></a></li>
+              </ul>
+            </nav>
+        </aside>
+        <article>
+            <section class="alerts">
+                <h2 class="uppercase letter-spacing-2">Alerts</h2>
+                <p class="alert bg-error">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>This is a error alert</span>
+                    <i class="closeError fas fa-times"></i>
+                </p>
+                <p class="alert bg-error">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>This is a error alert</span>
+                </p>
+                <p class="alert bg-warning">
+                    <i class="fas fa-exclamation"></i>
+                    <span>This is a warning alert</span>
+                    <i class="closeWarning fas fa-times"></i>
+                </p>
+                <p class="alert bg-warning">
+                    <i class="fas fa-exclamation"></i>
+                    <span>This is a warning alert</span>
+                </p>
+                <p class="alert bg-info">
+                    <i class="fas fa-info"></i>
+                    <span>This is a Info alert</span>
+                    <i class="closeInfo fas fa-times"></i>
+                </p>
+                <p class="alert bg-info">
+                    <i class="fas fa-info"></i>
+                    <span>This is a Info alert</span>
+                </p>
+                <p class="alert bg-success">
+                    <i class="far fa-check-circle"></i>
+                    <span>This is a Success alert</span>
+                    <i class="closeSuccess fas fa-times"></i>
+                </p>
+                <p class="alert bg-success">
+                    <i class="far fa-check-circle"></i>
+                    <span>This is a Success alert</span>
+                </p>
+                    <div class="code">
+                        <code class="language-html letter-spacing-3 fs-400">
+                            &lt;p class=&quot;alert bg-error&quot;&gt;<br />
+                                &lt;i class=&quot;fas fa-exclamation-circle&quot;&gt;&lt;/i&gt;<br />
+                                &lt;span&gt;This is a error alert&lt;/span&gt;<br />
+                                &lt;i class=&quot;closeError fas fa-times&quot;&gt;&lt;/i&gt;<br />
+                            &lt;/p&gt;<br />
+                            &lt;p class=&quot;alert bg-error&quot;&gt;<br />
+                                &lt;i class=&quot;fas fa-exclamation-circle&quot;&gt;&lt;/i&gt;<br />
+                                &lt;span&gt;This is a error alert&lt;/span&gt;<br />
+                            &lt;/p&gt;<br />
+                            &lt;p class=&quot;alert bg-warning&quot;&gt;<br />
+                                &lt;i class=&quot;fas fa-exclamation&quot;&gt;&lt;/i&gt;<br />
+                                &lt;span&gt;This is a warning alert&lt;/span&gt;<br />
+                                &lt;i class=&quot;closeWarning fas fa-times&quot;&gt;&lt;/i&gt;<br />
+                            &lt;/p&gt;<br />
+                            &lt;p class=&quot;alert bg-warning&quot;&gt;<br />
+                                &lt;i class=&quot;fas fa-exclamation&quot;&gt;&lt;/i&gt;<br />
+                                &lt;span&gt;This is a warning alert&lt;/span&gt;<br />
+                            &lt;/p&gt;<br />
+                            &lt;p class=&quot;alert bg-info&quot;&gt;<br />
+                                &lt;i class=&quot;fas fa-info&quot;&gt;&lt;/i&gt;<br />
+                                &lt;span&gt;This is a Info alert&lt;/span&gt;<br />
+                                &lt;i class=&quot;closeInfo fas fa-times&quot;&gt;&lt;/i&gt;<br />
+                            &lt;/p&gt;<br />
+                            &lt;p class=&quot;alert bg-info&quot;&gt;<br />
+                                &lt;i class=&quot;fas fa-info&quot;&gt;&lt;/i&gt;<br />
+                                &lt;span&gt;This is a Info alert&lt;/span&gt;<br />
+                            &lt;/p&gt;<br />
+                            &lt;p class=&quot;alert bg-success&quot;&gt;<br />
+                                &lt;i class=&quot;far fa-check-circle&quot;&gt;&lt;/i&gt;<br />
+                                &lt;span&gt;This is a Success alert&lt;/span&gt;<br />
+                                &lt;i class=&quot;closeSuccess fas fa-times&quot;&gt;&lt;/i&gt;<br />
+                            &lt;/p&gt;<br />
+                            &lt;p class=&quot;alert bg-success&quot;&gt;<br />
+                                &lt;i class=&quot;far fa-check-circle&quot;&gt;&lt;/i&gt;<br />
+                                &lt;span&gt;This is a Success alert&lt;/span&gt;<br />
+                            &lt;/p&gt;
+                        </code>
+                    </div>
+                    <div class="alert-information fs-500 letter-spacing-1">
+                        <p>bg-error is background:<span class="bg-error">hsl(345, 69%, 49%)</span></p>
+                        <p>bg-info is background:<span class="bg-info">hsl(198, 74%, 47%)</span></p>
+                        <p>bg-warning is background:<span class="bg-warning">hsl(46, 100%, 90%)</span></p>
+                        <p>bg-success is background:<span class="bg-success">hsl(153, 57%, 82%)</span></p>
+                    </div>
+            </section>
+        </article>
+    </main>
+
+</body>
+</html>

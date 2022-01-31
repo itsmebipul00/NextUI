@@ -6,12 +6,17 @@
   --clr-dark: 230 35% 7%;
   --clr-light: 40, 38%, 92%;
   --clr-white: 0 0% 100%;
+  --clr-red: 338, 81%, 41%;
+  --clr-error: 345, 69%, 49%;
+  --clr-info: 198, 74%, 47%;
+  --clr-warning: 46, 100%, 90%;
+  --clr-success: 153, 57%, 82%;
 
   /* font-sizes */
   --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
   --fs-800: 3.5rem;
   --fs-700: 1.5rem;
-  --fs-600: 1rem;
+  --fs-600: 1.25rem;
   --fs-500: 1rem;
   --fs-400: 0.9375rem;
   --fs-300: 1rem;
@@ -94,6 +99,10 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Make images easier to work with */
 img,
 picture {
@@ -131,14 +140,12 @@ select {
 
 /* general */
 
-.flex {
+.d-flex {
   display: flex;
-  gap: var(--gap, 1rem);
 }
 
-.grid {
+.d-grid {
   display: grid;
-  gap: var(--gap, 1rem);
 }
 
 .d-block {
@@ -150,7 +157,7 @@ select {
 }
 
 .container {
-  padding-inline: 2em;
+  padding-inline: 2rem;
   margin-inline: auto;
   max-width: 80rem;
 }
@@ -179,6 +186,22 @@ select {
   background-color: hsl(var(--clr-white));
 }
 
+.bg-success {
+  background-color: hsl(var(--clr-success));
+}
+
+.bg-error {
+  background-color: hsl(var(--clr-error));
+}
+
+.bg-info {
+  background-color: hsl(var(--clr-info));
+}
+
+.bg-warning {
+  background-color: hsl(var(--clr-warning));
+}
+
 .text-dark {
   color: hsl(var(--clr-dark));
 }
@@ -190,16 +213,6 @@ select {
 }
 
 /* typography */
-
-.ff-serif {
-  font-family: var(--ff-serif);
-}
-.ff-sans-cond {
-  font-family: var(--ff-sans-cond);
-}
-.ff-sans-normal {
-  font-family: var(--ff-sans-normal);
-}
 
 .letter-spacing-1 {
   letter-spacing: 4.75px;
