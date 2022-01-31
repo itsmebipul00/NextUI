@@ -2,6 +2,11 @@ aside {
   display: none;
 }
 
+article {
+  margin-top: 4rem;
+  width: 100%;
+}
+
 @media (min-width: 60em) {
   aside {
     position: fixed;
@@ -21,7 +26,10 @@ aside {
     width: 0.5rem;
   }
 
-  aside ul::-webkit-scrollbar-track,
+  aside ul::-webkit-scrollbar-track {
+    background: hsl(var(--clr-red));
+  }
+
   article::-webkit-scrollbar-track {
     background: hsl(var(--clr-white));
   }
