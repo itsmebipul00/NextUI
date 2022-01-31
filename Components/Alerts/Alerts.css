@@ -1,7 +1,3 @@
-.alerts > * {
-  gap: 1rem;
-}
-
 .alerts h2 {
   margin: 1rem;
   text-decoration: underline;
