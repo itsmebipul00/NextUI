@@ -144,6 +144,10 @@ select {
   display: flex;
 }
 
+.f-col {
+  flex-direction: column;
+}
+
 .d-grid {
   display: grid;
 }
@@ -154,6 +158,22 @@ select {
 
 .d-none {
   display: none;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
 }
 
 .container {
@@ -212,6 +232,10 @@ select {
   color: hsl(var(--clr-white));
 }
 
+.text-red {
+  color: hsl(var(--clr-red));
+}
+
 /* typography */
 
 .letter-spacing-1 {
@@ -222,6 +246,17 @@ select {
 }
 .letter-spacing-3 {
   letter-spacing: 2.35px;
+}
+.letter-spacing-4 {
+  letter-spacing: 2px;
+}
+
+.letter-spacing-5 {
+  letter-spacing: 1px;
+}
+
+.word-spacing {
+  word-spacing: 5px;
 }
 
 .uppercase {

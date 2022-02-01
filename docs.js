@@ -45,3 +45,41 @@ closeError.addEventListener("click", hideError)
 closeWarning.addEventListener("click", hideWarning)
 closeInfo.addEventListener("click", hideInfo)
 closeSuccess.addEventListener("click", hideSuccess)
+
+// CARDS
+const closeVIcon = document.querySelector(".close-icon-verticle")
+const closeHIcon = document.querySelector(".close-icon-horizontal")
+const closeHCard = document.querySelector(".card-dismiss-horizontal")
+const closeVCard = document.querySelector(".card-dismiss-verticle")
+
+closeHIcon.addEventListener("click", () => {
+  closeHCard.style.display = "none"
+})
+closeVIcon.addEventListener("click", () => {
+  closeVCard.style.display = "none"
+})
+
+const tabHorizontal = document.querySelector(".tab-horizontal")
+const tabVerticle = document.querySelector(".tab-verticle")
+const cardsHorizontal = document.querySelector(".cards-horizontal-autofit")
+const cardsVerticle = document.querySelector(".cards-verticle-autofit")
+const codeVerticle = document.querySelector(".code-verticle")
+const codeHorizontal = document.querySelector(".code-horizontal")
+
+tabHorizontal.addEventListener("click", () => {
+  tabVerticle.setAttribute("data-visible", false)
+  tabHorizontal.setAttribute("data-visible", true)
+  cardsVerticle.setAttribute("data-visible", false)
+  cardsHorizontal.setAttribute("data-visible", true)
+  codeVerticle.setAttribute("data-visible", false)
+  codeHorizontal.setAttribute("data-visible", true)
+})
+
+tabVerticle.addEventListener("click", () => {
+  tabHorizontal.setAttribute("data-visible", false)
+  tabVerticle.setAttribute("data-visible", true)
+  cardsHorizontal.setAttribute("data-visible", false)
+  cardsVerticle.setAttribute("data-visible", true)
+  codeHorizontal.setAttribute("data-visible", false)
+  codeVerticle.setAttribute("data-visible", true)
+})

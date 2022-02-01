@@ -23,7 +23,7 @@ article {
 
   aside ul::-webkit-scrollbar,
   article::-webkit-scrollbar {
-    width: 0.5rem;
+    width: 10px;
   }
 
   aside ul::-webkit-scrollbar-track {
@@ -37,6 +37,7 @@ article {
   aside ul::-webkit-scrollbar-thumb {
     background: hsl(var(--clr-dark));
   }
+
   article::-webkit-scrollbar-thumb {
     background: hsl(var(--clr-red));
   }
