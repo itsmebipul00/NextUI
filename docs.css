@@ -3,6 +3,9 @@
 @import "./Components/Aside/Aside.css";
 @import "./Components/Avatars/Avatars.css";
 @import "./Components/Alerts/Alerts.css";
+@import "./Components/Cards/Cards.css";
+
+/* HEADER STYLES */
 
 header {
   background: hsl(var(--clr-light));
@@ -30,4 +33,11 @@ header {
 
 .alert-information > * {
   margin: 3rem;
+}
+
+.code {
+  overflow: auto;
+  padding: 5rem;
+  background: hsl(var(--clr-white));
+  border: 3px solid hsl(var(--clr-dark));
 }

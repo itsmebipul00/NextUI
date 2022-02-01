@@ -18,14 +18,10 @@
   margin-left: auto;
 }
 
-.code {
+.code-alert {
   height: 40vh;
-  overflow: auto;
-  padding: 5rem;
   margin: 2rem 5rem 2rem auto;
   width: fit-content;
-  background: hsl(var(--clr-white));
-  border: 3px solid hsl(var(--clr-dark));
 }
 
 code {
@@ -33,7 +29,7 @@ code {
 }
 
 .code::-webkit-scrollbar {
-  width: 0.5rem;
+  width: 10px;
 }
 
 .code::-webkit-scrollbar-track {
@@ -42,4 +38,12 @@ code {
 
 .code::-webkit-scrollbar-thumb {
   background: hsl(var(--clr-dark));
+}
+
+.alert-information span {
+  padding: 0.5rem;
+}
+
+.alert-information > * {
+  margin: 3rem;
 }

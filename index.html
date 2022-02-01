@@ -17,7 +17,7 @@
 <body>
     <header>
         <div class="header-container d-grid">
-            <h1 class="header-title letter-spacing-2">NextUI</h1>
+            <h1 class="header-title letter-spacing-2 fs-700">NextUI</h1>
             <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only"
                 aria-expanded="false">Menu</span></button>
             <nav>
@@ -61,7 +61,7 @@
         </aside>
         <article>
             <section class="alerts">
-                <h2 class="uppercase letter-spacing-2">Alerts</h2>
+                <h2 class="uppercase letter-spacing-2 fs-600">Alerts</h2>
                 <p class="alert bg-error">
                     <i class="fas fa-exclamation-circle"></i>
                     <span>This is a error alert</span>
@@ -98,7 +98,7 @@
                     <i class="far fa-check-circle"></i>
                     <span>This is a Success alert</span>
                 </p>
-                    <div class="code">
+                    <div class="code code-alert">
                         <code class="language-html letter-spacing-3 fs-400">
                             &lt;p class=&quot;alert bg-error&quot;&gt;<br />
                                 &lt;i class=&quot;fas fa-exclamation-circle&quot;&gt;&lt;/i&gt;<br />
@@ -145,6 +145,319 @@
                         <p>bg-success is background: <span class="bg-success">hsl(153, 57%, 82%)</span></p>
                     </div>
             </section>
+            <section class="container cards-container">
+                <h2 class="uppercase letter-spacing-2 fs-600 text-underline">Cards</h2>
+                <div class="cards-tab d-flex fs-500 letter-spacing-4">
+                    <p class="tab-horizontal bg-white text-center" data-visible="true">Horizontal </p>
+                    <p class="tab-verticle bg-white text-center" data-visible="false">Verticle</p>
+                </div>
+                <div class="cards cards-horizontal-autofit" data-visible="true">
+                    <div class="card card-horizontal d-flex">
+                        <div class="img-container img-container-width">
+                          <picture>
+                              <source srcset="./images/tech.webp" type="image/webp">
+                              <source srcset="./images/tech.jpg" type="image/jpg" > 
+                              <img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img">
+                          </picture>
+                        </div>
+                        <div class="card-content card-content-width d-flex f-col">
+                          <h2 class="card-title fs-600">iPhone</h2>
+                          <p class="card-body letter-spacing-5">iPhone, the world's most powerful personal device stands for internet, individual,
+                            instruct, inform, and inspire.</p>
+                          <div class="card-footer">
+                            <p class="card-price fs-400">Price: &#36;<span>1000</span></p>
+                            <i class="fas fa-shopping-cart fa-lg"></i>
+                            <i class="far fa-heart fa-lg"></i>
+                            <i class="far fa-share-square fa-lg"></i>
+                          </div>
+                        </div>
+                    </div>
+                      <div class="card card-horizontal d-flex">
+                        <div class="img-container img-container-width">
+                          <p class="img-badge letter-spacing-3 letter-spacing-3">BESTSELLER</p>
+                          <picture>
+                              <source srcset="./images/tech.webp" type="image/webp">
+                              <source srcset="./images/tech.jpg" type="image/jpg" > 
+                              <img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img">
+                          </picture>                  </div>
+                        <div class="card-content card-content-width d-flex f-col">
+                          <h2 class="card-title fs-600">iPhone</h2>
+                          <p class="card-body letter-spacing-5">iPhone, the world's most powerful personal device stands for internet, individual,
+                            instruct, inform, and inspire.</p>
+                          <div class="card-footer">
+                            <p class="card-price fs-400">Price: &#36;<span>1000</span></p>
+                            <i class="fas fa-shopping-cart fa-lg"></i>
+                            <i class="far fa-heart fa-lg"></i>
+                            <i class="far fa-share-square fa-lg"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card card-horizontal card-dismiss-horizontal d-flex">
+                        <div class="img-container img-container-width">
+                          <p class="img-badge letter-spacing-3">BESTSELLER</p>
+                          <picture>
+                              <source srcset="./images/tech.webp" type="image/webp">
+                              <source srcset="./images/tech.jpg" type="image/jpg" > 
+                              <img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img">
+                          </picture>                  </div>
+                        <div class="card-content card-content-width d-flex f-col">
+                          <h2 class="card-title fs-600">iPhone</h2>
+                          <p class="card-body letter-spacing-5">iPhone, the world's most powerful personal device stands for internet, individual,
+                            instruct, inform, and inspire.</p>
+                          <div class="card-footer">
+                            <p class="card-price fs-400">Price: &#36;<span>1000</span></p>
+                            <i class="fas fa-shopping-cart fa-lg"></i>
+                            <i class="far fa-heart fa-lg"></i>
+                            <i class="far fa-share-square fa-lg"></i>
+                          </div>
+                    
+                        </div>
+                        <p class="close-icon close-icon-horizontal fs-300">X</p>
+                      </div>
+                      <div class="card card-horizontal d-flex card-shadow">
+                        <div class="img-container img-container-width">
+                          <picture>
+                              <source srcset="./images/tech.webp" type="image/webp">
+                              <source srcset="./images/tech.jpg" type="image/jpg" > 
+                              <img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img">
+                          </picture>                  </div>
+                        <div class="card-content card-content-width d-flex f-col">
+                          <h2 class="card-title fs-600">iPhone</h2>
+                          <p class="card-body letter-spacing-5">iPhone, the world's most powerful personal device stands for internet, individual,
+                            instruct, inform, and inspire.</p>
+                          <div class="card-footer">
+                            <p class="card-price fs-400">Price: &#36;<span>1000</span></p>
+                            <i class="fas fa-shopping-cart fa-lg"></i>
+                            <i class="far fa-heart fa-lg"></i>
+                            <i class="far fa-share-square fa-lg"></i>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="cards cards-verticle-autofit" data-visible="false">
+                    <div class="card card-verticle card-shadow-onhover">
+                        <div class="img-container">
+                          <picture>
+                              <source srcset="./images/tech.webp" type="image/webp">
+                              <source srcset="./images/tech.jpg" type="image/jpg" > 
+                              <img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img">
+                          </picture>                  </div>
+                        <div class="card-content">
+                          <h2 class="card-title fs-600">iPhone</h2>
+                          <p class="card-body letter-spacing-5">iPhone, the world's most powerful personal device stands for internet, individual,
+                            instruct, inform, and inspire.</p>
+                          <div class="card-footer">
+                            <p class="card-price fs-400">Price: &#36;<span>1000</span></p>
+                            <i class="fas fa-shopping-cart fa-lg"></i>
+                            <i class="far fa-heart fa-lg"></i>
+                            <i class="far fa-share-square fa-lg"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card card-verticle">
+                        <div class="img-container">
+                          <p class="img-badge letter-spacing-3">BESTSELLER</p>
+                          <picture>
+                              <source srcset="./images/tech.webp" type="image/webp">
+                              <source srcset="./images/tech.jpg" type="image/jpg" > 
+                              <img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img">
+                          </picture>
+                        </div>
+                        <div class="card-content">
+                          <h2 class="card-title fs-600">iPhone</h2>
+                          <p class="card-body letter-spacing-5">iPhone, the world's most powerful personal device stands for internet, individual,
+                            instruct, inform, and inspire.</p>
+                          <div class="card-footer">
+                            <p class="card-price fs-400">Price: &#36;<span>1000</span></p>
+                            <i class="fas fa-shopping-cart fa-lg"></i>
+                            <i class="far fa-heart fa-lg"></i>
+                            <i class="far fa-share-square fa-lg"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card card-verticle card-dismiss-verticle">
+                        <p class="close-icon close-icon-verticle fs-300">X</p>
+                        <div class="img-container">
+                          <p class="img-badge letter-spacing-3">BESTSELLER</p>
+                          <picture>
+                              <source srcset="./images/tech.webp" type="image/webp">
+                              <source srcset="./images/tech.jpg" type="image/jpg" > 
+                              <img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img">
+                            </picture>
+                        </div>
+                        <div class="card-content">
+                          <h2 class="card-title fs-600">iPhone</h2>
+                          <p class="card-body letter-spacing-5">iPhone, the world's most powerful personal device stands for internet, individual,
+                            instruct, inform, and inspire.</p>
+                          <div class="card-footer">
+                            <p class="card-price fs-400">Price: &#36;<span>1000</span></p>
+                            <i class="fas fa-shopping-cart fa-lg"></i>
+                            <i class="far fa-heart fa-lg"></i>
+                            <i class="far fa-share-square fa-lg"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card card-verticle">
+                        <div class="card-overlay">
+                          <div class="img-container">
+                              <picture>
+                                  <source srcset="./images/tech.webp" type="image/webp">
+                                  <source srcset="./images/tech.jpg" type="image/jpg" > 
+                                  <img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img">
+                              </picture>                    </div>
+                          <div class="card-content">
+                            <h2 class="card-title fs-600">iPhone</h2>
+                            <p class="card-body letter-spacing-5">iPhone, the world's most powerful personal device stands for internet, individual,
+                            instruct, inform, and inspire.</p>
+                            <div class="card-footer">
+                              <p class="card-price fs-400 blur">Price: &#36;<span>1000</span></p>
+                              <i class="fas fa-shopping-cart fa-lg"></i>
+                              <i class="far fa-heart fa-lg"></i>
+                              <i class="far fa-share-square fa-lg"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <h2 class="overlay-text">OUT OF STOCK</h2>
+                      </div>
+                </div>
+                <div class="code code-horizontal" data-visible="true">
+                    <code class="language-html letter-spacing-3 fs-400">
+                        &lt;div class=&quot;cards cards-horizontal-autofit&quot; data-visible=&quot;true&quot;&gt;<br />
+	&lt;div class=&quot;card card-horizontal d-flex&quot;&gt;<br />
+		&lt;div class=&quot;img-container img-container-width&quot;&gt;<br />
+			&lt;picture&gt;<br />
+				&lt;source srcset=&quot;./images/tech.webp&quot; type=&quot;image/webp&quot;&gt;<br />
+				&lt;source srcset=&quot;./images/tech.jpg&quot; type=&quot;image/jpg&quot;&gt; &lt;img src=&quot;./images/tech.jpg&quot; alt=&quot;an-iphone&quot; type=&quot;image/jpeg&quot; loading=&quot;lazy&quot; class=&quot;card-img&quot;&gt; &lt;/picture&gt;<br />
+		&lt;/div&gt;<br />
+		&lt;div class=&quot;card-content card-content-width d-flex f-col&quot;&gt;<br />
+			&lt;h2 class=&quot;card-title fs-600&quot;&gt;iPhone&lt;/h2&gt;<br />
+			&lt;p class=&quot;card-body letter-spacing-5&quot;&gt;iPhone, the world's most powerful personal device stands for internet, individual, instruct, inform, and inspire.&lt;/p&gt;<br />
+			&lt;div class=&quot;card-footer&quot;&gt;<br />
+				&lt;p class=&quot;card-price fs-400&quot;&gt;Price: &amp;#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt; &lt;i class=&quot;fas fa-shopping-cart fa-lg&quot;&gt;&lt;/i&gt; &lt;i class=&quot;far fa-heart fa-lg&quot;&gt;&lt;/i&gt; &lt;i class=&quot;far fa-share-square fa-lg&quot;&gt;&lt;/i&gt; &lt;/div&gt;<br />
+		&lt;/div&gt;<br />
+	&lt;/div&gt;<br />
+	&lt;div class=&quot;card card-horizontal d-flex&quot;&gt;<br />
+		&lt;div class=&quot;img-container img-container-width&quot;&gt;<br />
+			&lt;p class=&quot;img-badge letter-spacing-3 letter-spacing-3&quot;&gt;BESTSELLER&lt;/p&gt;<br />
+			&lt;picture&gt;<br />
+				&lt;source srcset=&quot;./images/tech.webp&quot; type=&quot;image/webp&quot;&gt;<br />
+				&lt;source srcset=&quot;./images/tech.jpg&quot; type=&quot;image/jpg&quot;&gt; &lt;img src=&quot;./images/tech.jpg&quot; alt=&quot;an-iphone&quot; type=&quot;image/jpeg&quot; loading=&quot;lazy&quot; class=&quot;card-img&quot;&gt; &lt;/picture&gt;<br />
+		&lt;/div&gt;<br />
+		&lt;div class=&quot;card-content card-content-width d-flex f-col&quot;&gt;<br />
+			&lt;h2 class=&quot;card-title fs-600&quot;&gt;iPhone&lt;/h2&gt;<br />
+			&lt;p class=&quot;card-body letter-spacing-5&quot;&gt;iPhone, the world's most powerful personal device stands for internet, individual, instruct, inform, and inspire.&lt;/p&gt;<br />
+			&lt;div class=&quot;card-footer&quot;&gt;<br />
+				&lt;p class=&quot;card-price fs-400&quot;&gt;Price: &amp;#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt; &lt;i class=&quot;fas fa-shopping-cart fa-lg&quot;&gt;&lt;/i&gt; &lt;i class=&quot;far fa-heart fa-lg&quot;&gt;&lt;/i&gt; &lt;i class=&quot;far fa-share-square fa-lg&quot;&gt;&lt;/i&gt; &lt;/div&gt;<br />
+		&lt;/div&gt;<br />
+	&lt;/div&gt;<br />
+	&lt;div class=&quot;card card-horizontal card-dismiss-horizontal d-flex&quot;&gt;<br />
+		&lt;div class=&quot;img-container img-container-width&quot;&gt;<br />
+			&lt;p class=&quot;img-badge letter-spacing-3&quot;&gt;BESTSELLER&lt;/p&gt;<br />
+			&lt;picture&gt;<br />
+				&lt;source srcset=&quot;./images/tech.webp&quot; type=&quot;image/webp&quot;&gt;<br />
+				&lt;source srcset=&quot;./images/tech.jpg&quot; type=&quot;image/jpg&quot;&gt; &lt;img src=&quot;./images/tech.jpg&quot; alt=&quot;an-iphone&quot; type=&quot;image/jpeg&quot; loading=&quot;lazy&quot; class=&quot;card-img&quot;&gt; &lt;/picture&gt;<br />
+		&lt;/div&gt;<br />
+		&lt;div class=&quot;card-content card-content-width d-flex f-col&quot;&gt;<br />
+			&lt;h2 class=&quot;card-title fs-600&quot;&gt;iPhone&lt;/h2&gt;<br />
+			&lt;p class=&quot;card-body letter-spacing-5&quot;&gt;iPhone, the world's most powerful personal device stands for internet, individual, instruct, inform, and inspire.&lt;/p&gt;<br />
+			&lt;div class=&quot;card-footer&quot;&gt;<br />
+				&lt;p class=&quot;card-price fs-400&quot;&gt;Price: &amp;#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt; &lt;i class=&quot;fas fa-shopping-cart fa-lg&quot;&gt;&lt;/i&gt; &lt;i class=&quot;far fa-heart fa-lg&quot;&gt;&lt;/i&gt; &lt;i class=&quot;far fa-share-square fa-lg&quot;&gt;&lt;/i&gt; &lt;/div&gt;<br />
+		&lt;/div&gt;<br />
+		&lt;p class=&quot;close-icon fs-300&quot;&gt;x&lt;/p&gt;<br />
+	&lt;/div&gt;<br />
+	&lt;div class=&quot;card card-horizontal d-flex card-shadow&quot;&gt;<br />
+		&lt;div class=&quot;img-container img-container-width&quot;&gt;<br />
+			&lt;picture&gt;<br />
+				&lt;source srcset=&quot;./images/tech.webp&quot; type=&quot;image/webp&quot;&gt;<br />
+				&lt;source srcset=&quot;./images/tech.jpg&quot; type=&quot;image/jpg&quot;&gt; &lt;img src=&quot;./images/tech.jpg&quot; alt=&quot;an-iphone&quot; type=&quot;image/jpeg&quot; loading=&quot;lazy&quot; class=&quot;card-img&quot;&gt; &lt;/picture&gt;<br />
+		&lt;/div&gt;<br />
+		&lt;div class=&quot;card-content card-content-width d-flex f-col&quot;&gt;<br />
+			&lt;h2 class=&quot;card-title fs-600&quot;&gt;iPhone&lt;/h2&gt;<br />
+			&lt;p class=&quot;card-body letter-spacing-5&quot;&gt;iPhone, the world's most powerful personal device stands for internet, individual, instruct, inform, and inspire.&lt;/p&gt;<br />
+			&lt;div class=&quot;card-footer&quot;&gt;<br />
+				&lt;p class=&quot;card-price fs-400&quot;&gt;Price: &amp;#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt; &lt;i class=&quot;fas fa-shopping-cart fa-lg&quot;&gt;&lt;/i&gt; &lt;i class=&quot;far fa-heart fa-lg&quot;&gt;&lt;/i&gt; &lt;i class=&quot;far fa-share-square fa-lg&quot;&gt;&lt;/i&gt; &lt;/div&gt;<br />
+		&lt;/div&gt;<br />
+	&lt;/div&gt;<br />
+&lt;/div&gt;
+                    </code>
+                </div>
+                <div class="code code-verticle" data-visible="false">
+                    <code class="language-html letter-spacing-3 fs-400">
+                        &lt;div class=&quot;cards cards-verticle-autofit&quot; data-visible=&quot;false&quot;&gt;<br />
+                        &lt;div class=&quot;card card-verticle card-shadow-onhover&quot;&gt;<br />
+                            &lt;div class=&quot;img-container&quot;&gt;<br />
+                                &lt;picture&gt;<br />
+                                    &lt;source srcset=&quot;./images/tech.webp&quot; type=&quot;image/webp&quot;&gt;<br />
+                                    &lt;source srcset=&quot;./images/tech.jpg&quot; type=&quot;image/jpg&quot;&gt; &lt;img src=&quot;./images/tech.jpg&quot; alt=&quot;an-iphone&quot; type=&quot;image/jpeg&quot; loading=&quot;lazy&quot; class=&quot;card-img&quot;&gt; &lt;/picture&gt;<br />
+                            &lt;/div&gt;<br />
+                            &lt;div class=&quot;card-content&quot;&gt;<br />
+                                &lt;h2 class=&quot;card-title fs-600&quot;&gt;iPhone&lt;/h2&gt;<br />
+                                &lt;p class=&quot;card-body letter-spacing-5&quot;&gt;iPhone, the world's most powerful personal device&lt;/p&gt;<br />
+                                &lt;div class=&quot;card-footer&quot;&gt;<br />
+                                    &lt;p class=&quot;card-price fs-400&quot;&gt;Price: &amp;#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt; &lt;i class=&quot;fas fa-shopping-cart fa-lg&quot;&gt;&lt;/i&gt; &lt;i class=&quot;far fa-heart fa-lg&quot;&gt;&lt;/i&gt; &lt;i class=&quot;far fa-share-square fa-lg&quot;&gt;&lt;/i&gt; &lt;/div&gt;<br />
+                            &lt;/div&gt;<br />
+                        &lt;/div&gt;<br />
+                        &lt;div class=&quot;card card-verticle&quot;&gt;<br />
+                            &lt;div class=&quot;img-container&quot;&gt;<br />
+                                &lt;p class=&quot;img-badge letter-spacing-3&quot;&gt;BESTSELLER&lt;/p&gt;<br />
+                                &lt;picture&gt;<br />
+                                    &lt;source srcset=&quot;./images/tech.webp&quot; type=&quot;image/webp&quot;&gt;<br />
+                                    &lt;source srcset=&quot;./images/tech.jpg&quot; type=&quot;image/jpg&quot;&gt; &lt;img src=&quot;./images/tech.jpg&quot; alt=&quot;an-iphone&quot; type=&quot;image/jpeg&quot; loading=&quot;lazy&quot; class=&quot;card-img&quot;&gt; &lt;/picture&gt;<br />
+                            &lt;/div&gt;<br />
+                            &lt;div class=&quot;card-content&quot;&gt;<br />
+                                &lt;h2 class=&quot;card-title fs-600&quot;&gt;iPhone&lt;/h2&gt;<br />
+                                &lt;p class=&quot;card-body letter-spacing-5&quot;&gt;iPhone, the world's most powerful personal device&lt;/p&gt;<br />
+                                &lt;div class=&quot;card-footer&quot;&gt;<br />
+                                    &lt;p class=&quot;card-price fs-400&quot;&gt;Price: &amp;#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt; &lt;i class=&quot;fas fa-shopping-cart fa-lg&quot;&gt;&lt;/i&gt; &lt;i class=&quot;far fa-heart fa-lg&quot;&gt;&lt;/i&gt; &lt;i class=&quot;far fa-share-square fa-lg&quot;&gt;&lt;/i&gt; &lt;/div&gt;<br />
+                            &lt;/div&gt;<br />
+                        &lt;/div&gt;<br />
+                        &lt;div class=&quot;card card-verticle card-dismiss-verticle&quot;&gt;<br />
+                            &lt;p class=&quot;close-icon close-icon-ver fs-300&quot;&gt;x&lt;/p&gt;<br />
+                            &lt;div class=&quot;img-container&quot;&gt;<br />
+                                &lt;p class=&quot;img-badge letter-spacing-3&quot;&gt;BESTSELLER&lt;/p&gt;<br />
+                                &lt;picture&gt;<br />
+                                    &lt;source srcset=&quot;./images/tech.webp&quot; type=&quot;image/webp&quot;&gt;<br />
+                                    &lt;source srcset=&quot;./images/tech.jpg&quot; type=&quot;image/jpg&quot;&gt; &lt;img src=&quot;./images/tech.jpg&quot; alt=&quot;an-iphone&quot; type=&quot;image/jpeg&quot; loading=&quot;lazy&quot; class=&quot;card-img&quot;&gt; &lt;/picture&gt;<br />
+                            &lt;/div&gt;<br />
+                            &lt;div class=&quot;card-content&quot;&gt;<br />
+                                &lt;h2 class=&quot;card-title fs-600&quot;&gt;iPhone&lt;/h2&gt;<br />
+                                &lt;p class=&quot;card-body letter-spacing-5&quot;&gt;iPhone, the world's most powerful personal device&lt;/p&gt;<br />
+                                &lt;div class=&quot;card-footer&quot;&gt;<br />
+                                    &lt;p class=&quot;card-price fs-400&quot;&gt;Price: &amp;#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt; &lt;i class=&quot;fas fa-shopping-cart fa-lg&quot;&gt;&lt;/i&gt; &lt;i class=&quot;far fa-heart fa-lg&quot;&gt;&lt;/i&gt; &lt;i class=&quot;far fa-share-square fa-lg&quot;&gt;&lt;/i&gt; &lt;/div&gt;<br />
+                            &lt;/div&gt;<br />
+                        &lt;/div&gt;<br />
+                        &lt;div class=&quot;card card-verticle&quot;&gt;<br />
+                            &lt;div class=&quot;card-overlay&quot;&gt;<br />
+                                &lt;div class=&quot;img-container&quot;&gt;<br />
+                                    &lt;picture&gt;<br />
+                                        &lt;source srcset=&quot;./images/tech.webp&quot; type=&quot;image/webp&quot;&gt;<br />
+                                        &lt;source srcset=&quot;./images/tech.jpg&quot; type=&quot;image/jpg&quot;&gt; &lt;img src=&quot;./images/tech.jpg&quot; alt=&quot;an-iphone&quot; type=&quot;image/jpeg&quot; loading=&quot;lazy&quot; class=&quot;card-img&quot;&gt; &lt;/picture&gt;<br />
+                                &lt;/div&gt;<br />
+                                &lt;div class=&quot;card-content&quot;&gt;<br />
+                                    &lt;h2 class=&quot;card-title fs-600&quot;&gt;iPhone&lt;/h2&gt;<br />
+                                    &lt;p class=&quot;card-body letter-spacing-5&quot;&gt;iPhone, the world's most powerful personal device&lt;/p&gt;<br />
+                                    &lt;div class=&quot;card-footer&quot;&gt;<br />
+                                        &lt;p class=&quot;card-price fs-400 blur&quot;&gt;Price: &amp;#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt; &lt;i class=&quot;fas fa-shopping-cart fa-lg&quot;&gt;&lt;/i&gt; &lt;i class=&quot;far fa-heart fa-lg&quot;&gt;&lt;/i&gt; &lt;i class=&quot;far fa-share-square fa-lg&quot;&gt;&lt;/i&gt; &lt;/div&gt;<br />
+                                &lt;/div&gt;<br />
+                            &lt;/div&gt;<br />
+                            &lt;h2 class=&quot;overlay-text&quot;&gt;OUT OF STOCK&lt;/h2&gt; &lt;/div&gt;<br />
+                    &lt;/div&gt;
+                    </code>
+                </div>
+                    
+                <div class="card card-horizontal card-horizontal-textonly">
+                    <h2 class="card-textonly-title fs-600">Description</h2>
+                    <div class="card-textonly-body letter-spacing-4 fs-400 word-spacing d-grid">
+                        <p>.cards-horizontal-autofit is grid-template-columns: <span class="text-red">repeat(auto-fit, minmax(25rem, 1fr))</span></p>
+                        <p>.cards-verticle-autofit is grid-template-columns: <span class="text-red">repeat(auto-fit, minmax(20rem, 1fr))</span></p>
+                        <p>.card background is <span class="text-red">hsl(var(--clr-white) / 0.8)</span> and color is <span class="text-red">hsl(var(--clr-dark) / 0.8)</span></p>
+                        <p>.card-content-width is of <span class="text-red">width: 65%</span></p>
+                        <p>.img-container-width is of <span class="text-red">width: 35%</span></p>
+                        <p>.close-icon is a letter<span class="text-red fs-500"> X</span></p>
+                        <p>.card-overlay is set to <span class="text-red">filter: blur(0.12rem)</span> and <span class="text-red">opacity: 0.2</span> </p>
+                    </div>
+                   </div>
+              </section>
         </article>
     </main>
 
