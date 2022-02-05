@@ -73,12 +73,10 @@ button {
   color: hsl(var(--clr-dark));
   margin-left: 1rem;
   text-decoration: underline;
-  /* text-decoration-color: hsl(var(--clr-dark)); */
   text-decoration-thickness: 0.25rem;
 }
 
 .btn-link:hover {
-  /* color: aliceblue; */
   text-decoration-color: hsl(var(--clr-info));
 }
 

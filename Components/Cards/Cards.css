@@ -188,6 +188,5 @@ picture,
 
 .code-horizontal[data-visible="true"],
 .code-verticle[data-visible="true"] {
-  /* transition: opacity 0.5s linear; */
   display: block;
 }
