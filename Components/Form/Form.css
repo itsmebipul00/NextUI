@@ -1,8 +1,7 @@
 .form-login {
-  margin: 2rem;
   background: hsl(var(--clr-white) / 0.7);
   padding: 2rem;
-  width: 50%;
+  width: 60%;
 }
 
 form input {
@@ -31,20 +30,9 @@ form input {
   margin-bottom: 1rem;
 }
 
-.form-heading {
-  margin: 2rem;
-}
-
-.code-buttons {
-  height: 60vh;
-  width: 60%;
-  margin-left: auto;
-}
-
 .code-form {
-  height: 60vh;
-  width: 60%;
-  margin-left: auto;
+  height: 40vh;
+  width: 70%;
 }
 
 .form-textonly-body {
@@ -55,5 +43,9 @@ form input {
 }
 
 .form-textonly-body > * {
+  margin-bottom: 1rem;
+}
+
+.information-form > * {
   margin-bottom: 1rem;
 }

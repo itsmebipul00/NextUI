@@ -1,11 +1,9 @@
 .cards-container {
   display: grid;
-  gap: 2rem;
 }
 
 .cards-tab {
-  padding: 2rem 1rem;
-  justify-content: space-around;
+  margin-bottom: 1rem;
 }
 
 .cards-tab p {
@@ -34,7 +32,7 @@
 
 .cards-verticle-autofit,
 .cards-horizontal-autofit {
-  gap: 2rem;
+  gap: 0.5rem;
 }
 
 .cards-horizontal-autofit {
@@ -169,25 +167,18 @@ picture,
   transform: scale(1.01);
 }
 
-.card-horizontal-textonly {
-  width: fit-content;
-  height: fit-content;
-  margin-left: auto;
+.card-information > * {
+  margin: 1rem;
 }
 
 .card-textonly-title {
   margin: 1rem;
 }
 
-.card-textonly-body {
-  padding: 0 1rem;
-  gap: 1rem;
-}
-
 .code-horizontal,
 .code-verticle {
-  height: 60vh;
-  width: 80%;
+  height: 40vh;
+  width: 70%;
 }
 
 .code-horizontal[data-visible="false"],

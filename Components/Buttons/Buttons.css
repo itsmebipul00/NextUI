@@ -1,9 +1,5 @@
-.buttons h2 {
-  margin: 2rem 0;
-}
-
 button {
-  margin: 1rem;
+  margin: 0 0.25rem 0.5rem 0.25rem;
 }
 
 .btn {
@@ -99,17 +95,15 @@ button {
   display: none;
 }
 
-.buttons-textonly-body {
-  padding: 1rem;
-  background: hsl(var(--clr-white) / 0.9);
-  width: 60%;
-  margin-top: 2rem;
-}
-
-.buttons-textonly-body > * {
-  margin-bottom: 1rem;
+.code-buttons {
+  height: 40vh;
+  width: 70%;
 }
 
 .btn-primary-description {
   padding: 0.2rem 0.6rem;
+}
+
+.button-information > * {
+  margin-bottom: 1rem;
 }

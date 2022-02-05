@@ -29,17 +29,61 @@ header {
   }
 }
 
+.container {
+  padding-inline: 5rem;
+  margin-inline: auto;
+  max-width: 80rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  margin-bottom: 2rem;
+  text-decoration: underline;
+}
+
+i {
+  height: fit-content;
+  width: fit-content;
+}
+
+.information {
+  background: hsl(var(--clr-white) / 0.9);
+  color: hsl(var(--clr-dark) / 0.9);
+  padding: 1rem;
+  margin: 1rem 0 2rem 0;
+  width: 70%;
+}
+
 .alert-information span {
-  padding: 0.5rem;
+  padding: 0.25rem;
 }
 
 .alert-information > * {
-  margin: 3rem;
+  margin: 1rem;
 }
 
 .code {
+  margin: 1rem 0 0 0;
   overflow: auto;
   padding: 5rem;
   background: hsl(var(--clr-white));
   border: 3px solid hsl(var(--clr-dark));
+}
+
+code {
+  font-family: inherit;
+}
+
+.code::-webkit-scrollbar {
+  width: 10px;
+}
+
+.code::-webkit-scrollbar-track {
+  background: hsl(var(--clr-white));
+}
+
+.code::-webkit-scrollbar-thumb {
+  background: hsl(var(--clr-dark));
 }
