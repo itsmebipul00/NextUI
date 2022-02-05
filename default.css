@@ -90,6 +90,7 @@ body {
   color: hsl(var(--clr-dark));
   font-family: var(--ff-serif-openSans);
   font-weight: var(--fs-400);
+  font-size: var(--fs-400);
   min-width: 100vh;
   line-height: 1.5;
 }
@@ -168,18 +169,16 @@ select {
   text-align: center;
 }
 
+.text-underline {
+  text-decoration: underline;
+}
+
 .p-relative {
   position: relative;
 }
 
 .p-absolute {
   position: absolute;
-}
-
-.container {
-  padding-inline: 2rem;
-  margin-inline: auto;
-  max-width: 80rem;
 }
 
 .sr-only {
@@ -225,9 +224,11 @@ select {
 .text-dark {
   color: hsl(var(--clr-dark));
 }
+
 .text-accent {
   color: hsl(var(--clr-light));
 }
+
 .text-white {
   color: hsl(var(--clr-white));
 }
@@ -286,6 +287,10 @@ select {
 }
 .fs-200 {
   font-size: var(--fs-200);
+}
+
+.fw-200 {
+  font-weight: var(--fs-200);
 }
 
 .fs-900,

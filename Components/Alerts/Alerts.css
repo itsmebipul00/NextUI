@@ -1,15 +1,14 @@
-.alerts h2 {
-  margin: 1rem;
-  text-decoration: underline;
+.alert-container {
+  width: 100%;
 }
 
 .alert {
-  max-width: 70%;
-  padding: 1rem;
+  max-width: 60%;
+  padding: 1.25rem;
   display: flex;
 }
 
-.alert > span {
+.alert-message {
   margin: 0 1rem;
 }
 
@@ -20,30 +19,9 @@
 
 .code-alert {
   height: 40vh;
-  margin: 2rem 5rem 2rem auto;
-  width: fit-content;
-}
-
-code {
-  font-family: inherit;
-}
-
-.code::-webkit-scrollbar {
-  width: 10px;
-}
-
-.code::-webkit-scrollbar-track {
-  background: hsl(var(--clr-white));
-}
-
-.code::-webkit-scrollbar-thumb {
-  background: hsl(var(--clr-dark));
+  width: 70%;
 }
 
 .alert-information span {
-  padding: 0.5rem;
-}
-
-.alert-information > * {
-  margin: 3rem;
+  padding: 0.125rem;
 }

@@ -66,7 +66,6 @@ img {
   border-radius: 50%;
   aspect-ratio: 1;
   inset: 2% 0 0 70%;
-  z-index: 999;
 }
 
 .notification-color-green::after {
@@ -117,14 +116,13 @@ img {
 }
 
 .icons {
-  width: max-content;
   gap: 1rem;
   margin: 0 0 0 2rem;
   place-items: center;
   grid-template-areas:
-    " . notification-color-green code-icon-green"
-    " . notification-color-blue code-icon-blue"
-    " . notification-color-yellow code-icon-yellow";
+    "notification-color-green code-icon-green"
+    "notification-color-blue code-icon-blue"
+    "notification-color-yellow code-icon-yellow";
 }
 
 .code-icon-blue {
@@ -155,9 +153,8 @@ img {
 .code-icon-blue,
 .code-icon-yellow {
   margin-right: auto;
-  width: 90%;
+  max-width: 100%;
   padding: 1rem !important;
-  /* height: 10vh; */
 }
 
 .avatar-information {

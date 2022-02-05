@@ -40,7 +40,7 @@
             </nav>
         </div>
     </header>
-    <main class="d-flex">
+    <main>
         <aside>
             <ul id="secondary-navigation"  class="secondary-navigation uppercase letter-spacing-2 d-grid" role="list">
                 <li><a href="#"><span>Colors</span></a></li>
@@ -56,47 +56,46 @@
                 <li><a href="#"><span>Toast</span></a></li>
                 <li><a href="#"><span>Modal</span></a></li>
                 <li><a href="#"><span>Slider</span></a></li>
-              </ul>
-            </nav>
+            </ul>
         </aside>
-        <article>
-            <section class="alerts">
+        <article class="container">
+            <section class="alert-container">
                 <h2 class="uppercase letter-spacing-2 fs-600">Alerts</h2>
                 <p class="alert bg-error">
                     <i class="fas fa-exclamation-circle"></i>
-                    <span>This is a error alert</span>
+                    <span class="alert-message">This is a error alert</span>
                     <i class="closeError fas fa-times"></i>
                 </p>
                 <p class="alert bg-error">
                     <i class="fas fa-exclamation-circle"></i>
-                    <span>This is a error alert</span>
+                    <span class="alert-message">This is a error alert</span>
                 </p>
                 <p class="alert bg-warning">
                     <i class="fas fa-exclamation"></i>
-                    <span>This is a warning alert</span>
+                    <span class="alert-message">This is a warning alert</span>
                     <i class="closeWarning fas fa-times"></i>
                 </p>
                 <p class="alert bg-warning">
                     <i class="fas fa-exclamation"></i>
-                    <span>This is a warning alert</span>
+                    <span class="alert-message">This is a warning alert</span>
                 </p>
                 <p class="alert bg-info">
                     <i class="fas fa-info"></i>
-                    <span>This is a Info alert</span>
+                    <span class="alert-message">This is a Info alert</span>
                     <i class="closeInfo fas fa-times"></i>
                 </p>
                 <p class="alert bg-info">
                     <i class="fas fa-info"></i>
-                    <span>This is a Info alert</span>
+                    <span class="alert-message">This is a Info alert</span>
                 </p>
                 <p class="alert bg-success">
                     <i class="far fa-check-circle"></i>
-                    <span>This is a Success alert</span>
+                    <span class="alert-message">This is a Success alert</span>
                     <i class="closeSuccess fas fa-times"></i>
                 </p>
                 <p class="alert bg-success">
                     <i class="far fa-check-circle"></i>
-                    <span>This is a Success alert</span>
+                    <span class="alert-message">This is a Success alert</span>
                 </p>
                     <div class="code code-alert">
                         <code class="language-html letter-spacing-3 fs-400">
@@ -138,147 +137,16 @@
                             &lt;/p&gt;
                         </code>
                     </div>
-                    <div class="alert-information fs-500 letter-spacing-1">
-                        <p>bg-error is background: <span class="bg-error">hsl(345, 69%, 49%)</span></p>
-                        <p>bg-info is background: <span class="bg-info">hsl(198, 74%, 47%)</span></p>
-                        <p>bg-warning is background: <span class="bg-warning">hsl(46, 100%, 90%)</span></p>
-                        <p>bg-success is background: <span class="bg-success">hsl(153, 57%, 82%)</span></p>
+                    <div class="information alert-information letter-spacing-5">
+                        <p>.bg-error is background: <span class="bg-error">hsl(345, 69%, 49%)</span></p>
+                        <p>.bg-info is background: <span class="bg-info">hsl(198, 74%, 47%)</span></p>
+                        <p>.bg-warning is background: <span class="bg-warning">hsl(46, 100%, 90%)</span></p>
+                        <p>.bg-success is background: <span class="bg-success">hsl(153, 57%, 82%)</span></p>
                     </div>
             </section>
-            <section class="avatars">
-                <h2 class="uppercase letter-spacing-2 fs-600 text-underline">Avatars and badges</h2>            
-                <div class="avatar avatar-image">
-                  <div class="width-5rem">
-                      <img class="radius-50" src="./images/avatar.jpg" alt="random_picture">
-                  </div>
-                  <div class="width-7rem">
-                      <img class="radius-50" src="./images/avatar.jpg" alt="random_picture">
-                  </div>
-                  <div class="width-9rem">
-                      <img class="radius-50" src="./images/avatar.jpg" alt="random_picture">
-                  </div>
-                  <div class="width-10rem container-radius-50 p-relative notification notification-color-yellow">
-                      <img class="radius-50" src="./images/avatar.jpg" alt="random_picture">
-                  </div>
-              </div>
-              <div class="code code-avatar-image">
-                  <code class="language-html letter-spacing-3 fs-400">
-                  &lt;div class=&quot;avatar avatar-image&quot;&gt;<br />
-                    &lt;div class=&quot;width-5rem&quot;&gt;<br />
-                        &lt;img class=&quot;radius-50&quot; src=&quot;./images/avatar.jpg&quot; alt=&quot;random_picture&quot;&gt;<br />
-                    &lt;/div&gt;<br />
-                    &lt;div class=&quot;width-7rem&quot;&gt;<br />
-                        &lt;img class=&quot;radius-50&quot; src=&quot;./images/avatar.jpg&quot; alt=&quot;random_picture&quot;&gt;<br />
-                    &lt;/div&gt;<br />
-                    &lt;div class=&quot;width-9rem&quot;&gt;<br />
-                        &lt;img class=&quot;radius-50&quot; src=&quot;./images/avatar.jpg&quot; alt=&quot;random_picture&quot;&gt;<br />
-                    &lt;/div&gt;<br />
-                    &lt;div class=&quot;width-10rem container-radius-50 p-relative notification notification-color-yellow&quot;&gt;<br />
-                        &lt;img class=&quot;radius-50&quot; src=&quot;./images/avatar.jpg&quot; alt=&quot;random_picture&quot;&gt;<br />
-                    &lt;/div&gt;<br />
-                  &lt;/div&gt;
-                  </code>
-              </div>
-              <div class="avatar avatar-placeholder">
-                  <div class="width-5rem">
-                      <div class="placeholder">
-                          <div class="placeholder-face"></div>
-                          <div class="placeholder-hands"></div>
-                      </div>
-                  </div>
-                  <div class="width-7rem p-relative notification notification-color-green">
-                      <div class="placeholder">
-                          <div class="placeholder-face"></div>
-                          <div class="placeholder-hands"></div>
-                      </div>
-                  </div>
-                  <div class="width-9rem p-relative notification notification-color-blue">
-                      <div class="placeholder">
-                          <div class="placeholder-face"></div>
-                          <div class="placeholder-hands"></div>
-                      </div>
-                  </div>
-                  <div class="width-10rem">
-                      <div class="placeholder fs-700 letter-spacing-3">
-                          BK
-                      </div>
-                  </div>
-              </div>
-              <div class="code code-avatar-placeholder">
-                <code class="language-html letter-spacing-3 fs-400">                &lt;div class=&quot;avatar avatar-placeholder&quot;&gt;<br />
-                  &lt;div class=&quot;width-5rem&quot;&gt;<br />
-                      &lt;div class=&quot;placeholder&quot;&gt;<br />
-                       &lt;div class=&quot;placeholder-face&quot;&gt;&lt;/div&gt;<br />
-                       &lt;div class=&quot;placeholder-hands&quot;&gt;&lt;/div&gt;<br />
-                      &lt;/div&gt;<br />
-                  &lt;/div&gt;<br />
-                  &lt;div class=&quot;width-7rem p-relative notification notification-color-green&quot;&gt;<br />
-                      &lt;div class=&quot;placeholder&quot;&gt;<br />
-                       &lt;div class=&quot;placeholder-face&quot;&gt;&lt;/div&gt;<br />
-                       &lt;div class=&quot;placeholder-hands&quot;&gt;&lt;/div&gt;<br />
-                      &lt;/div&gt;<br />
-                  &lt;/div&gt;<br />
-                  &lt;div class=&quot;width-9rem p-relative notification notification-color-blue&quot;&gt;<br />
-                      &lt;div class=&quot;placeholder&quot;&gt;<br />
-                       &lt;div class=&quot;placeholder-face&quot;&gt;&lt;/div&gt;<br />
-                       &lt;div class=&quot;placeholder-hands&quot;&gt;&lt;/div&gt;<br />
-                    &lt;/div&gt;<br />
-                  &lt;/div&gt;<br />
-                  &lt;div class=&quot;width-10rem&quot;&gt;<br />
-                      &lt;div class=&quot;placeholder fs-700 letter-spacing-3&quot;&gt;<br />
-                        BK<br />
-                      &lt;/div&gt;<br />
-                  &lt;/div&gt;<br />
-                &lt;/div&gt;
-                </code>
-              </div>
-              <div class="avatar-information fs-400 letter-spacing-1">
-                <p>.width-5rem is <span class="text-red">width: 5rem</span></p>
-                <p>.width-7rem is <span class="text-red">width: 7rem</span></p>
-                <p>.width-9rem is <span class="text-red">width: 9rem</span></p>
-                <p>.width-10rem is <span class="text-red">width: 10rem</span></p>
-                <p>.notification is <span class="text-red">relative</span> positioned and its <span class="text-red">pseudo elements</span> are <span class="text-red">absolute</span> positioned</p>
-                <p>.notification-color-blue gives background: <span class="bg-info">hsl(198, 74%, 47%)</span> to its pseudo element</p>
-                <p>.notification-color-green gives background: <span class="bg-success">hsl(153, 57%, 82%)</span> to its pseudo element</p>
-                <p>.notification-color-yellow gives background: <span class="bg-warning">hsl(46, 100%, 90%)</span> to its pseudo element</p>
-                <p><span class="text-red">.placeholder</span>, <span class="text-red">.placeholder-face</span> and <span class="text-red">.placeholder-hands</span> are used to design the placeholder</p>
-              </div>
-              <div class="icons d-grid f-col">
-                <div class="p-relative notification notification-color-green">
-                  <i class="fas fa-shopping-cart fa-5x"></i>
-                </div>
-                <p class="code code-icon-green">
-                  <code class="language-html letter-spacing-3 fs-400">
-                    &lt;div class=&quot;p-relative notification notification-color-green&quot;&gt;<br />
-                      &lt;i class=&quot;fas fa-shopping-cart fa-5x&quot;&gt;&lt;/i&gt;<br />
-                    &lt;/div&gt;
-                  </code>
-                </p>
-                <div class="p-relative notification notification-color-blue">
-                  <i class="fas fa-trash fa-5x"></i>
-                </div>
-                <p class="code code-icon-blue">
-                  <code class="language-html letter-spacing-3 fs-400">
-                    &lt;div class=&quot;p-relative notification notification-color-green&quot;&gt;<br />
-                      &lt;i class=&quot;fas fa-shopping-cart fa-5x&quot;&gt;&lt;/i&gt;<br />
-                    &lt;/div&gt;
-                  </code>
-                </p>
-                <div class="p-relative notification notification-color-yellow">
-                  <i class="fas fa-bell fa-5x"></i> 
-                </div>
-                <p class="code code-icon-yellow">
-                  <code class="language-html letter-spacing-3 fs-400">
-                    &lt;div class=&quot;p-relative notification notification-color-green&quot;&gt;<br />
-                      &lt;i class=&quot;fas fa-shopping-cart fa-5x&quot;&gt;&lt;/i&gt;<br />
-                    &lt;/div&gt;
-                  </code>
-                </p>
-             </div>
-            </section>
-            <section class="container cards-container">
-                <h2 class="uppercase letter-spacing-2 fs-600 text-underline">Cards</h2>
-                <div class="cards-tab d-flex fs-500 letter-spacing-4">
+            <section class="cards-container d-grid">
+                <h2 class="uppercase letter-spacing-2 fs-600">Cards</h2>
+                <div class="cards-tab d-flex fs-500 letter-spacing-5">
                     <p class="tab-horizontal bg-white text-center" data-visible="true">Horizontal </p>
                     <p class="tab-verticle bg-white text-center" data-visible="false">Verticle</p>
                 </div>
@@ -292,7 +160,7 @@
                           </picture>
                         </div>
                         <div class="card-content card-content-width d-flex f-col">
-                          <h2 class="card-title fs-600">iPhone</h2>
+                          <h3 class="card-title fs-600">iPhone</h3>
                           <p class="card-body letter-spacing-5">iPhone, the world's most powerful personal device stands for internet, individual,
                             instruct, inform, and inspire.</p>
                           <div class="card-footer">
@@ -312,7 +180,7 @@
                               <img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img">
                           </picture>                  </div>
                         <div class="card-content card-content-width d-flex f-col">
-                          <h2 class="card-title fs-600">iPhone</h2>
+                          <h3 class="card-title fs-600">iPhone</h3>
                           <p class="card-body letter-spacing-5">iPhone, the world's most powerful personal device stands for internet, individual,
                             instruct, inform, and inspire.</p>
                           <div class="card-footer">
@@ -332,7 +200,7 @@
                               <img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img">
                           </picture>                  </div>
                         <div class="card-content card-content-width d-flex f-col">
-                          <h2 class="card-title fs-600">iPhone</h2>
+                          <h3 class="card-title fs-600">iPhone</h3>
                           <p class="card-body letter-spacing-5">iPhone, the world's most powerful personal device stands for internet, individual,
                             instruct, inform, and inspire.</p>
                           <div class="card-footer">
@@ -353,7 +221,7 @@
                               <img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img">
                           </picture>                  </div>
                         <div class="card-content card-content-width d-flex f-col">
-                          <h2 class="card-title fs-600">iPhone</h2>
+                          <h3 class="card-title fs-600">iPhone</h3>
                           <p class="card-body letter-spacing-5">iPhone, the world's most powerful personal device stands for internet, individual,
                             instruct, inform, and inspire.</p>
                           <div class="card-footer">
@@ -374,7 +242,7 @@
                               <img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img">
                           </picture>                  </div>
                         <div class="card-content">
-                          <h2 class="card-title fs-600">iPhone</h2>
+                          <h3 class="card-title fs-600">iPhone</h3>
                           <p class="card-body letter-spacing-5">iPhone, the world's most powerful personal device stands for internet, individual,
                             instruct, inform, and inspire.</p>
                           <div class="card-footer">
@@ -395,7 +263,7 @@
                           </picture>
                         </div>
                         <div class="card-content">
-                          <h2 class="card-title fs-600">iPhone</h2>
+                          <h3 class="card-title fs-600">iPhone</h3>
                           <p class="card-body letter-spacing-5">iPhone, the world's most powerful personal device stands for internet, individual,
                             instruct, inform, and inspire.</p>
                           <div class="card-footer">
@@ -417,7 +285,7 @@
                             </picture>
                         </div>
                         <div class="card-content">
-                          <h2 class="card-title fs-600">iPhone</h2>
+                          <h3 class="card-title fs-600">iPhone</h3>
                           <p class="card-body letter-spacing-5">iPhone, the world's most powerful personal device stands for internet, individual,
                             instruct, inform, and inspire.</p>
                           <div class="card-footer">
@@ -437,79 +305,79 @@
                                   <img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img">
                               </picture>                    </div>
                           <div class="card-content">
-                            <h2 class="card-title fs-600">iPhone</h2>
+                            <h3 class="card-title fs-600">iPhone</h3>
                             <p class="card-body letter-spacing-5">iPhone, the world's most powerful personal device stands for internet, individual,
                             instruct, inform, and inspire.</p>
                             <div class="card-footer">
-                              <p class="card-price fs-400 blur">Price: &#36;<span>1000</span></p>
+                              <p class="card-price">Price: &#36;<span>1000</span></p>
                               <i class="fas fa-shopping-cart fa-lg"></i>
                               <i class="far fa-heart fa-lg"></i>
                               <i class="far fa-share-square fa-lg"></i>
                             </div>
                           </div>
                         </div>
-                        <h2 class="overlay-text">OUT OF STOCK</h2>
+                        <p class="overlay-text">OUT OF STOCK</p>
                       </div>
                 </div>
                 <div class="code code-horizontal" data-visible="true">
                     <code class="language-html letter-spacing-3 fs-400">
                         &lt;div class=&quot;cards cards-horizontal-autofit&quot; data-visible=&quot;true&quot;&gt;<br />
-	&lt;div class=&quot;card card-horizontal d-flex&quot;&gt;<br />
-		&lt;div class=&quot;img-container img-container-width&quot;&gt;<br />
-			&lt;picture&gt;<br />
-				&lt;source srcset=&quot;./images/tech.webp&quot; type=&quot;image/webp&quot;&gt;<br />
-				&lt;source srcset=&quot;./images/tech.jpg&quot; type=&quot;image/jpg&quot;&gt; &lt;img src=&quot;./images/tech.jpg&quot; alt=&quot;an-iphone&quot; type=&quot;image/jpeg&quot; loading=&quot;lazy&quot; class=&quot;card-img&quot;&gt; &lt;/picture&gt;<br />
-		&lt;/div&gt;<br />
-		&lt;div class=&quot;card-content card-content-width d-flex f-col&quot;&gt;<br />
-			&lt;h2 class=&quot;card-title fs-600&quot;&gt;iPhone&lt;/h2&gt;<br />
-			&lt;p class=&quot;card-body letter-spacing-5&quot;&gt;iPhone, the world's most powerful personal device stands for internet, individual, instruct, inform, and inspire.&lt;/p&gt;<br />
-			&lt;div class=&quot;card-footer&quot;&gt;<br />
-				&lt;p class=&quot;card-price fs-400&quot;&gt;Price: &amp;#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt; &lt;i class=&quot;fas fa-shopping-cart fa-lg&quot;&gt;&lt;/i&gt; &lt;i class=&quot;far fa-heart fa-lg&quot;&gt;&lt;/i&gt; &lt;i class=&quot;far fa-share-square fa-lg&quot;&gt;&lt;/i&gt; &lt;/div&gt;<br />
-		&lt;/div&gt;<br />
-	&lt;/div&gt;<br />
-	&lt;div class=&quot;card card-horizontal d-flex&quot;&gt;<br />
-		&lt;div class=&quot;img-container img-container-width&quot;&gt;<br />
-			&lt;p class=&quot;img-badge letter-spacing-3 letter-spacing-3&quot;&gt;BESTSELLER&lt;/p&gt;<br />
-			&lt;picture&gt;<br />
-				&lt;source srcset=&quot;./images/tech.webp&quot; type=&quot;image/webp&quot;&gt;<br />
-				&lt;source srcset=&quot;./images/tech.jpg&quot; type=&quot;image/jpg&quot;&gt; &lt;img src=&quot;./images/tech.jpg&quot; alt=&quot;an-iphone&quot; type=&quot;image/jpeg&quot; loading=&quot;lazy&quot; class=&quot;card-img&quot;&gt; &lt;/picture&gt;<br />
-		&lt;/div&gt;<br />
-		&lt;div class=&quot;card-content card-content-width d-flex f-col&quot;&gt;<br />
-			&lt;h2 class=&quot;card-title fs-600&quot;&gt;iPhone&lt;/h2&gt;<br />
-			&lt;p class=&quot;card-body letter-spacing-5&quot;&gt;iPhone, the world's most powerful personal device stands for internet, individual, instruct, inform, and inspire.&lt;/p&gt;<br />
-			&lt;div class=&quot;card-footer&quot;&gt;<br />
-				&lt;p class=&quot;card-price fs-400&quot;&gt;Price: &amp;#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt; &lt;i class=&quot;fas fa-shopping-cart fa-lg&quot;&gt;&lt;/i&gt; &lt;i class=&quot;far fa-heart fa-lg&quot;&gt;&lt;/i&gt; &lt;i class=&quot;far fa-share-square fa-lg&quot;&gt;&lt;/i&gt; &lt;/div&gt;<br />
-		&lt;/div&gt;<br />
-	&lt;/div&gt;<br />
-	&lt;div class=&quot;card card-horizontal card-dismiss-horizontal d-flex&quot;&gt;<br />
-		&lt;div class=&quot;img-container img-container-width&quot;&gt;<br />
-			&lt;p class=&quot;img-badge letter-spacing-3&quot;&gt;BESTSELLER&lt;/p&gt;<br />
-			&lt;picture&gt;<br />
-				&lt;source srcset=&quot;./images/tech.webp&quot; type=&quot;image/webp&quot;&gt;<br />
-				&lt;source srcset=&quot;./images/tech.jpg&quot; type=&quot;image/jpg&quot;&gt; &lt;img src=&quot;./images/tech.jpg&quot; alt=&quot;an-iphone&quot; type=&quot;image/jpeg&quot; loading=&quot;lazy&quot; class=&quot;card-img&quot;&gt; &lt;/picture&gt;<br />
-		&lt;/div&gt;<br />
-		&lt;div class=&quot;card-content card-content-width d-flex f-col&quot;&gt;<br />
-			&lt;h2 class=&quot;card-title fs-600&quot;&gt;iPhone&lt;/h2&gt;<br />
-			&lt;p class=&quot;card-body letter-spacing-5&quot;&gt;iPhone, the world's most powerful personal device stands for internet, individual, instruct, inform, and inspire.&lt;/p&gt;<br />
-			&lt;div class=&quot;card-footer&quot;&gt;<br />
-				&lt;p class=&quot;card-price fs-400&quot;&gt;Price: &amp;#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt; &lt;i class=&quot;fas fa-shopping-cart fa-lg&quot;&gt;&lt;/i&gt; &lt;i class=&quot;far fa-heart fa-lg&quot;&gt;&lt;/i&gt; &lt;i class=&quot;far fa-share-square fa-lg&quot;&gt;&lt;/i&gt; &lt;/div&gt;<br />
-		&lt;/div&gt;<br />
-		&lt;p class=&quot;close-icon fs-300&quot;&gt;x&lt;/p&gt;<br />
-	&lt;/div&gt;<br />
-	&lt;div class=&quot;card card-horizontal d-flex card-shadow&quot;&gt;<br />
-		&lt;div class=&quot;img-container img-container-width&quot;&gt;<br />
-			&lt;picture&gt;<br />
-				&lt;source srcset=&quot;./images/tech.webp&quot; type=&quot;image/webp&quot;&gt;<br />
-				&lt;source srcset=&quot;./images/tech.jpg&quot; type=&quot;image/jpg&quot;&gt; &lt;img src=&quot;./images/tech.jpg&quot; alt=&quot;an-iphone&quot; type=&quot;image/jpeg&quot; loading=&quot;lazy&quot; class=&quot;card-img&quot;&gt; &lt;/picture&gt;<br />
-		&lt;/div&gt;<br />
-		&lt;div class=&quot;card-content card-content-width d-flex f-col&quot;&gt;<br />
-			&lt;h2 class=&quot;card-title fs-600&quot;&gt;iPhone&lt;/h2&gt;<br />
-			&lt;p class=&quot;card-body letter-spacing-5&quot;&gt;iPhone, the world's most powerful personal device stands for internet, individual, instruct, inform, and inspire.&lt;/p&gt;<br />
-			&lt;div class=&quot;card-footer&quot;&gt;<br />
-				&lt;p class=&quot;card-price fs-400&quot;&gt;Price: &amp;#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt; &lt;i class=&quot;fas fa-shopping-cart fa-lg&quot;&gt;&lt;/i&gt; &lt;i class=&quot;far fa-heart fa-lg&quot;&gt;&lt;/i&gt; &lt;i class=&quot;far fa-share-square fa-lg&quot;&gt;&lt;/i&gt; &lt;/div&gt;<br />
-		&lt;/div&gt;<br />
-	&lt;/div&gt;<br />
-&lt;/div&gt;
+                        &lt;div class=&quot;card card-horizontal d-flex&quot;&gt;<br />
+                          &lt;div class=&quot;img-container img-container-width&quot;&gt;<br />
+                            &lt;picture&gt;<br />
+                              &lt;source srcset=&quot;./images/tech.webp&quot; type=&quot;image/webp&quot;&gt;<br />
+                              &lt;source srcset=&quot;./images/tech.jpg&quot; type=&quot;image/jpg&quot;&gt; &lt;img src=&quot;./images/tech.jpg&quot; alt=&quot;an-iphone&quot; type=&quot;image/jpeg&quot; loading=&quot;lazy&quot; class=&quot;card-img&quot;&gt; &lt;/picture&gt;<br />
+                          &lt;/div&gt;<br />
+                          &lt;div class=&quot;card-content card-content-width d-flex f-col&quot;&gt;<br />
+                            &lt;h2 class=&quot;card-title fs-600&quot;&gt;iPhone&lt;/h2&gt;<br />
+                            &lt;p class=&quot;card-body letter-spacing-5&quot;&gt;iPhone, the world's most powerful personal device stands for internet, individual, instruct, inform, and inspire.&lt;/p&gt;<br />
+                            &lt;div class=&quot;card-footer&quot;&gt;<br />
+                              &lt;p class=&quot;card-price fs-400&quot;&gt;Price: &amp;#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt; &lt;i class=&quot;fas fa-shopping-cart fa-lg&quot;&gt;&lt;/i&gt; &lt;i class=&quot;far fa-heart fa-lg&quot;&gt;&lt;/i&gt; &lt;i class=&quot;far fa-share-square fa-lg&quot;&gt;&lt;/i&gt; &lt;/div&gt;<br />
+                          &lt;/div&gt;<br />
+                        &lt;/div&gt;<br />
+                        &lt;div class=&quot;card card-horizontal d-flex&quot;&gt;<br />
+                          &lt;div class=&quot;img-container img-container-width&quot;&gt;<br />
+                            &lt;p class=&quot;img-badge letter-spacing-3 letter-spacing-3&quot;&gt;BESTSELLER&lt;/p&gt;<br />
+                            &lt;picture&gt;<br />
+                              &lt;source srcset=&quot;./images/tech.webp&quot; type=&quot;image/webp&quot;&gt;<br />
+                              &lt;source srcset=&quot;./images/tech.jpg&quot; type=&quot;image/jpg&quot;&gt; &lt;img src=&quot;./images/tech.jpg&quot; alt=&quot;an-iphone&quot; type=&quot;image/jpeg&quot; loading=&quot;lazy&quot; class=&quot;card-img&quot;&gt; &lt;/picture&gt;<br />
+                          &lt;/div&gt;<br />
+                          &lt;div class=&quot;card-content card-content-width d-flex f-col&quot;&gt;<br />
+                            &lt;h2 class=&quot;card-title fs-600&quot;&gt;iPhone&lt;/h2&gt;<br />
+                            &lt;p class=&quot;card-body letter-spacing-5&quot;&gt;iPhone, the world's most powerful personal device stands for internet, individual, instruct, inform, and inspire.&lt;/p&gt;<br />
+                            &lt;div class=&quot;card-footer&quot;&gt;<br />
+                              &lt;p class=&quot;card-price fs-400&quot;&gt;Price: &amp;#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt; &lt;i class=&quot;fas fa-shopping-cart fa-lg&quot;&gt;&lt;/i&gt; &lt;i class=&quot;far fa-heart fa-lg&quot;&gt;&lt;/i&gt; &lt;i class=&quot;far fa-share-square fa-lg&quot;&gt;&lt;/i&gt; &lt;/div&gt;<br />
+                          &lt;/div&gt;<br />
+                        &lt;/div&gt;<br />
+                        &lt;div class=&quot;card card-horizontal card-dismiss-horizontal d-flex&quot;&gt;<br />
+                          &lt;div class=&quot;img-container img-container-width&quot;&gt;<br />
+                            &lt;p class=&quot;img-badge letter-spacing-3&quot;&gt;BESTSELLER&lt;/p&gt;<br />
+                            &lt;picture&gt;<br />
+                              &lt;source srcset=&quot;./images/tech.webp&quot; type=&quot;image/webp&quot;&gt;<br />
+                              &lt;source srcset=&quot;./images/tech.jpg&quot; type=&quot;image/jpg&quot;&gt; &lt;img src=&quot;./images/tech.jpg&quot; alt=&quot;an-iphone&quot; type=&quot;image/jpeg&quot; loading=&quot;lazy&quot; class=&quot;card-img&quot;&gt; &lt;/picture&gt;<br />
+                          &lt;/div&gt;<br />
+                          &lt;div class=&quot;card-content card-content-width d-flex f-col&quot;&gt;<br />
+                            &lt;h2 class=&quot;card-title fs-600&quot;&gt;iPhone&lt;/h2&gt;<br />
+                            &lt;p class=&quot;card-body letter-spacing-5&quot;&gt;iPhone, the world's most powerful personal device stands for internet, individual, instruct, inform, and inspire.&lt;/p&gt;<br />
+                            &lt;div class=&quot;card-footer&quot;&gt;<br />
+                              &lt;p class=&quot;card-price fs-400&quot;&gt;Price: &amp;#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt; &lt;i class=&quot;fas fa-shopping-cart fa-lg&quot;&gt;&lt;/i&gt; &lt;i class=&quot;far fa-heart fa-lg&quot;&gt;&lt;/i&gt; &lt;i class=&quot;far fa-share-square fa-lg&quot;&gt;&lt;/i&gt; &lt;/div&gt;<br />
+                          &lt;/div&gt;<br />
+                          &lt;p class=&quot;close-icon fs-300&quot;&gt;x&lt;/p&gt;<br />
+                        &lt;/div&gt;<br />
+                        &lt;div class=&quot;card card-horizontal d-flex card-shadow&quot;&gt;<br />
+                          &lt;div class=&quot;img-container img-container-width&quot;&gt;<br />
+                            &lt;picture&gt;<br />
+                              &lt;source srcset=&quot;./images/tech.webp&quot; type=&quot;image/webp&quot;&gt;<br />
+                              &lt;source srcset=&quot;./images/tech.jpg&quot; type=&quot;image/jpg&quot;&gt; &lt;img src=&quot;./images/tech.jpg&quot; alt=&quot;an-iphone&quot; type=&quot;image/jpeg&quot; loading=&quot;lazy&quot; class=&quot;card-img&quot;&gt; &lt;/picture&gt;<br />
+                          &lt;/div&gt;<br />
+                          &lt;div class=&quot;card-content card-content-width d-flex f-col&quot;&gt;<br />
+                            &lt;h2 class=&quot;card-title fs-600&quot;&gt;iPhone&lt;/h2&gt;<br />
+                            &lt;p class=&quot;card-body letter-spacing-5&quot;&gt;iPhone, the world's most powerful personal device stands for internet, individual, instruct, inform, and inspire.&lt;/p&gt;<br />
+                            &lt;div class=&quot;card-footer&quot;&gt;<br />
+                              &lt;p class=&quot;card-price fs-400&quot;&gt;Price: &amp;#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt; &lt;i class=&quot;fas fa-shopping-cart fa-lg&quot;&gt;&lt;/i&gt; &lt;i class=&quot;far fa-heart fa-lg&quot;&gt;&lt;/i&gt; &lt;i class=&quot;far fa-share-square fa-lg&quot;&gt;&lt;/i&gt; &lt;/div&gt;<br />
+                          &lt;/div&gt;<br />
+                        &lt;/div&gt;<br />
+                      &lt;/div&gt;
                     </code>
                 </div>
                 <div class="code code-verticle" data-visible="false">
@@ -576,9 +444,7 @@
                     </code>
                 </div>
                     
-                <div class="card card-horizontal card-horizontal-textonly">
-                    <h2 class="card-textonly-title fs-600">Description</h2>
-                    <div class="card-textonly-body letter-spacing-4 fs-400 word-spacing d-grid">
+                <div class="information card-information letter-spacing-5">
                         <p>.cards-horizontal-autofit is grid-template-columns: <span class="text-red">repeat(auto-fit, minmax(25rem, 1fr))</span></p>
                         <p>.cards-verticle-autofit is grid-template-columns: <span class="text-red">repeat(auto-fit, minmax(20rem, 1fr))</span></p>
                         <p>.card background is <span class="text-red">hsl(var(--clr-white) / 0.8)</span> and color is <span class="text-red">hsl(var(--clr-dark) / 0.8)</span></p>
@@ -586,10 +452,136 @@
                         <p>.img-container-width is of <span class="text-red">width: 35%</span></p>
                         <p>.close-icon is a letter<span class="text-red fs-500"> X</span></p>
                         <p>.card-overlay is set to <span class="text-red">filter: blur(0.12rem)</span> and <span class="text-red">opacity: 0.2</span> </p>
-                    </div>
-                   </div>
-              </section>
-              
+                </div>
+            </section>
+            <section class="buttons fs-400 d-grid">
+              <h2 class="uppercase letter-spacing-2 fs-600">Buttons</h2>
+              <div>
+                <button class="btn btn-primary letter-spacing-3 uppercase">Primary</button>
+                <button class="btn btn-disabled letter-spacing-3 uppercase" disabled>Disabled</button>
+              </div>
+              <div class="outlined-btn">
+                <button class="btn btn-outlined uppercase letter-spacing-3">
+                  <i class="fas fa-trash"></i>
+                  <span>Delete</span>
+                </button>
+                <button class="btn btn-outlined uppercase letter-spacing-3">
+                  <i class="fas fa-paper-plane"></i>
+                  <span>Send</span>
+                </button>
+              </div>
+            <div class="icon-btn">
+              <button class="icon"><i class="fas fa-trash fa-lg"></i></button>
+              <button class="icon"><i class="fas fa-paper-plane fa-lg"></i></button>
+              <a href="#" class="btn-link fs-600 letter-spacing-5">This is a link</a>
+            </div>
+              <div class="icon-btn">
+                <button class="btn btn-float btn-float-cta" aria-expanded="false" aria-controls="float-buttons">
+                  <i class="fas fa-plus fa-2x"></i>              
+                </button>
+                <div class="float-buttons" id="float-buttons" data-visible="false">
+                  <button class="btn btn-float btn-float-camera"><i class="fas fa-camera fa-2x"></i></button>
+                  <button class="btn btn-float btn-float-video"><i class="fas fa-video fa-2x"></i></button>
+                  <button class="btn btn-float btn-float-star"><i class="far fa-star fa-2x"></i></button>
+                </div>
+              </div>
+              <div class="code code-buttons">
+                <code class="language-html letter-spacing-3 fs-400">
+                  &lt;h2 class=&quot;uppercase letter-spacing-2 fs-600 text-underline&quot;&gt;Buttons&lt;/h2&gt;<br />
+                  &lt;div class=&quot;primary-disabled-btn&quot;&gt;<br />
+                    &lt;button class=&quot;btn btn-primary letter-spacing-3 uppercase&quot;&gt;Primary&lt;/button&gt;<br />
+                    &lt;button class=&quot;btn btn-disabled letter-spacing-3 uppercase&quot; disabled&gt;Disabled&lt;/button&gt;<br />
+                  &lt;/div&gt;<br />
+                  &lt;div class=&quot;outlined-btn&quot;&gt;<br />
+                    &lt;button class=&quot;btn btn-outlined uppercase letter-spacing-3&quot;&gt;<br />
+                      &lt;i class=&quot;fas fa-trash&quot;&gt;&lt;/i&gt;<br />
+                      &lt;span&gt;Delete&lt;/span&gt;<br />
+                    &lt;/button&gt;<br />
+                    &lt;button class=&quot;btn btn-outlined uppercase letter-spacing-3&quot;&gt;<br />
+                      &lt;i class=&quot;fas fa-paper-plane&quot;&gt;&lt;/i&gt;<br />
+                      &lt;span&gt;Send&lt;/span&gt;<br />
+                    &lt;/button&gt;<br />
+                  &lt;/div&gt;<br />
+                  &lt;button class=&quot;icon&quot;&gt;&lt;i class=&quot;fas fa-trash fa-lg&quot;&gt;&lt;/i&gt;&lt;/button&gt;<br />
+                  &lt;button class=&quot;icon&quot;&gt;&lt;i class=&quot;fas fa-paper-plane fa-lg&quot;&gt;&lt;/i&gt;&lt;/button&gt;<br />
+                  &lt;a href=&quot;#&quot; class=&quot;btn btn-link letter-spacing-4&quot;&gt;Link&lt;/a&gt;<br />
+                  &lt;div class=&quot;icon-btn&quot;&gt;<br />
+                    &lt;!-- &lt;span class=&quot;text-float p-absolute fs-200 bg-info letter-spacing-4&quot;&gt;floating btn&lt;/span&gt; --&gt;<br />
+                    &lt;button class=&quot;btn btn-float btn-float-cta&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;float-buttons&quot;&gt;<br />
+                      &lt;i class=&quot;fas fa-plus fa-2x&quot;&gt;&lt;/i&gt;              <br />
+                    &lt;/button&gt;<br />
+                    &lt;div class=&quot;float-buttons&quot; id=&quot;float-buttons&quot; data-visible=&quot;false&quot;&gt;<br />
+                      &lt;button class=&quot;btn btn-float btn-float-camera&quot;&gt;&lt;i class=&quot;fas fa-camera fa-2x&quot;&gt;&lt;/i&gt;&lt;/button&gt;<br />
+                      &lt;button class=&quot;btn btn-float btn-float-video&quot;&gt;&lt;i class=&quot;fas fa-video fa-2x&quot;&gt;&lt;/i&gt;&lt;/button&gt;<br />
+                      &lt;button class=&quot;btn btn-float btn-float-star&quot;&gt;&lt;i class=&quot;far fa-star fa-2x&quot;&gt;&lt;/i&gt;&lt;/button&gt;<br />
+                    &lt;/div&gt;<br />
+                  &lt;/div&gt;
+                </code>
+              </div>
+              <div class="information button-information letter-spacing-4 fs-400 d-grid">
+                    <p><span class="text-red">.btn</span> is for a button</p>
+                    <p><span class="text-red">.icon</span> acts as a button</p>
+                    <p><span class="text-red">.btn-outlined</span> has a border</p>
+                    <p><span class="text-red">.btn-disabled</span> is for a disabled button, where cursor is not allowed</p>
+                    <p><span class="text-red">.btn-float</span> could be fixed anywhere on the screen to act as a floating button</p>
+              </div>
+            </div>
+            </section> 
+            <section class="form">
+              <h2 class="uppercase letter-spacing-2 fs-600 text-underline">INPUT</h2>
+              <form class="form-login fs-400 letter-spacing-3">
+                  
+                  <label for="username" class="username">Username<span class="text-red">*</span></label>
+                  <input id="username" class="form-username" type="text" required>
+          
+                  <label for="email" class="email">Email<span class="text-red">*</span><span class="form__tooltip" data-tooltip="Please enter your email address"></span></label>
+                  <input id="email" class="form-email" type="email" required>
+          
+                  <label for="password" class="password">Create Password<span class="text-red">*</span><span class="form__tooltip" data-tooltip="Minimum 8 characters"></span></label>
+                  <input id="password" class="form-password" type="password" minlength="8" required>
+                
+                  <p class="confirm-password">
+                    <label for="reenter-password" class="reenter-password">Confirm Password<span class="text-red">*</span></label>
+                    <input id="reenter-password" class="form-reenter-password" type="password" required>  
+                  </p>
+                  
+                  <input class="form__checkbox" type="checkbox" id="agreement" name="agreement" required>
+                  <span for="agreement">I am 13 years of age or older AND agree to the <a href="#">terms and serivces</a>.<span class="text-red">*</span></span>
+                  
+                  <button class="btn btn-signUp uppercase letter-spacing-1">Sign up</button>
+              </form> 
+              <div class="code code-form">
+                <code class="language-html letter-spacing-3 fs-400">
+                  &lt;form class=&quot;form-login fs-400 letter-spacing-3&quot;&gt;<br />
+                  <br />
+                  &lt;label for=&quot;username&quot; class=&quot;username&quot;&gt;Username&lt;span class=&quot;text-red&quot;&gt;*&lt;/span&gt;&lt;/label&gt;<br />
+                  &lt;input id=&quot;username&quot; class=&quot;form-username&quot; type=&quot;text&quot; required&gt;<br />
+          <br />
+                  &lt;label for=&quot;email&quot; class=&quot;email&quot;&gt;Email&lt;span class=&quot;text-red&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;form__tooltip&quot; data-tooltip=&quot;Please enter your email address&quot;&gt;&lt;/span&gt;&lt;/label&gt;<br />
+                  &lt;input id=&quot;email&quot; class=&quot;form-email&quot; type=&quot;email&quot; required&gt;<br />
+          <br />
+                  &lt;label for=&quot;password&quot; class=&quot;password&quot;&gt;Create Password&lt;span class=&quot;text-red&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;form__tooltip&quot; data-tooltip=&quot;Minimum 8 characters&quot;&gt;&lt;/span&gt;&lt;/label&gt;<br />
+                  &lt;input id=&quot;password&quot; class=&quot;form-password&quot; type=&quot;password&quot; minlength=&quot;8&quot; required&gt;<br />
+                <br />
+                  &lt;p class=&quot;confirm-password&quot;&gt;<br />
+                    &lt;label for=&quot;reenter-password&quot; class=&quot;reenter-password&quot;&gt;Confirm Password&lt;span class=&quot;text-red&quot;&gt;*&lt;/span&gt;&lt;/label&gt;<br />
+                    &lt;input id=&quot;reenter-password&quot; class=&quot;form-reenter-password&quot; type=&quot;password&quot; required&gt;  <br />
+                  &lt;/p&gt;<br />
+                  <br />
+                  &lt;input class=&quot;form__checkbox&quot; type=&quot;checkbox&quot; id=&quot;agreement&quot; name=&quot;agreement&quot; required&gt;<br />
+                  &lt;span for=&quot;agreement&quot;&gt;I am 13 years of age or older AND agree to the &lt;a href=&quot;#&quot;&gt;terms and serivces&lt;/a&gt;.&lt;span class=&quot;text-red&quot;&gt;*&lt;/span&gt;&lt;/span&gt;<br />
+                  <br />
+                  &lt;button class=&quot;btn btn-signUp uppercase letter-spacing-1&quot;&gt;Sign up&lt;/button&gt;<br />
+              &lt;/form&gt; 
+                </code>
+              </div>
+              <div class="information information-form letter-spacing-4 fs-400">
+                <p>Username, Email, Create Password, Confirm Password and the checkbox are <span class="text-red">required</span>.</p>
+                <p>An error <span class="text-red">"Passwords do not match"</span> drops down if passwords do not match</p>
+              </div>
+
+
+          </section>
         </article>
     </main>
 

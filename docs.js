@@ -5,8 +5,8 @@ const headingTitle = document.querySelector(".header-title")
 
 navToggle.addEventListener("click", () => {
   console.log("object")
-  const visiblity = nav.getAttribute("data-visible")
-  if (visiblity === "false") {
+  const navVisiblity = nav.getAttribute("data-visible")
+  if (navVisiblity === "false") {
     nav.setAttribute("data-visible", true)
     navToggle.setAttribute("aria-expanded", true)
     headingTitle.style.color = "white"
@@ -82,4 +82,43 @@ tabVerticle.addEventListener("click", () => {
   cardsVerticle.setAttribute("data-visible", true)
   codeHorizontal.setAttribute("data-visible", false)
   codeVerticle.setAttribute("data-visible", true)
+})
+
+// BUTTONS
+
+const floatButtons = document.querySelector(".float-buttons")
+const btnFloatCta = document.querySelector(".btn-float-cta")
+
+btnFloatCta.addEventListener("click", () => {
+  // console.log("first")
+  const floatBtnVisiblity = floatButtons.getAttribute("data-visible")
+  console.log(floatBtnVisiblity)
+  if (floatBtnVisiblity === "false") {
+    floatButtons.setAttribute("data-visible", true)
+    btnFloatCta.setAttribute("aria-expanded", true)
+  } else {
+    floatButtons.setAttribute("data-visible", false)
+    btnFloatCta.setAttribute("aria-expanded", false)
+  }
+})
+
+// FORM
+
+const password = document.querySelector(".form-password")
+const reenterpassword = document.querySelector(".form-reenter-password")
+const confirmPassword = document.querySelector(".confirm-password")
+const small = document.createElement("small")
+const btn = document.querySelector(".btn")
+
+reenterpassword.addEventListener("keyup", (e) => {
+  small.innerText = ""
+  btn.disabled = false
+  if (password.value !== e.target.value) {
+    small.innerText = "Passwords do not match"
+    confirmPassword.appendChild(small)
+    btn.disabled = true
+  } else {
+    small.innerText = ""
+    btn.disabled = false
+  }
 })
