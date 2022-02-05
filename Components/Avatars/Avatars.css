@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 .avatars {
   margin: 5rem 2rem;
 }
@@ -159,14 +157,6 @@ img {
   padding: 1rem !important;
 }
 
-/* @media (max-width: 60em) {
-  .code-icon-green,
-  .code-icon-blue,
-  .code-icon-yellow {
-    max-width: 50%;
-  }
-} */
-
 .avatar-information {
   width: 70%;
   background: hsl(var(--clr-white) / 0.7);
@@ -177,4 +167,3 @@ img {
 .avatar-information > * {
   margin: 0.5rem;
 }
->>>>>>> Stashed changes
