@@ -1,0 +1,180 @@
+<<<<<<< Updated upstream
+=======
+.avatars {
+  margin: 5rem 2rem;
+}
+
+.avatar {
+  display: flex;
+  gap: 5rem;
+  margin: 3rem;
+  width: 80%;
+  align-items: flex-end;
+}
+
+.radius-50 {
+  border-radius: 50%;
+}
+
+img {
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.placeholder-face {
+  height: 40%;
+  aspect-ratio: 1;
+  border: 0.1875rem solid hsl(var(--clr-dark));
+  border-radius: 50%;
+  background: hsl(var(--clr-white));
+  z-index: 999;
+}
+
+.placeholder-hands {
+  position: absolute;
+  inset: 60% 0 0 32%;
+  width: 38%;
+  aspect-ratio: 1/1.23;
+  border: solid 0.1875rem hsl(var(--clr-dark));
+  border-color: transparent hsl(var(--clr-dark)) transparent
+    hsl(var(--clr-dark));
+  border-radius: 50%;
+  border-top-width: 0;
+  border-top-style: none;
+}
+
+.placeholder {
+  width: 100%;
+  position: relative;
+  aspect-ratio: 1;
+  background: hsl(var(--clr-white) / 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 0.15rem solid hsl(var(--clr-dark) / 0.7);
+}
+
+.notification {
+  width: fit-content;
+}
+
+.notification::after {
+  content: "5";
+  position: absolute;
+  font-weight: bold;
+  text-align: center;
+  width: 1.5rem;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  inset: 2% 0 0 70%;
+}
+
+.notification-color-green::after {
+  background: hsl(var(--clr-success));
+}
+
+.notification-color-blue::after {
+  background: hsl(var(--clr-info));
+}
+
+.notification-color-yellow::after {
+  background: hsl(var(--clr-warning));
+}
+
+.width-5rem {
+  width: 5rem;
+}
+
+.width-7rem {
+  width: 7rem;
+}
+
+.width-10rem {
+  width: 10rem;
+}
+
+.width-9rem {
+  width: 9rem;
+}
+
+.container-radius-50 {
+  border: 0.2rem solid hsl(var(--clr-dark));
+  border-radius: 50%;
+}
+
+.code-avatar-image,
+.code-avatar-placeholder {
+  height: 40vh;
+  width: 70%;
+}
+
+.code-avatar-image {
+  margin: 0 5rem 0 auto;
+}
+
+.code-avatar-placeholder {
+  margin: 0 auto 0 5rem;
+}
+
+.icons {
+  gap: 1rem;
+  margin: 0 0 0 2rem;
+  place-items: center;
+  grid-template-areas:
+    "notification-color-green code-icon-green"
+    "notification-color-blue code-icon-blue"
+    "notification-color-yellow code-icon-yellow";
+}
+
+.code-icon-blue {
+  grid-area: code-icon-blue;
+}
+
+.code-icon-yellow {
+  grid-area: code-icon-yellow;
+}
+
+.notification-color-yellow {
+  grid-area: notification-color-yellow;
+}
+
+.notification-color-green {
+  grid-area: notification-color-green;
+}
+
+.notification-color-blue {
+  grid-area: notification-color-blue;
+}
+
+.code-icon-green {
+  grid-area: code-icon-green;
+}
+
+.code-icon-green,
+.code-icon-blue,
+.code-icon-yellow {
+  margin-right: auto;
+  max-width: 100%;
+  padding: 1rem !important;
+}
+
+/* @media (max-width: 60em) {
+  .code-icon-green,
+  .code-icon-blue,
+  .code-icon-yellow {
+    max-width: 50%;
+  }
+} */
+
+.avatar-information {
+  width: 70%;
+  background: hsl(var(--clr-white) / 0.7);
+  padding: 2rem;
+  margin: 3rem 0 3rem auto;
+}
+
+.avatar-information > * {
+  margin: 0.5rem;
+}
+>>>>>>> Stashed changes

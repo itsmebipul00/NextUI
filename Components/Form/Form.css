@@ -1,0 +1,59 @@
+.form-login {
+  margin: 2rem;
+  background: hsl(var(--clr-white) / 0.7);
+  padding: 2rem;
+  width: 50%;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1.25rem;
+  padding: 0.25rem;
+}
+
+.form__checkbox {
+  display: inline;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-bottom: 0;
+}
+
+.btn-signUp {
+  padding: 1rem 3rem;
+  margin: 1rem 0 0 0;
+  display: block;
+}
+
+.confirm-password small {
+  display: block;
+  color: hsl(var(--clr-red));
+  margin-bottom: 1rem;
+}
+
+.form-heading {
+  margin: 2rem;
+}
+
+.code-buttons {
+  height: 60vh;
+  width: 60%;
+  margin-left: auto;
+}
+
+.code-form {
+  height: 60vh;
+  width: 60%;
+  margin-left: auto;
+}
+
+.form-textonly-body {
+  padding: 1rem;
+  background: hsl(var(--clr-white) / 0.9);
+  width: 60%;
+  margin: 2rem 0 0 2rem;
+}
+
+.form-textonly-body > * {
+  margin-bottom: 1rem;
+}
