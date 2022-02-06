@@ -6,6 +6,8 @@
 @import "./Components/Cards/Cards.css";
 @import "./Components/Buttons/Buttons.css";
 @import "./Components/Form/Form.css";
+@import "./Components/Lists/Lists.css";
+@import "./Components/Modal/Modal.css";
 
 /* HEADER STYLES */
 
@@ -48,12 +50,20 @@ i {
   width: fit-content;
 }
 
+section {
+  width: 100%;
+}
+
 .information {
   background: hsl(var(--clr-white) / 0.9);
   color: hsl(var(--clr-dark) / 0.9);
   padding: 1rem;
   margin: 1rem 0 2rem 0;
   width: 70%;
+}
+
+.information > *:where(:not(:first-child)) {
+  margin-top: 1rem;
 }
 
 .alert-information span {

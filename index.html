@@ -579,8 +579,48 @@
                 <p>Username, Email, Create Password, Confirm Password and the checkbox are <span class="text-red">required</span>.</p>
                 <p>An error <span class="text-red">"Passwords do not match"</span> drops down if passwords do not match</p>
               </div>
-
-
+          </section>
+          <section class="list-group">
+            <h2 class="uppercase letter-spacing-2 fs-600">List</h2>
+            <div class="d-flex">
+              <ul role="list" class="list">
+                <li class="list-item list-subtitle-normal" aria-controls="normal-list" data-visible="true">Normal List</li>
+                <li class="list-item list-subtitle-stacked" aria-controls="stacked-list" data-visible="false">Stacked List</li>
+              </ul>
+              <ul role="list" class="list list-normal" aria-hidden="false" id="normal-list" data-visible="true">
+                <li class="list-item list-item-1">List 1</li>
+                <li class="list-item list-item-2">List 2</li>
+                <li class="list-item list-item-3">List 3</li>
+                <li class="list-item list-item-4">List 4</li>
+                <li class="list-item list-item-5">List 5</li>
+              </ul>
+              <ul role="list" class="list list-stacked" aria-hidden="true" id="stacked-list" data-visible="false">
+              <li class="list-item stackList-item-1">List 1</li>
+              <li class="list-item stackList-item-2">List 2</li>
+              <li class="list-item stackList-item-3">List 3</li>
+              <li class="list-item stackList-item-more" data-visible="false">Show more</li>
+              <li class="list-item stackList-item-4" data-visible="false">List 4</li>
+              <li class="list-item stackList-item-5" data-visible="false">List 5</li>
+            </ul>
+          </div>
+            <div class="information list-information letter-spacing-4 fs-400 d-grid">
+              <p>You can toggle between <span class="text-red">Normal list</span> and <span class="text-red">Stacked list</span></p>
+              <p><span class="text-red">.stackList-item-more</span> is used on <span class="text-red">Show more</span> to hide and show stacked list items.</p>
+          </div>
+          </section>
+          <section class="modal">
+            <h2 class="uppercase letter-spacing-2 fs-600">Modal</h2>
+            <p class="modal-display letter-spacing-2" aria-controls="modal-fixed">Open modal</p>
+            <div class="modal-fixed text-center" data-visible="false" id="modal-fixed">
+                <i class="far fa-times-circle fa-4x"></i>
+                <p class="modal-subtitle fs-700 letter-spacing-4">We've a special offer only for you 🎊🎊</p>
+                <h2 class="modal-title fs-700 letter-spacing-3">FLAT 90% OFF ON ALL ITEMS</h2>
+                <button class="btn btn-modal letter-spacing-3 fs-600">TAKE ME THERE</button>
+            </div>
+            <div class="information modal-information letter-spacing-4">
+              <p><span class="text-red">.modal-fixed</span> is positioned <span class="text-red">fixed</span> and displayed <span class="text-red">flex-column</span> when visible</p>
+              <p><span class="text-red">Icon X</span> is used to close the Modal.</p>
+          </div>
           </section>
         </article>
     </main>
