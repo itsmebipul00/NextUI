@@ -122,3 +122,68 @@ reenterpassword.addEventListener("keyup", (e) => {
     btn.disabled = false
   }
 })
+
+// LIST
+
+const normalList = document.querySelector(".list-subtitle-normal")
+const stackedList = document.querySelector(".list-subtitle-stacked")
+const listNormal = document.querySelector(".list-normal")
+const listStacked = document.querySelector(".list-stacked")
+
+normalList.addEventListener("click", () => {
+  stackedList.setAttribute("data-visible", false)
+  listStacked.setAttribute("data-visible", false)
+  listStacked.setAttribute("aria-hidden", true)
+  normalList.setAttribute("data-visible", true)
+  listNormal.setAttribute("data-visible", true)
+  listNormal.setAttribute("aria-hidden", false)
+})
+
+stackedList.addEventListener("click", () => {
+  normalList.setAttribute("data-visible", false)
+  listNormal.setAttribute("data-visible", false)
+  listNormal.setAttribute("aria-hidden", true)
+  stackedList.setAttribute("data-visible", true)
+  listStacked.setAttribute("data-visible", true)
+  listStacked.setAttribute("aria-hidden", false)
+})
+
+// STACKED LIST
+
+const showMore = document.querySelector(".stackList-item-more")
+const listItem4 = document.querySelector(".stackList-item-4")
+const listItem5 = document.querySelector(".stackList-item-5")
+
+showMore.addEventListener("click", () => {
+  const listOneVisibility = showMore.getAttribute("data-visible")
+  if (listOneVisibility === "false") {
+    showMore.innerText = "Show less"
+    listItem4.setAttribute("data-visible", true)
+    listItem5.setAttribute("data-visible", true)
+    showMore.setAttribute("data-visible", true)
+  } else {
+    showMore.innerText = "Show more"
+    listItem4.setAttribute("data-visible", false)
+    listItem5.setAttribute("data-visible", false)
+    showMore.setAttribute("data-visible", false)
+  }
+})
+
+// MODAL
+
+const displayModal = document.querySelector(".modal-display")
+const modal = document.querySelector(".modal-fixed")
+const closeModal = document.querySelector(".fa-times-circle")
+
+closeModal.addEventListener("click", () => {
+  modal.setAttribute("data-visible", false)
+})
+
+displayModal.addEventListener("click", () => {
+  const modalVisibility = modal.getAttribute("data-visible")
+  if (modalVisibility === "false") {
+    modal.setAttribute("data-visible", true)
+  } else {
+    modal.setAttribute("data-visible", false)
+  }
+})
