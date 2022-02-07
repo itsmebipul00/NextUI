@@ -5,9 +5,8 @@
 .modal-display {
   padding: 2rem;
   width: fit-content;
-  background-color: hsl(var(--clr-dark));
-  color: hsl(var(--clr-white));
   cursor: pointer;
+  margin: 0;
 }
 
 .modal-display:hover {
@@ -21,7 +20,7 @@
   color: hsl(var(--clr-white));
   padding: 4rem;
   z-index: 99999;
-  backdrop-filter: blur(0.25rem);
+  backdrop-filter: blur(0.75rem);
 }
 
 .modal-fixed[data-visible="false"] {

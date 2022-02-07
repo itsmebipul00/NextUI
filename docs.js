@@ -187,3 +187,18 @@ displayModal.addEventListener("click", () => {
     modal.setAttribute("data-visible", false)
   }
 })
+
+// TOAST
+
+const btnToast = document.querySelector(".btn-toast")
+const toastNotification = document.querySelector(".toast-notification")
+
+btnToast.addEventListener("click", () => {
+  const toastVisibility = toastNotification.getAttribute("data-visible")
+  if (toastVisibility === "false") {
+    toastNotification.setAttribute("data-visible", true)
+    setTimeout(() => {
+      toastNotification.setAttribute("data-visible", false)
+    }, 2000)
+  }
+})

@@ -1,0 +1,31 @@
+.rating {
+  display: flex;
+  width: fit-content;
+  flex-direction: row-reverse;
+  position: relative;
+  top: -10%;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating > label {
+  width: 1.5rem;
+  aspect-ratio: 1;
+  color: hsl(var(--clr-dark));
+}
+
+.rating label::before {
+  content: "\2606";
+  position: absolute;
+  top: 0;
+}
+
+.rating input:checked ~ label:before {
+  content: "\2605";
+}
+
+.rating > *:where(:not(:last-child)) {
+  margin-left: 2rem;
+}

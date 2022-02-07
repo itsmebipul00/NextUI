@@ -8,6 +8,9 @@
 @import "./Components/Form/Form.css";
 @import "./Components/Lists/Lists.css";
 @import "./Components/Modal/Modal.css";
+@import "./Components/Ratings/Ratings.css";
+@import "./Components/Toasts/Toasts.css";
+@import "./Components/Grid/Grid.css";
 
 /* HEADER STYLES */
 

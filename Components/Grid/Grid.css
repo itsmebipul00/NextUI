@@ -1,0 +1,73 @@
+.grid {
+  display: grid;
+  width: 70%;
+  height: auto;
+}
+
+.grid-6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.grid-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-item {
+  padding: 1rem;
+  border: 2px solid hsl(var(--clr-white));
+}
+
+.grid-autofit-breaks {
+  width: 60%;
+  height: 50vh;
+  overflow: auto;
+  resize: both;
+  margin-bottom: 1rem;
+}
+
+.grid-autofit-breaks > * {
+  border: 0.5px solid hsl(var(--clr-dark));
+}
+
+@media (min-width: 0) {
+  .grid-autofit-breaks {
+    grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
+  }
+}
+@media (min-width: 30em) {
+  .grid-autofit-breaks {
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  }
+}
+@media (min-width: 45em) {
+  .grid-autofit-breaks {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+}
+@media (min-width: 60em) {
+  .grid-autofit-breaks {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+}
+@media (min-width: 75em) {
+  .grid-autofit-breaks {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+}
+@media (min-width: 110em) {
+  .grid-autofit-breaks {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+}

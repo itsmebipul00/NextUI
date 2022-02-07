@@ -610,7 +610,7 @@
           </section>
           <section class="modal">
             <h2 class="uppercase letter-spacing-2 fs-600">Modal</h2>
-            <p class="modal-display letter-spacing-2" aria-controls="modal-fixed">Open modal</p>
+            <button class="btn modal-display letter-spacing-2 uppercase fs-400" aria-controls="modal-fixed">Open modal</button>
             <div class="modal-fixed text-center" data-visible="false" id="modal-fixed">
                 <i class="far fa-times-circle fa-4x"></i>
                 <p class="modal-subtitle fs-700 letter-spacing-4">We've a special offer only for you 🎊🎊</p>
@@ -622,6 +622,108 @@
               <p><span class="text-red">Icon X</span> is used to close the Modal.</p>
           </div>
           </section>
+          <section class="ratings">
+            <h2 class="uppercase letter-spacing-2 fs-600">Rating</h2>
+            <div class="rating">
+              <input type="radio" name="stars" id="five-stars" value="5" class="five-stars"/>
+              <label for="five-stars" class="fs-700"></label>
+        
+              <input type="radio" name="stars" id="four-stars" value="4" class="four-stars" />
+              <label for="four-stars" class="fs-700"></label>
+          
+              <input type="radio" name="stars" id="three-stars" value="3" class="three-stars"/>
+              <label for="three-stars" class="fs-700"></label>
+          
+              <input type="radio" name="stars" id="two-stars" value="2" class="two-stars"/>
+              <label for="two-stars" class="fs-700"></label>
+          
+              <input type="radio" name="stars" id="one-stars" value="1" class="one-stars"/>
+              <label for="one-stars" class="fs-700"></label>
+            </div>
+            <div class="information rating-information letter-spacing-4">
+              <p><span class="text-red">psedo elements of label</span> and <span class="text-red">radio inputs</span> are used to create stars for rating</p>
+            </div>
+          </section>
+          <section class="toats">
+            <h2 class="uppercase letter-spacing-2 fs-600">TOAST</h2>
+            <button class="btn btn-toast letter-spacing-4 uppercase">Show Toast</button>
+            <p class="alert bg-success toast-notification fs-600" data-visible="false">
+              <i class="far fa-check-circle"></i>
+              <span class="alert-message">Your order was succesfully placed</span>
+          </p>
+          <div class="information toast-information letter-spacing-5">
+            <p><span class="text-red">.btn-toast</span> is used as a toast button</p>
+            <p><span class="text-red">.toast-notification</span> is positioned <span class="text-red">fixed</span> and visible on the screen for<span class="text-red"> 2 seconds</span></p>
+        </div>
+          </section>
+          <section class="grids">
+              <h2 class="uppercase letter-spacing-2 fs-600">Grids</h2>
+              <div class="grid grid-autofit-breaks">
+                <div class="bg-white"></div>
+                <div class="bg-white-90"></div>
+                <div class="bg-white-80"></div>
+                <div class="bg-white-70"></div>
+                <div class="bg-white-60"></div>
+                <div class="bg-white-50"></div>
+                <div class="bg-white-40"></div>
+                <div class="bg-white-30"></div>
+                <div class="bg-white-20"></div>
+                <div class="bg-white-10"></div>
+                <div class="bg-dark-10"></div>
+                <div class="bg-dark-20"></div>
+                <div class="bg-dark-30"></div>
+                <div class="bg-dark-40"></div>
+                <div class="bg-dark-50"></div>
+                <div class="bg-dark-60"></div>
+                <div class="bg-dark-70"></div>
+                <div class="bg-dark-80"></div>
+                <div class="bg-dark-90"></div>
+                <div class="bg-dark"></div>
+            </div>
+            <div class="information grid-information letter-spacing-4">
+              <p>The above grid can be <span class="text-red">resized</span></p>
+             <p><span class="text-red">.grid-autofit-breaks</span> is used to autofit grid-items based on <span class="text-red">minmax</span> and <span class="text-red"> breakpoints</span></p>
+            </div>
+              <div class="grid grid-6">
+                <div class="grid-item bg-dark-50"></div>
+                <div class="grid-item bg-dark-50"></div>
+                <div class="grid-item bg-dark-50"></div>
+                <div class="grid-item bg-dark-50"></div>
+                <div class="grid-item bg-dark-50"></div>
+                <div class="grid-item bg-dark-50"></div>
+              </div>
+              <div class="grid grid-5">
+                <div class="grid-item bg-dark-60"></div>
+                <div class="grid-item bg-dark-60"></div>
+                <div class="grid-item bg-dark-60"></div>
+                <div class="grid-item bg-dark-60"></div>
+                <div class="grid-item bg-dark-60"></div>
+              </div>
+              <div class="grid grid-4">
+                <div class="grid-item bg-dark-70"></div>
+                <div class="grid-item bg-dark-70"></div>
+                <div class="grid-item bg-dark-70"></div>
+                <div class="grid-item bg-dark-70"></div>
+              </div>
+              <div class="grid grid-3">
+                <div class="grid-item bg-dark-80"></div>
+                <div class="grid-item bg-dark-80"></div>
+                <div class="grid-item bg-dark-80"></div>
+              </div>
+              <div class="grid grid-2">
+                <div class="grid-item bg-dark-90"></div>
+                <div class="grid-item bg-dark-90"></div>
+              </div>
+              <div class="grid">
+                <div class="grid-item bg-dark"></div>
+              </div>
+              <div class="information grid-information letter-spacing-5">
+                <p><span class="text-red">.grid-6</span> is grid-template-columns: repeat(6, 1fr).</p>
+                <p>Similarly grid-5 is repeat 5, grid-4 is repeat 4 and so on.</p>
+              </div>
+
+          </section>
+
         </article>
     </main>
 
