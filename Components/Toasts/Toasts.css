@@ -1,0 +1,16 @@
+.toast-notification {
+  position: fixed;
+  inset: 5% 20% 84% 24%;
+}
+
+.btn-toast {
+  margin: 0;
+}
+
+.toast-notification[data-visible="true"] {
+  display: block;
+}
+
+.toast-notification[data-visible="false"] {
+  display: none;
+}
