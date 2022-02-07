@@ -46,26 +46,31 @@
     grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
   }
 }
+
 @media (min-width: 30em) {
   .grid-autofit-breaks {
     grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
   }
 }
+
 @media (min-width: 45em) {
   .grid-autofit-breaks {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
+
 @media (min-width: 60em) {
   .grid-autofit-breaks {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   }
 }
+
 @media (min-width: 75em) {
   .grid-autofit-breaks {
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   }
 }
+
 @media (min-width: 110em) {
   .grid-autofit-breaks {
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
