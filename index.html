@@ -820,6 +820,37 @@
           </section>
           <section class="images">
             <h2 class="uppercase letter-spacing-2 fs-600">Responsive Images</h2>
+            <div class="responsive-round-picture">
+              <div class="image_wrapper">
+                <picture>
+                  <source media="(min-width: 960px)"
+                          srcset="./images/large.webp 534w,
+                                  ./images/large.jpg 534w,
+                                  ./images/large@2x.webp 1068w,
+                                  ./images/large@2x.jpg 1068w,
+                                  ./images/large@3x.webp 1602w,
+                                  ./images/large@3x.jpg 1602w"
+                          >
+                  <source media="(min-width: 600px)"
+                          srcset="./images/medium.webp 474w,
+                                  ./images/medium.jpg 474w,
+                                  ./images/medium@2x.webp 984w,
+                                  ./images/medium@2x.jpg 984w,
+                                  ./images/medium@3x.webp 1422w,
+                                  ./images/medium@3x.jpg 1422w">
+                  <source srcset="./images/small.webp 273w
+                                  ./images/small.jpg 273w,
+                                  ./images/small@2x.webp 546w,
+                                  ./images/small@2x.jpg 546w,
+                                  ./images/small@3x.webp 819w,
+                                  ./images/small@3x.jpg 819w">
+                  <img class="responsive-round-image" src="./images/small.jpg" loading="lazy" alt="responsive-image">
+                </picture>
+              </div>
+              <div class="information picture-round-information letter-spacing-5">
+                <p>img is given <span class="text-red">border-radius: 50%</span> and <span class="text-red">object-fit: cover</span></p>
+              </div>
+            </div>
             <div class="responsive-pictures">
                 <picture>
                   <source media="(min-width: 960px)"
@@ -843,15 +874,39 @@
                                   ./images/small@2x.jpg 546w,
                                   ./images/small@3x.webp 819w,
                                   ./images/small@3x.jpg 819w">
-                  <img class="example" src="./images/small.jpg" loading="lazy" alt="This is business">
+                  <img class="responsive-image" src="./images/small.jpg" loading="lazy" alt="responsive-image">
                 </picture>
-              <div class="information picture-information letter-spacing-5">
-                <p>img is given <span class="text-red">max-width: 100%</span> so that its width is  always less that or equal to 100% even for varying screen sizes</p>
-                <p>While using <span class="text-red"> width descriptor(w) </span>, the browser calculates the <span class="text-red">density pixel ratio (dpr)</span> for each image size and applies the image that best fits according to the image size and device resolution</p>
-                <p>fallbacks for <span class="text-red">jpegs</span> are also available if browser doesnt support <span class="text-red"> webp</span></p>
-                <p>You can go to the network tab and check disable cache to see the different images being downloaded for different screen widths</p>
-              </div>
+                <div class="information picture-information letter-spacing-5">
+                  <p>img is given <span class="text-red">max-width: 100%</span> so that its width is  always less that or equal to 100% even for varying screen sizes</p>
+                  <p>While using <span class="text-red"> width descriptor(w) </span>, the browser calculates the <span class="text-red">density pixel ratio (dpr)</span> for each image size and applies the image that best fits according to the image size and device resolution</p>
+                  <p>fallbacks for <span class="text-red">jpegs</span> are also available if browser doesnt support <span class="text-red"> webp</span></p>
+                  <p>You can go to the network tab and check disable cache to see the different images being downloaded for different screen widths</p>
+                </div>
             </div>
+          </section>
+          <section class="submenus">
+            <h2 class="uppercase letter-spacing-2 fs-600">Navigation and Submenus</h2>
+              <div class="navigation-area d-grid grid-3">
+                  <h3 class="uppercase letter-spacing-4">Google</h3>
+                  <div class="input-search d-flex">
+                    <label for="search" class="sr-only" >Search</label>
+                    <input type="text" id="search" class="search" placeholder="Search">
+                    <i class="fas fa-search fa-lg"></i>
+                  </div>
+                    <div class="submenu d-flex p-relative">
+                      <div class="submenu-drop-btn d-flex">Profile
+                        <i class="fa fa-caret-down"></i>
+                      </div>
+                      <ul class="dropdown-content p-absolute" role="list">
+                        <li class="submenu-item"><a href="#">Cart<i class="fas fa-shopping-cart fa-sm"></i>
+                        </a></li>
+                        <li class="submenu-item"><a href="#">Logout</a></li>
+                      </ul>
+                    </div>
+              </div>
+              <div class="information submenu-information letter-spacing-5">
+                <p>On hover to Profile the <span class="text-red">submenu</span> drops down</p>
+              </div>
           </section>
         </article>
     </main>

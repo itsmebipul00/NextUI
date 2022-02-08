@@ -18,3 +18,25 @@
     align-self: start;
   }
 }
+
+.image_wrapper {
+  width: 15rem;
+  aspect-ratio: 1;
+  margin: 0;
+}
+
+.responsive-round-picture {
+  gap: 1rem;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.responsive-round-image {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.picture-round-information {
+  align-self: flex-end;
+  width: fit-content !important;
+}
