@@ -1,12 +1,8 @@
-.avatars {
-  margin: 5rem 2rem;
-}
-
 .avatar {
   display: flex;
   gap: 5rem;
-  margin: 3rem;
-  width: 80%;
+  margin-bottom: 1rem;
+  width: 70%;
   align-items: flex-end;
 }
 
@@ -116,13 +112,16 @@ img {
 }
 
 .icons {
-  gap: 1rem;
-  margin: 0 0 0 2rem;
-  place-items: center;
+  margin-bottom: 2rem;
+  grid-template-columns: 8rem 1fr;
   grid-template-areas:
     "notification-color-green code-icon-green"
     "notification-color-blue code-icon-blue"
     "notification-color-yellow code-icon-yellow";
+}
+
+.icons > .notification {
+  align-self: center;
 }
 
 .code-icon-blue {
@@ -152,8 +151,7 @@ img {
 .code-icon-green,
 .code-icon-blue,
 .code-icon-yellow {
-  margin-right: auto;
-  max-width: 100%;
+  width: 60%;
   padding: 1rem !important;
 }
 
@@ -161,7 +159,6 @@ img {
   width: 70%;
   background: hsl(var(--clr-white) / 0.7);
   padding: 2rem;
-  margin: 3rem 0 3rem auto;
 }
 
 .avatar-information > * {

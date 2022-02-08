@@ -202,3 +202,14 @@ btnToast.addEventListener("click", () => {
     }, 2000)
   }
 })
+
+// SLIDER
+
+const slider = document.querySelector(".slider")
+const percentage = document.querySelector(".percentage")
+percentage.innerHTML = `${slider.value}%`
+
+slider.oninput = function () {
+  const value = this.value
+  percentage.innerHTML = `${value}%`
+}
