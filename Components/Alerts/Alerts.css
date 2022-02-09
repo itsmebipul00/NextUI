@@ -3,7 +3,7 @@
 }
 
 .alert {
-  max-width: 60%;
+  width: 60%;
   padding: 1.25rem;
   display: flex;
 }
@@ -24,4 +24,10 @@
 
 .alert-information span {
   padding: 0.125rem;
+}
+
+@media (max-width: 60em) {
+  .alert {
+    width: 100%;
+  }
 }

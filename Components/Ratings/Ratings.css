@@ -29,3 +29,9 @@
 .rating > *:where(:not(:last-child)) {
   margin-left: 2rem;
 }
+
+@media (max-width: 60em) {
+  .rating > label {
+    width: 3rem;
+  }
+}

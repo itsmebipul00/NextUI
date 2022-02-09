@@ -52,3 +52,13 @@
 .stackList-item-5[data-visible="true"] {
   display: block;
 }
+
+@media (max-width: 60em) {
+  .list {
+    width: 35%;
+  }
+  .list-stacked,
+  .list-normal {
+    width: 60%;
+  }
+}

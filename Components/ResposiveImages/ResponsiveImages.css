@@ -40,3 +40,9 @@
   align-self: flex-end;
   width: fit-content !important;
 }
+
+@media (max-width: 60em) {
+  .responsive-pictures {
+    width: 100%;
+  }
+}

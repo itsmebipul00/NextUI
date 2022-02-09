@@ -4,6 +4,30 @@
   height: auto;
 }
 
+.grid-row-5 {
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.grid-row-4 {
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.grid-row-3 {
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.grid-row-2 {
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.grid-row-1 {
+  grid-template-rows: repeat(1, 1fr);
+}
+
+.grid-7 {
+  grid-template-columns: repeat(7, 1fr);
+}
+
 .grid-6 {
   grid-template-columns: repeat(6, 1fr);
 }
@@ -30,7 +54,6 @@
 }
 
 .grid-autofit-breaks {
-  width: 60%;
   height: 50vh;
   overflow: auto;
   resize: both;
@@ -43,13 +66,25 @@
 
 @media (min-width: 0) {
   .grid-autofit-breaks {
-    grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
+  }
+}
+
+@media (min-width: 10rem) {
+  .grid-autofit-breaks {
+    grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+  }
+}
+
+@media (min-width: 20em) {
+  .grid-autofit-breaks {
+    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
   }
 }
 
 @media (min-width: 30em) {
   .grid-autofit-breaks {
-    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
   }
 }
 
@@ -74,5 +109,11 @@
 @media (min-width: 110em) {
   .grid-autofit-breaks {
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  }
+}
+
+@media (max-width: 60em) {
+  .grid {
+    width: 100%;
   }
 }

@@ -65,15 +65,15 @@ img {
 }
 
 .notification-color-green::after {
-  background: hsl(var(--clr-success));
+  background: hsl(var(--clr-green));
 }
 
 .notification-color-blue::after {
-  background: hsl(var(--clr-info));
+  background: hsl(var(--clr-blue));
 }
 
 .notification-color-yellow::after {
-  background: hsl(var(--clr-warning));
+  background: hsl(var(--clr-yellow));
 }
 
 .width-5rem {
@@ -163,4 +163,11 @@ img {
 
 .avatar-information > * {
   margin: 0.5rem;
+}
+
+@media (max-width: 60em) {
+  .avatar,
+  .avatar-information {
+    width: 100%;
+  }
 }

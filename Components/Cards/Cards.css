@@ -190,3 +190,20 @@ picture,
 .code-verticle[data-visible="true"] {
   display: block;
 }
+
+.card-textonly {
+  width: 45%;
+  padding: 2rem;
+  margin-top: 1rem;
+}
+
+.card-textonly > .card-title {
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid hsl(var(--clr-red));
+}
+
+@media (max-width: 60em) {
+  .card-textonly {
+    width: 100%;
+  }
+}

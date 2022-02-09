@@ -50,6 +50,12 @@
   color: hsl(var(--clr-white));
 }
 
-.dropdown-content .submenu-item:hover a {
+.submenu-item:hover a {
   text-decoration: underline;
+}
+
+@media (max-width: 60em) {
+  .navigation-area {
+    width: 100%;
+  }
 }

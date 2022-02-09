@@ -49,3 +49,9 @@ form input {
 .information-form > * {
   margin-bottom: 1rem;
 }
+
+@media (max-width: 60em) {
+  .form-login {
+    width: 100%;
+  }
+}
