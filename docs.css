@@ -65,7 +65,7 @@ section {
   color: hsl(var(--clr-dark) / 0.9);
   padding: 1rem;
   margin: 1rem 0 2rem 0;
-  width: 70%;
+  width: 80%;
 }
 
 .information > *:where(:not(:first-child)) {
@@ -178,16 +178,16 @@ code {
 
 .text-colors {
   padding: 3rem;
-  width: 70%;
+  width: 80%;
 }
 
 .text-colors > * {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .center-text {
   padding: 2rem;
-  width: 70%;
+  width: 80%;
 }
 
 @media (max-width: 60em) {

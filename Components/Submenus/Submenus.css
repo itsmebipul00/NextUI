@@ -1,7 +1,7 @@
 .navigation-area {
   background: hsl(var(--clr-white));
   height: fit-content;
-  width: 70%;
+  width: 80%;
   padding: 1rem;
   align-items: center;
 }
