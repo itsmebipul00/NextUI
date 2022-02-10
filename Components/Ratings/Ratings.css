@@ -3,7 +3,7 @@
   width: fit-content;
   flex-direction: row-reverse;
   position: relative;
-  top: -10%;
+  top: -5%;
 }
 
 .rating input {
@@ -31,6 +31,9 @@
 }
 
 @media (max-width: 60em) {
+  .rating {
+    top: -10%;
+  }
   .rating > label {
     width: 3rem;
   }

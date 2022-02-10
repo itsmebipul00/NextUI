@@ -181,18 +181,24 @@ picture,
   width: 70%;
 }
 
-.code-horizontal[data-visible="false"],
-.code-verticle[data-visible="false"] {
+.code-cards-verticle,
+.code-cards-horizontal {
+  width: 100%;
+  overflow: hidden;
+}
+
+.code-cards-horizontal[data-visible="false"],
+.code-cards-verticle[data-visible="false"] {
   display: none;
 }
 
-.code-horizontal[data-visible="true"],
-.code-verticle[data-visible="true"] {
+.code-cards-horizontal[data-visible="true"],
+.code-cards-verticle[data-visible="true"] {
   display: block;
 }
 
 .card-textonly {
-  width: 45%;
+  width: 80%;
   padding: 2rem;
   margin-top: 1rem;
 }

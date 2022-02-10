@@ -6,6 +6,10 @@
   align-items: center;
 }
 
+.submenu-heading {
+  margin-top: 2rem;
+}
+
 .fa-search {
   align-self: center;
   margin: -0.25rem 0 0 0.25rem;
@@ -52,6 +56,10 @@
 
 .submenu-item:hover a {
   text-decoration: underline;
+}
+
+.submenu-information {
+  margin-bottom: 1rem !important;
 }
 
 @media (max-width: 60em) {

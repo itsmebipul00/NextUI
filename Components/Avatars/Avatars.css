@@ -15,6 +15,10 @@ img {
   aspect-ratio: 1;
 }
 
+.avatar-placeholder {
+  margin-top: 1rem;
+}
+
 .placeholder-face {
   height: 40%;
   aspect-ratio: 1;
@@ -92,70 +96,17 @@ img {
   width: 9rem;
 }
 
-.container-radius-50 {
-  border: 0.2rem solid hsl(var(--clr-dark));
-  border-radius: 50%;
-}
-
-.code-avatar-image,
-.code-avatar-placeholder {
-  height: 40vh;
-  width: 70%;
-}
-
-.code-avatar-image {
-  margin: 0 5rem 0 auto;
-}
-
-.code-avatar-placeholder {
-  margin: 0 auto 0 5rem;
-}
-
 .icons {
-  margin-bottom: 2rem;
-  grid-template-columns: 8rem 1fr;
-  grid-template-areas:
-    "notification-color-green code-icon-green"
-    "notification-color-blue code-icon-blue"
-    "notification-color-yellow code-icon-yellow";
+  margin: 1rem;
+  gap: 20%;
 }
 
 .icons > .notification {
   align-self: center;
 }
 
-.code-icon-blue {
-  grid-area: code-icon-blue;
-}
-
-.code-icon-yellow {
-  grid-area: code-icon-yellow;
-}
-
-.notification-color-yellow {
-  grid-area: notification-color-yellow;
-}
-
-.notification-color-green {
-  grid-area: notification-color-green;
-}
-
-.notification-color-blue {
-  grid-area: notification-color-blue;
-}
-
-.code-icon-green {
-  grid-area: code-icon-green;
-}
-
-.code-icon-green,
-.code-icon-blue,
-.code-icon-yellow {
-  width: 60%;
-  padding: 1rem !important;
-}
-
 .avatar-information {
+  margin-top: 1rem;
   width: 80%;
   background: hsl(var(--clr-white) / 0.7);
   padding: 2rem;
@@ -163,6 +114,10 @@ img {
 
 .avatar-information > * {
   margin: 0.5rem;
+}
+
+.avatars > .code-toolbar {
+  margin: 0;
 }
 
 @media (max-width: 60em) {

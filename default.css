@@ -75,7 +75,7 @@ body {
   font-family: var(--ff-serif-openSans);
   font-weight: var(--fs-400);
   font-size: var(--fs-400);
-  min-width: 100vh;
+  min-height: 100vh;
   line-height: 1.5;
 }
 
@@ -157,6 +157,10 @@ select {
 
 .text-center {
   text-align: center;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-underline {
@@ -300,6 +304,14 @@ select {
   background-color: hsl(var(--clr-red));
 }
 
+.text-dark {
+  color: hsl(var(--clr-dark));
+}
+
+.text-dark:hover {
+  color: hsl(var(--clr-white));
+}
+
 .text-dark-90 {
   color: hsl(var(--clr-dark) / 0.9);
 }
@@ -338,6 +350,10 @@ select {
 
 .text-white {
   color: hsl(var(--clr-white));
+}
+
+.text-white:hover {
+  color: hsl(var(--clr-dark));
 }
 
 .text-red {
