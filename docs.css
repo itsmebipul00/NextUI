@@ -13,6 +13,7 @@
 @import "./Components/Grid/Grid.css";
 @import "./Components/Slider/Slider.css";
 @import "./Components/ResposiveImages/ResponsiveImages.css";
+@import "./Components/Submenus/Submenus.css";
 
 /* HEADER STYLES */
 
@@ -64,7 +65,7 @@ section {
   color: hsl(var(--clr-dark) / 0.9);
   padding: 1rem;
   margin: 1rem 0 2rem 0;
-  width: 70%;
+  width: 80%;
 }
 
 .information > *:where(:not(:first-child)) {
@@ -101,4 +102,100 @@ code {
 
 .code::-webkit-scrollbar-thumb {
   background: hsl(var(--clr-dark));
+}
+
+.primary-colors,
+.primary-colors-light,
+.primary-colors-dark {
+  gap: 0.125rem;
+}
+
+.primary-colors-light {
+  background-color: hsl(var(--clr-light));
+}
+
+.primary-colors-dark {
+  background-color: hsl(var(--clr-white));
+  margin-bottom: 1rem;
+}
+
+.primary-color > * {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+.clr-hsl {
+  align-self: flex-end;
+  border: 3px solid hsl(var(--clr-dark));
+  padding: 0.25rem;
+}
+
+.primary-color-white,
+.primary-color-dark,
+.primary-color-red,
+.primary-color-light,
+.primary-color-blue,
+.primary-color-green,
+.primary-color-yellow,
+.primary-color-light {
+  width: 100%;
+  aspect-ratio: 1.15/1;
+}
+
+/* typography */
+
+.typography {
+  margin-bottom: 1rem;
+}
+
+.typography-subheading {
+  padding: 2rem;
+  background: hsl(var(--clr-white));
+  width: 80%;
+}
+
+.typography > p {
+  margin-bottom: 1rem;
+}
+
+.font-sizes > p {
+  margin-bottom: 1rem;
+}
+
+.font-sizes {
+  padding: 2rem;
+  margin-bottom: 1rem;
+  width: 80%;
+}
+
+.text-utilities {
+  margin-bottom: 1rem;
+}
+
+.text-utilities h3 {
+  margin-bottom: 1rem;
+}
+
+.text-colors {
+  padding: 3rem;
+  width: 80%;
+}
+
+.text-colors > * {
+  margin-bottom: 1rem;
+}
+
+.center-text {
+  padding: 2rem;
+  width: 80%;
+}
+
+@media (max-width: 60em) {
+  .center-text,
+  .typography-subheading,
+  .font-sizes,
+  .text-colors,
+  .information {
+    width: 100%;
+  }
 }

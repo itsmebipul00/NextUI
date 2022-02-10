@@ -1,7 +1,7 @@
 .form-login {
   background: hsl(var(--clr-white) / 0.7);
   padding: 2rem;
-  width: 60%;
+  width: 80%;
 }
 
 form input {
@@ -48,4 +48,10 @@ form input {
 
 .information-form > * {
   margin-bottom: 1rem;
+}
+
+@media (max-width: 60em) {
+  .form-login {
+    width: 100%;
+  }
 }

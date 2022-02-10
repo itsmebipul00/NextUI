@@ -77,7 +77,11 @@ button {
 }
 
 .btn-link:hover {
-  text-decoration-color: hsl(var(--clr-info));
+  text-decoration-color: hsl(var(--clr-blue));
+}
+
+.btn-float {
+  border: 3px solid hsl(var(--clr-dark));
 }
 
 .btn-float:hover {
@@ -100,8 +104,4 @@ button {
 
 .btn-primary-description {
   padding: 0.2rem 0.6rem;
-}
-
-.button-information > * {
-  margin-bottom: 1rem;
 }

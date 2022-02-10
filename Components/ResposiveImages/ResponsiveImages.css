@@ -7,7 +7,7 @@
   display: grid;
   grid-gap: 1rem;
   align-items: center;
-  width: 75%;
+  width: 80%;
 }
 
 @media (min-width: 75rem) {
@@ -16,5 +16,34 @@
   }
   .picture-information {
     align-self: start;
+  }
+}
+
+.image_wrapper {
+  width: 30%;
+  aspect-ratio: 1;
+  margin: 0;
+}
+
+.responsive-round-picture {
+  gap: 1rem;
+  display: flex;
+  margin-bottom: 1rem;
+  width: 80%;
+}
+
+.responsive-round-image {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.picture-round-information {
+  align-self: flex-end;
+  width: 70% !important;
+}
+
+@media (max-width: 60em) {
+  .responsive-pictures {
+    width: 100%;
   }
 }

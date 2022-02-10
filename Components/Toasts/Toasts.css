@@ -14,3 +14,15 @@
 .toast-notification[data-visible="false"] {
   display: none;
 }
+
+@media (max-width: 60em) {
+  .toast-notification {
+    inset: 5% 20% 84% 3%;
+  }
+}
+
+@media (max-width: 45em) {
+  .toast-notification {
+    inset: 5% 20% 90% 3%;
+  }
+}

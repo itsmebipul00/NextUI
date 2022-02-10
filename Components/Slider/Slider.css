@@ -1,40 +1,8 @@
 .slider-container {
-  width: 60%;
-}
-
-.input-ticks {
-  width: 100%;
-}
-.one-percent {
-  position: absolute;
-  inset: 40% 0 0 0;
-}
-.two-percent {
-  position: absolute;
-  inset: 40% 0 0 19%;
-}
-.three-percent {
-  position: absolute;
-  inset: 40% 0 0 38%;
-}
-.four-percent {
-  position: absolute;
-  inset: 40% 0 0 57%;
-}
-.five-percent {
-  position: absolute;
-  inset: 40% 0 0 76%;
-}
-.six-percent {
-  position: absolute;
-  inset: 30% 0 0 95%;
-}
-.tickmark {
-  font-size: 1.5rem;
+  width: 80%;
 }
 
 .slider {
-  margin: 0;
   -webkit-appearance: none;
   width: 100%;
   height: 10px;
@@ -64,17 +32,23 @@
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 1.875rem;
+  width: 2rem;
   aspect-ratio: 1;
   border: 0;
-  background: url("../../images/icons8-moon-and-stars-30.png");
+  background: url("../../images/icons8-moon-and-stars-30.webp");
   cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
-  width: 1.875rem;
+  width: 2rem;
   aspect-ratio: 1;
   border: 0;
-  background: url("../../images/icons8-moon-and-stars-30.png");
+  background: url("../../images/icons8-moon-and-stars-30.webp");
   cursor: pointer;
+}
+
+@media (max-width: 60em) {
+  .slider-container {
+    width: 100%;
+  }
 }
