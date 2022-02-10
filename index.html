@@ -9,9 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
+    <!-- PRISM CSS -->
+    <link rel="stylesheet" href="prism.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="docs.css">
+    <!-- PRISM JS -->
+    <script defer src="prism.js"></script>
+    <!-- FONT AWESOME JS -->
     <script defer src="https://kit.fontawesome.com/8c1231c9b8.js" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
     <script defer src="docs.js"></script>
 </head>
 <body>
@@ -240,6 +246,46 @@
                     <i class="far fa-check-circle"></i>
                     <span class="alert-message">This is a Success alert</span>
                 </p>
+                <pre>
+                  <code class="language-html">
+                    &lt;p class="alert bg-red"&gt;
+                        &lt;i class="fas fa-exclamation-circle"&gt;&lt;/i&gt;
+                        &lt;span class="alert-message"&gt;This is a error alert&lt;/span&gt;
+                        &lt;i class="closeError fas fa-times"&gt;&lt;/i&gt;
+                    &lt;/p&gt;
+                    &lt;p class="alert bg-red"&gt;
+                        &lt;i class="fas fa-exclamation-circle"&gt;&lt;/i&gt;
+                        &lt;span class="alert-message"&gt;This is a error alert&lt;/span&gt;
+                    &lt;/p&gt;
+                    &lt;p class="alert bg-yellow"&gt;
+                        &lt;i class="fas fa-exclamation"&gt;&lt;/i&gt;
+                        &lt;span class="alert-message"&gt;This is a warning alert&lt;/span&gt;
+                        &lt;i class="closeWarning fas fa-times"&gt;&lt;/i&gt;
+                    &lt;/p&gt;
+                    &lt;p class="alert bg-yellow"&gt;
+                        &lt;i class="fas fa-exclamation"&gt;&lt;/i&gt;
+                        &lt;span class="alert-message"&gt;This is a warning alert&lt;/span&gt;
+                    &lt;/p&gt;
+                    &lt;p class="alert bg-blue"&gt;
+                        &lt;i class="fas fa-info"&gt;&lt;/i&gt;
+                        &lt;span class="alert-message"&gt;This is a Info alert&lt;/span&gt;
+                        &lt;i class="closeInfo fas fa-times"&gt;&lt;/i&gt;
+                    &lt;/p&gt;
+                    &lt;p class="alert bg-blue"&gt;
+                        &lt;i class="fas fa-info"&gt;&lt;/i&gt;
+                        &lt;span class="alert-message"&gt;This is a Info alert&lt;/span&gt;
+                    &lt;/p&gt;
+                    &lt;p class="alert bg-green"&gt;
+                        &lt;i class="far fa-check-circle"&gt;&lt;/i&gt;
+                        &lt;span class="alert-message"&gt;This is a Success alert&lt;/span&gt;
+                        &lt;i class="closeSuccess fas fa-times"&gt;&lt;/i&gt;
+                    &lt;/p&gt;
+                    &lt;p class="alert bg-green"&gt;
+                        &lt;i class="far fa-check-circle"&gt;&lt;/i&gt;
+                        &lt;span class="alert-message"&gt;This is a Success alert&lt;/span&gt;
+                    &lt;/p&gt;
+                  </code>
+                </pre>
                     <div class="information alert-information letter-spacing-5">
                         <p>.bg-red is background: <span class="bg-red">hsl(338, 81%, 41%)</span></p>
                         <p>.bg-blue is background: <span class="bg-blue">hsl(198, 74%, 47%)</span></p>
@@ -259,10 +305,26 @@
                 <div class="width-9rem">
                     <img class="radius-50" src="./images/avatar.jpg" alt="random_picture">
                 </div>
-                <div class="width-10rem container-radius-50 p-relative notification notification-color-yellow">
+                <div class="width-10rem p-relative notification notification-color-yellow">
                     <img class="radius-50" src="./images/avatar.jpg" alt="random_picture">
                 </div>
             </div>
+            <pre>
+              <code class="language-html">
+                &lt;div class="width-5rem"&gt;
+                    &lt;img class="radius-50" src="....." alt="random_picture"&gt;
+                &lt;/div&gt;
+                &lt;div class="width-7rem"&gt;
+                    &lt;img class="radius-50" src="....." alt="random_picture"&gt;
+                &lt;/div&gt;
+                &lt;div class="width-9rem"&gt;
+                    &lt;img class="radius-50" src="....." alt="random_picture"&gt;
+                &lt;/div&gt;
+                &lt;div class="width-10rem p-relative notification notification-color-yellow"&gt;
+                    &lt;img class="radius-50" src="....." alt="random_picture"&gt;
+                &lt;/div&gt;
+              </code>
+            </pre>
             <div class="avatar avatar-placeholder">
                 <div class="width-5rem">
                     <div class="placeholder">
@@ -288,18 +350,35 @@
                     </div>
                 </div>
             </div>
-            <div class="avatar-information fs-400 letter-spacing-5">
-              <p>.width-5rem is <span class="text-red">width: 5rem</span></p>
-              <p>.width-7rem is <span class="text-red">width: 7rem</span></p>
-              <p>.width-9rem is <span class="text-red">width: 9rem</span></p>
-              <p>.width-10rem is <span class="text-red">width: 10rem</span></p>
-              <p>.notification is <span class="text-red">relative</span> positioned and its <span class="text-red">pseudo elements</span> are <span class="text-red">absolute</span> positioned</p>
-              <p>.notification-color-blue gives background: <span class="bg-blue">hsl(198, 74%, 47%)</span> to its pseudo element</p>
-              <p>.notification-color-green gives background: <span class="bg-green">hsl(153, 57%, 82%)</span> to its pseudo element</p>
-              <p>.notification-color-yellow gives background: <span class="bg-yellow">hsl(46, 100%, 90%)</span> to its pseudo element</p>
-              <p><span class="text-red">.placeholder</span>, <span class="text-red">.placeholder-face</span> and <span class="text-red">.placeholder-hands</span> are used to design the placeholder</p>
-            </div>
-            <div class="icons d-grid f-col">
+            <pre>
+              <code class="language-html">
+                &lt;div class="width-5rem"&gt;
+                  &lt;div class="placeholder"&gt;
+                      &lt;div class="placeholder-face"&gt;&lt;/div&gt;
+                      &lt;div class="placeholder-hands"&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="width-7rem p-relative notification notification-color-green"&gt;
+                  &lt;div class="placeholder"&gt;
+                      &lt;div class="placeholder-face"&gt;&lt;/div&gt;
+                      &lt;div class="placeholder-hands"&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="width-9rem p-relative notification notification-color-blue"&gt;
+                    &lt;div class="placeholder"&gt;
+                      &lt;div class="placeholder-face"&gt;&lt;/div&gt;
+                      &lt;div class="placeholder-hands"&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;div class="width-10rem"&gt;
+                  &lt;div class="placeholder fs-700 letter-spacing-3"&gt;
+                      BK
+                  &lt;/div&gt;
+              &lt;/div&gt;
+              </code>
+            </pre>
+           
+            <div class="icons f-row">
               <div class="p-relative notification notification-color-green">
                 <i class="fas fa-shopping-cart fa-5x"></i>
               </div>
@@ -310,6 +389,31 @@
                 <i class="fas fa-bell fa-5x"></i> 
               </div>
            </div>
+           <pre>
+              <code class="language-html">
+                &lt;div class="p-relative notification notification-color-green"&gt;
+                  &lt;i class="fas fa-shopping-cart fa-5x"&gt;&lt;/i&gt;
+                &lt;/div&gt;
+                &lt;div class="p-relative notification notification-color-blue"&gt;
+                  &lt;i class="fas fa-trash fa-5x"&gt;&lt;/i&gt;
+                &lt;/div&gt;
+                &lt;div class="p-relative notification notification-color-yellow"&gt;
+                  &lt;i class="fas fa-bell fa-5x"&gt;&lt;/i&gt; 
+                &lt;/div&gt;
+              </code>
+           </pre>
+           <div class="information avatar-information fs-400 letter-spacing-5">
+            <p>.width-5rem is <span class="text-red">width: 5rem</span></p>
+            <p>.width-7rem is <span class="text-red">width: 7rem</span></p>
+            <p>.width-9rem is <span class="text-red">width: 9rem</span></p>
+            <p>.width-10rem is <span class="text-red">width: 10rem</span></p>
+            <p>.notification is <span class="text-red">relative</span> positioned and its <span class="text-red">pseudo elements</span> are <span class="text-red">absolute</span> positioned</p>
+            <p>.notification-color-blue gives background: <span class="bg-blue">hsl(198, 74%, 47%)</span> to its pseudo element</p>
+            <p>.notification-color-green gives background: <span class="bg-green">hsl(153, 57%, 82%)</span> to its pseudo element</p>
+            <p>.notification-color-yellow gives background: <span class="bg-yellow">hsl(46, 100%, 90%)</span> to its pseudo element</p>
+            <p><span class="text-red">.placeholder</span>, <span class="text-red">.placeholder-face</span> and <span class="text-red">.placeholder-hands</span> are used to design the placeholder</p>
+            <p><span class="text-red">.radius-50</span> is border-radius to 50</p>
+          </div>
           </section>
             <section class="cards-container d-grid">
                 <h2 class="uppercase letter-spacing-2 fs-600">Cards</h2>
@@ -317,7 +421,7 @@
                     <p class="tab-horizontal bg-white text-center" data-visible="true">Horizontal </p>
                     <p class="tab-verticle bg-white text-center" data-visible="false">Verticle</p>
                 </div>
-                <div class="cards cards-horizontal-autofit" data-visible="true">
+                <div class="cards cards-horizontal cards-horizontal-autofit" data-visible="true">
                     <div class="card card-horizontal d-flex">
                         <div class="img-container img-container-width">
                           <picture>
@@ -400,7 +504,7 @@
                         </div>
                       </div>
                 </div>
-                <div class="cards cards-verticle-autofit" data-visible="false">
+                <div class="cards cards-verticle cards-verticle-autofit" data-visible="false">
                     <div class="card card-verticle card-shadow-onhover">
                         <div class="img-container">
                           <picture>
@@ -492,6 +596,197 @@
                     instruct, inform, and inspire.</p>
                     <button class="btn">Next</button>
                 </div>  
+                <div class="code-cards-horizontal" data-visible="true">
+                  <pre>
+                    <code class="language-html">
+                      &lt;div class="card card-horizontal d-flex"&gt;
+                        &lt;div class="img-container img-container-width"&gt;
+                          &lt;picture&gt;
+                              &lt;source srcset="./images/tech.webp" type="image/webp"&gt;
+                              &lt;source srcset="./images/tech.jpg" type="image/jpg" &gt; 
+                              &lt;img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img"&gt;
+                          &lt;/picture&gt;
+                        &lt;/div&gt;
+                        &lt;div class="card-content card-content-width d-flex f-col"&gt;
+                          &lt;h3 class="card-title fs-600"&gt;iPhone&lt;/h3&gt;
+                          &lt;p class="card-body letter-spacing-5"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
+                            instruct, inform, and inspire.&lt;/p&gt;
+                          &lt;div class="card-footer"&gt;
+                            &lt;p class="card-price fs-400"&gt;Price: &#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt;
+                            &lt;i class="fas fa-shopping-cart fa-lg"&gt;&lt;/i&gt;
+                            &lt;i class="far fa-heart fa-lg"&gt;&lt;/i&gt;
+                            &lt;i class="far fa-share-square fa-lg"&gt;&lt;/i&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class="card card-horizontal d-flex"&gt;
+                        &lt;div class="img-container img-container-width"&gt;
+                          &lt;p class="img-badge letter-spacing-3 letter-spacing-3"&gt;BESTSELLER&lt;/p&gt;
+                          &lt;picture&gt;
+                              &lt;source srcset="./images/tech.webp" type="image/webp"&gt;
+                              &lt;source srcset="./images/tech.jpg" type="image/jpg" &gt; 
+                              &lt;img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img"&gt;
+                          &lt;/picture&gt;  
+                        &lt;/div&gt;                
+                        &lt;div class="card-content card-content-width d-flex f-col"&gt;
+                          &lt;h3 class="card-title fs-600"&gt;iPhone&lt;/h3&gt;
+                          &lt;p class="card-body letter-spacing-5"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
+                            instruct, inform, and inspire.&lt;/p&gt;
+                          &lt;div class="card-footer"&gt;
+                            &lt;p class="card-price fs-400"&gt;Price: &#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt;
+                            &lt;i class="fas fa-shopping-cart fa-lg"&gt;&lt;/i&gt;
+                            &lt;i class="far fa-heart fa-lg"&gt;&lt;/i&gt;
+                            &lt;i class="far fa-share-square fa-lg"&gt;&lt;/i&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class="card card-horizontal card-dismiss-horizontal d-flex"&gt;
+                        &lt;div class="img-container img-container-width"&gt;
+                          &lt;p class="img-badge letter-spacing-3"&gt;BESTSELLER&lt;/p&gt;
+                          &lt;picture&gt;
+                              &lt;source srcset="./images/tech.webp" type="image/webp"&gt;
+                              &lt;source srcset="./images/tech.jpg" type="image/jpg" &gt; 
+                              &lt;img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img"&gt;
+                          &lt;/picture&gt;                  
+                        &lt;/div&gt;
+                        &lt;div class="card-content card-content-width d-flex f-col"&gt;
+                          &lt;h3 class="card-title fs-600"&gt;iPhone&lt;/h3&gt;
+                          &lt;p class="card-body letter-spacing-5"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
+                            instruct, inform, and inspire.&lt;/p&gt;
+                          &lt;div class="card-footer"&gt;
+                            &lt;p class="card-price fs-400"&gt;Price: &#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt;
+                            &lt;i class="fas fa-shopping-cart fa-lg"&gt;&lt;/i&gt;
+                            &lt;i class="far fa-heart fa-lg"&gt;&lt;/i&gt;
+                            &lt;i class="far fa-share-square fa-lg"&gt;&lt;/i&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;p class="close-icon close-icon-horizontal fs-300"&gt;X&lt;/p&gt;
+                      &lt;/div&gt;
+                      &lt;div class="card card-horizontal d-flex card-shadow"&gt;
+                        &lt;div class="img-container img-container-width"&gt;
+                          &lt;picture&gt;
+                              &lt;source srcset="./images/tech.webp" type="image/webp"&gt;
+                              &lt;source srcset="./images/tech.jpg" type="image/jpg" &gt; 
+                              &lt;img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img"&gt;
+                          &lt;/picture&gt;                  
+                        &lt;/div&gt;
+                        &lt;div class="card-content card-content-width d-flex f-col"&gt;
+                          &lt;h3 class="card-title fs-600"&gt;iPhone&lt;/h3&gt;
+                          &lt;p class="card-body letter-spacing-5"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
+                            instruct, inform, and inspire.&lt;/p&gt;
+                          &lt;div class="card-footer"&gt;
+                            &lt;p class="card-price fs-400"&gt;Price: &#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt;
+                            &lt;i class="fas fa-shopping-cart fa-lg"&gt;&lt;/i&gt;
+                            &lt;i class="far fa-heart fa-lg"&gt;&lt;/i&gt;
+                            &lt;i class="far fa-share-square fa-lg"&gt;&lt;/i&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                    &lt;div class="card card-textonly"&gt;
+                      &lt;h3 class="card-title fs-600"&gt;Text Only Card&lt;/h3&gt;
+                      &lt;p class="card-body letter-spacing-5"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
+                        instruct, inform, and inspire.&lt;/p&gt;
+                      &lt;button class="btn"&gt;Next&lt;/button&gt;
+                    &lt;/div&gt;  
+                    </code>
+                  </pre>
+                </div>
+                 <div class="code-cards-verticle" data-visible="false">
+                  <pre >
+                    <code class="language-html">
+                      &lt;div class="card card-verticle card-shadow-onhover"&gt;
+                        &lt;div class="img-container"&gt;
+                          &lt;picture&gt;
+                              &lt;source srcset="./images/tech.webp" type="image/webp"&gt;
+                              &lt;source srcset="./images/tech.jpg" type="image/jpg" &gt; 
+                              &lt;img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img"&gt;
+                          &lt;/picture&gt;                  &lt;/div&gt;
+                        &lt;div class="card-content"&gt;
+                          &lt;h3 class="card-title fs-600"&gt;iPhone&lt;/h3&gt;
+                          &lt;p class="card-body letter-spacing-5"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
+                            instruct, inform, and inspire.&lt;/p&gt;
+                          &lt;div class="card-footer"&gt;
+                            &lt;p class="card-price fs-400"&gt;Price: &#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt;
+                            &lt;i class="fas fa-shopping-cart fa-lg"&gt;&lt;/i&gt;
+                            &lt;i class="far fa-heart fa-lg"&gt;&lt;/i&gt;
+                            &lt;i class="far fa-share-square fa-lg"&gt;&lt;/i&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class="card card-verticle"&gt;
+                        &lt;div class="img-container"&gt;
+                          &lt;p class="img-badge letter-spacing-3"&gt;BESTSELLER&lt;/p&gt;
+                          &lt;picture&gt;
+                              &lt;source srcset="./images/tech.webp" type="image/webp"&gt;
+                              &lt;source srcset="./images/tech.jpg" type="image/jpg" &gt; 
+                              &lt;img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img"&gt;
+                          &lt;/picture&gt;
+                        &lt;/div&gt;
+                        &lt;div class="card-content"&gt;
+                          &lt;h3 class="card-title fs-600"&gt;iPhone&lt;/h3&gt;
+                          &lt;p class="card-body letter-spacing-5"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
+                            instruct, inform, and inspire.&lt;/p&gt;
+                          &lt;div class="card-footer"&gt;
+                            &lt;p class="card-price fs-400"&gt;Price: &#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt;
+                            &lt;i class="fas fa-shopping-cart fa-lg"&gt;&lt;/i&gt;
+                            &lt;i class="far fa-heart fa-lg"&gt;&lt;/i&gt;
+                            &lt;i class="far fa-share-square fa-lg"&gt;&lt;/i&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class="card card-verticle card-dismiss-verticle"&gt;
+                        &lt;p class="close-icon close-icon-verticle fs-300"&gt;X&lt;/p&gt;
+                        &lt;div class="img-container"&gt;
+                          &lt;p class="img-badge letter-spacing-3"&gt;BESTSELLER&lt;/p&gt;
+                          &lt;picture&gt;
+                              &lt;source srcset="./images/tech.webp" type="image/webp"&gt;
+                              &lt;source srcset="./images/tech.jpg" type="image/jpg" &gt; 
+                              &lt;img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img"&gt;
+                            &lt;/picture&gt;
+                        &lt;/div&gt;
+                        &lt;div class="card-content"&gt;
+                          &lt;h3 class="card-title fs-600"&gt;iPhone&lt;/h3&gt;
+                          &lt;p class="card-body letter-spacing-5"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
+                            instruct, inform, and inspire.&lt;/p&gt;
+                          &lt;div class="card-footer"&gt;
+                            &lt;p class="card-price fs-400"&gt;Price: &#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt;
+                            &lt;i class="fas fa-shopping-cart fa-lg"&gt;&lt;/i&gt;
+                            &lt;i class="far fa-heart fa-lg"&gt;&lt;/i&gt;
+                            &lt;i class="far fa-share-square fa-lg"&gt;&lt;/i&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class="card card-verticle"&gt;
+                        &lt;div class="card-overlay"&gt;
+                          &lt;div class="img-container"&gt;
+                              &lt;picture&gt;
+                                  &lt;source srcset="./images/tech.webp" type="image/webp"&gt;
+                                  &lt;source srcset="./images/tech.jpg" type="image/jpg" &gt; 
+                                  &lt;img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img"&gt;
+                              &lt;/picture&gt;                    &lt;/div&gt;
+                          &lt;div class="card-content"&gt;
+                            &lt;h3 class="card-title fs-600"&gt;iPhone&lt;/h3&gt;
+                            &lt;p class="card-body letter-spacing-5"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
+                            instruct, inform, and inspire.&lt;/p&gt;
+                            &lt;div class="card-footer"&gt;
+                              &lt;p class="card-price"&gt;Price: &#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt;
+                              &lt;i class="fas fa-shopping-cart fa-lg"&gt;&lt;/i&gt;
+                              &lt;i class="far fa-heart fa-lg"&gt;&lt;/i&gt;
+                              &lt;i class="far fa-share-square fa-lg"&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;p class="overlay-text"&gt;OUT OF STOCK&lt;/p&gt;
+                      &lt;/div&gt;
+                      &lt;div class="card card-textonly"&gt;
+                        &lt;h3 class="card-title fs-600"&gt;Text Only Card&lt;/h3&gt;
+                        &lt;p class="card-body letter-spacing-5"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
+                          instruct, inform, and inspire.&lt;/p&gt;
+                          &lt;button class="btn"&gt;Next&lt;/button&gt;
+                      &lt;/div&gt;  
+                    </code>
+                 </pre>
+                 </div>
                 <div class="information card-information letter-spacing-5">
                         <p>.cards-horizontal-autofit is grid-template-columns: <span class="text-red">repeat(auto-fit, minmax(25rem, 1fr))</span></p>
                         <p>.cards-verticle-autofit is grid-template-columns: <span class="text-red">repeat(auto-fit, minmax(20rem, 1fr))</span></p>
@@ -504,18 +799,18 @@
             </section>
             <section class="buttons fs-400 d-grid">
               <h2 class="uppercase letter-spacing-2 fs-600">Buttons</h2>
-              <div>
+              <div class="primary-buttons">
                 <button class="btn btn-primary letter-spacing-3 uppercase">Primary</button>
                 <button class="btn btn-disabled letter-spacing-3 uppercase" disabled>Disabled</button>
               </div>
               <div class="outlined-btn">
                 <button class="btn btn-outlined uppercase letter-spacing-3">
                   <i class="fas fa-trash"></i>
-                  <span>Delete</span>
+                  Delete
                 </button>
                 <button class="btn btn-outlined uppercase letter-spacing-3">
                   <i class="fas fa-paper-plane"></i>
-                  <span>Send</span>
+                  Send
                 </button>
               </div>
             <div class="icon-btn">
@@ -529,11 +824,47 @@
                 <button class="btn btn-float btn-float-video"><i class="fas fa-video fa-lg"></i></button>
                 <button class="btn btn-float btn-float-star"><i class="far fa-star fa-lg"></i></button>
               </div>
-              
             </div>
-              <div >
+              <div class="link-button">
                 <a href="#" class="btn-link fs-600 letter-spacing-5">This is a link</a>
               </div>
+              <pre>
+                <code class="language-html">
+                  &lt;button class="btn btn-primary letter-spacing-3 uppercase"&gt;Primary&lt;/button&gt;
+                  &lt;button class="btn btn-disabled letter-spacing-3 uppercase" disabled&gt;Disabled&lt;/button&gt;
+                  &lt;button class="btn btn-outlined uppercase letter-spacing-3"&gt;
+                    &lt;i class="fas fa-trash"&gt;&lt;/i&gt;
+                    Delete
+                  &lt;/button&gt;
+                  &lt;button class="btn btn-outlined uppercase letter-spacing-3"&gt;
+                    &lt;i class="fas fa-paper-plane"&gt;&lt;/i&gt;
+                    Send
+                  &lt;/button&gt;
+                  &lt;button class="icon"&gt;
+                    &lt;i class="fas fa-trash fa-lg"&gt;&lt;/i&gt;
+                  &lt;/button&gt;
+                  &lt;button class="icon"&gt;
+                    &lt;i class="fas fa-paper-plane fa-lg"&gt;&lt;/i&gt;
+                  &lt;/button&gt;
+                  &lt;button class="btn btn-float btn-float-cta" 
+                          aria-expanded="false"
+                          aria-controls="float-buttons"&gt;
+                    &lt;i class="fas fa-plus fa-lg"&gt;&lt;/i&gt;              
+                  &lt;/button&gt;
+                  &lt;div class="float-buttons" id="float-buttons" data-visible="false"&gt;
+                    &lt;button class="btn btn-float btn-float-camera"&gt;
+                      &lt;i class="fas fa-camera fa-lg"&gt;&lt;/i&gt;
+                    &lt;/button&gt;
+                    &lt;button class="btn btn-float btn-float-video"&gt;
+                      &lt;i class="fas fa-video fa-lg"&gt;&lt;/i&gt;
+                    &lt;/button&gt;
+                    &lt;button class="btn btn-float btn-float-star"&gt;
+                      &lt;i class="far fa-star fa-lg"&gt;&lt;/i&gt;
+                    &lt;/button&gt;
+                  &lt;/div&gt;
+                  &lt;a href="#" class="btn-link fs-600 letter-spacing-5"&gt;This is a link&lt;/a&gt;
+                </code>
+              </pre>
               <div class="information button-information letter-spacing-4 fs-400 d-grid">
                     <p><span class="text-red">.btn</span> is for a button</p>
                     <p><span class="text-red">.icon</span> acts as a button</p>
@@ -566,6 +897,31 @@
                   
                   <button class="btn btn-signUp uppercase letter-spacing-1">Sign up</button>
               </form> 
+              <pre>
+                <code class="language-html">
+                  &lt;form class="form-login fs-400 letter-spacing-3"&gt;
+                  
+                    &lt;label for="username" class="username"&gt;Username&lt;span class="text-red"&gt;*&lt;/span&gt;&lt;/label&gt;
+                    &lt;input id="username" class="form-username" type="text" required&gt;
+            
+                    &lt;label for="email" class="email"&gt;Email&lt;span class="text-red"&gt;*&lt;/span&gt;&lt;span class="form__tooltip" data-tooltip="Please enter your email address"&gt;&lt;/span&gt;&lt;/label&gt;
+                    &lt;input id="email" class="form-email" type="email" required&gt;
+            
+                    &lt;label for="password" class="password"&gt;Create Password&lt;span class="text-red"&gt;*&lt;/span&gt;&lt;span class="form__tooltip" data-tooltip="Minimum 8 characters"&gt;&lt;/span&gt;&lt;/label&gt;
+                    &lt;input id="password" class="form-password" type="password" minlength="8" required&gt;
+                  
+                    &lt;p class="confirm-password"&gt;
+                      &lt;label for="reenter-password" class="reenter-password"&gt;Confirm Password&lt;span class="text-red"&gt;*&lt;/span&gt;&lt;/label&gt;
+                      &lt;input id="reenter-password" class="form-reenter-password" type="password" required&gt;  
+                    &lt;/p&gt;
+                    
+                    &lt;input class="form__checkbox" type="checkbox" id="agreement" name="agreement" required&gt;
+                    &lt;span for="agreement"&gt;I am 13 years of age or older AND agree to the &lt;a href="#"&gt;terms and serivces&lt;/a&gt;.&lt;span class="text-red"&gt;*&lt;/span&gt;&lt;/span&gt;
+                    
+                    &lt;button class="btn btn-signUp uppercase letter-spacing-1"&gt;Sign up&lt;/button&gt;
+                  &lt;/form&gt;
+                </code>
+              </pre>
               <div class="information information-form letter-spacing-4 fs-400">
                 <p>Username, Email, Create Password, Confirm Password and the checkbox are <span class="text-red">required</span>.</p>
                 <p>An error <span class="text-red">"Passwords do not match"</span> drops down if passwords do not match</p>
@@ -586,14 +942,33 @@
                 <li class="list-item list-item-5">List 5</li>
               </ul>
               <ul role="list" class="list list-stacked" aria-hidden="true" id="stacked-list" data-visible="false">
-              <li class="list-item stackList-item-1">List 1</li>
-              <li class="list-item stackList-item-2">List 2</li>
-              <li class="list-item stackList-item-3">List 3</li>
-              <li class="list-item stackList-item-more" data-visible="false">Show more</li>
-              <li class="list-item stackList-item-4" data-visible="false">List 4</li>
-              <li class="list-item stackList-item-5" data-visible="false">List 5</li>
-            </ul>
+                <li class="list-item stackList-item-1">List 1</li>
+                <li class="list-item stackList-item-2">List 2</li>
+                <li class="list-item stackList-item-3">List 3</li>
+                <li class="list-item stackList-item-more" data-visible="false">Show more</li>
+                <li class="list-item stackList-item-4" data-visible="false">List 4</li>
+                <li class="list-item stackList-item-5" data-visible="false">List 5</li>
+              </ul>
           </div>
+          <pre>
+            <code class="language-html">
+              &lt;ul role="list" class="list list-normal" aria-hidden="false" id="normal-list" data-visible="true"&gt;
+                &lt;li class="list-item list-item-1"&gt;List 1&lt;/li&gt;
+                &lt;li class="list-item list-item-2"&gt;List 2&lt;/li&gt;
+                &lt;li class="list-item list-item-3"&gt;List 3&lt;/li&gt;
+                &lt;li class="list-item list-item-4"&gt;List 4&lt;/li&gt;
+                &lt;li class="list-item list-item-5"&gt;List 5&lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;ul role="list" class="list list-stacked" aria-hidden="true" id="stacked-list" data-visible="false"&gt;
+                &lt;li class="list-item stackList-item-1"&gt;List 1&lt;/li&gt;
+                &lt;li class="list-item stackList-item-2"&gt;List 2&lt;/li&gt;
+                &lt;li class="list-item stackList-item-3"&gt;List 3&lt;/li&gt;
+                &lt;li class="list-item stackList-item-more" data-visible="false"&gt;Show more&lt;/li&gt;
+                &lt;li class="list-item stackList-item-4" data-visible="false"&gt;List 4&lt;/li&gt;
+                &lt;li class="list-item stackList-item-5" data-visible="false"&gt;List 5&lt;/li&gt;
+              &lt;/ul&gt;
+            </code>
+          </pre>
             <div class="information list-information letter-spacing-4 fs-400 d-grid">
               <p>You can toggle between <span class="text-red">Normal list</span> and <span class="text-red">Stacked list</span></p>
               <p><span class="text-red">.stackList-item-more</span> is used on <span class="text-red">Show more</span> to hide and show stacked list items.</p>
@@ -608,6 +983,17 @@
                 <h2 class="modal-title fs-700 letter-spacing-3">FLAT 90% OFF ON ALL ITEMS</h2>
                 <button class="btn btn-modal letter-spacing-3 fs-600">TAKE ME THERE</button>
             </div>
+            <pre>
+              <code class="language-html">
+                &lt;button class="btn modal-display letter-spacing-2 uppercase fs-400" aria-controls="modal-fixed"&gt;Open modal&lt;/button&gt;
+                &lt;div class="modal-fixed text-center" data-visible="false" id="modal-fixed"&gt;
+                    &lt;i class="far fa-times-circle fa-4x"&gt;&lt;/i&gt;
+                    &lt;p class="modal-subtitle fs-700 letter-spacing-4"&gt;We've a special offer only for you 🎊🎊&lt;/p&gt;
+                    &lt;h2 class="modal-title fs-700 letter-spacing-3"&gt;FLAT 90% OFF ON ALL ITEMS&lt;/h2&gt;
+                    &lt;button class="btn btn-modal letter-spacing-3 fs-600"&gt;TAKE ME THERE&lt;/button&gt;
+                &lt;/div&gt;
+              </code>
+            </pre>
             <div class="information modal-information letter-spacing-4">
               <p><span class="text-red">.modal-fixed</span> is positioned <span class="text-red">fixed</span> and displayed <span class="text-red">flex-column</span> when visible</p>
               <p><span class="text-red">Icon X</span> is used to close the Modal.</p>
@@ -631,6 +1017,24 @@
               <input type="radio" name="stars" id="one-stars" value="1" class="one-stars"/>
               <label for="one-stars" class="fs-700"></label>
             </div>
+            <pre>
+              <code class="language-html">
+                &lt;input type="radio" name="stars" id="five-stars" value="5" class="five-stars"/&gt;
+                &lt;label for="five-stars" class="fs-700"&gt;&lt;/label&gt;
+          
+                &lt;input type="radio" name="stars" id="four-stars" value="4" class="four-stars" /&gt;
+                &lt;label for="four-stars" class="fs-700"&gt;&lt;/label&gt;
+            
+                &lt;input type="radio" name="stars" id="three-stars" value="3" class="three-stars"/&gt;
+                &lt;label for="three-stars" class="fs-700"&gt;&lt;/label&gt;
+            
+                &lt;input type="radio" name="stars" id="two-stars" value="2" class="two-stars"/&gt;
+                &lt;label for="two-stars" class="fs-700"&gt;&lt;/label&gt;
+            
+                &lt;input type="radio" name="stars" id="one-stars" value="1" class="one-stars"/&gt;
+                &lt;label for="one-stars" class="fs-700"&gt;&lt;/label&gt;
+              </code>
+            </pre>
             <div class="information rating-information letter-spacing-4">
               <p><span class="text-red">psedo elements of label</span> and <span class="text-red">radio inputs</span> are used to create stars for rating</p>
             </div>
@@ -641,11 +1045,20 @@
             <p class="alert bg-green toast-notification fs-600" data-visible="false">
               <i class="far fa-check-circle"></i>
               <span class="alert-message">Your order was succesfully placed</span>
-          </p>
+            </p>
+          <pre>
+            <code class="language-html">
+              &lt;button class="btn btn-toast letter-spacing-4 uppercase"&gt;Show Toast&lt;/button&gt;
+              &lt;p class="alert bg-green toast-notification fs-600" data-visible="false"&gt;
+                &lt;i class="far fa-check-circle"&gt;&lt;/i&gt;
+                &lt;span class="alert-message"&gt;Your order was succesfully placed&lt;/span&gt;
+              &lt;/p&gt;
+            </code>
+          </pre>
           <div class="information toast-information letter-spacing-5">
             <p><span class="text-red">.btn-toast</span> is used as a toast button</p>
             <p><span class="text-red">.toast-notification</span> is positioned <span class="text-red">fixed</span> and visible on the screen for<span class="text-red"> 2 seconds</span></p>
-        </div>
+          </div>
           </section>
           <section class="grids">
               <h2 class="uppercase letter-spacing-2 fs-600">Grids</h2>
@@ -671,6 +1084,32 @@
                 <div class="bg-dark-90"></div>
                 <div class="bg-dark"></div>
             </div>
+            <pre>
+              <code class="language-html">
+                &lt;div class="grid grid-autofit-breaks">
+                  &lt;div class="bg-white"&gt;&lt;/div&gt;
+                  &lt;div class="bg-white-90"&gt;&lt;/div&gt;
+                  &lt;div class="bg-white-80"&gt;&lt;/div&gt;
+                  &lt;div class="bg-white-70"&gt;&lt;/div&gt;
+                  &lt;div class="bg-white-60"&gt;&lt;/div&gt;
+                  &lt;div class="bg-white-50"&gt;&lt;/div&gt;
+                  &lt;div class="bg-white-40"&gt;&lt;/div&gt;
+                  &lt;div class="bg-white-30"&gt;&lt;/div&gt;
+                  &lt;div class="bg-white-20"&gt;&lt;/div&gt;
+                  &lt;div class="bg-white-10"&gt;&lt;/div&gt;
+                  &lt;div class="bg-dark-10"&gt;&lt;/div&gt;
+                  &lt;div class="bg-dark-20"&gt;&lt;/div&gt;
+                  &lt;div class="bg-dark-30"&gt;&lt;/div&gt;
+                  &lt;div class="bg-dark-40"&gt;&lt;/div&gt;
+                  &lt;div class="bg-dark-50"&gt;&lt;/div&gt;
+                  &lt;div class="bg-dark-60"&gt;&lt;/div&gt;
+                  &lt;div class="bg-dark-70"&gt;&lt;/div&gt;
+                  &lt;div class="bg-dark-80"&gt;&lt;/div&gt;
+                  &lt;div class="bg-dark-90"&gt;&lt;/div&gt;
+                  &lt;div class="bg-dark"&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              </code>
+            </pre>
             <div class="information grid-information letter-spacing-4">
               <p>The above grid can be <span class="text-red">resized</span></p>
              <p><span class="text-red">.grid-autofit-breaks</span> is used to autofit grid-items based on <span class="text-red">minmax</span> and <span class="text-red"> breakpoints</span></p>
@@ -708,6 +1147,43 @@
               <div class="grid">
                 <div class="grid-item bg-dark"></div>
               </div>
+              <pre>
+                <code class="language-html">
+                  &lt;div class="grid grid-6"&gt;
+                    &lt;div class="grid-item bg-dark-50"&gt;&lt;/div&gt;
+                    &lt;div class="grid-item bg-dark-50"&gt;&lt;/div&gt;
+                    &lt;div class="grid-item bg-dark-50"&gt;&lt;/div&gt;
+                    &lt;div class="grid-item bg-dark-50"&gt;&lt;/div&gt;
+                    &lt;div class="grid-item bg-dark-50"&gt;&lt;/div&gt;
+                    &lt;div class="grid-item bg-dark-50"&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class="grid grid-5"&gt;
+                    &lt;div class="grid-item bg-dark-60"&gt;&lt;/div&gt;
+                    &lt;div class="grid-item bg-dark-60"&gt;&lt;/div&gt;
+                    &lt;div class="grid-item bg-dark-60"&gt;&lt;/div&gt;
+                    &lt;div class="grid-item bg-dark-60"&gt;&lt;/div&gt;
+                    &lt;div class="grid-item bg-dark-60"&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class="grid grid-4"&gt;
+                    &lt;div class="grid-item bg-dark-70"&gt;&lt;/div&gt;
+                    &lt;div class="grid-item bg-dark-70"&gt;&lt;/div&gt;
+                    &lt;div class="grid-item bg-dark-70"&gt;&lt;/div&gt;
+                    &lt;div class="grid-item bg-dark-70"&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class="grid grid-3"&gt;
+                    &lt;div class="grid-item bg-dark-80"&gt;&lt;/div&gt;
+                    &lt;div class="grid-item bg-dark-80"&gt;&lt;/div&gt;
+                    &lt;div class="grid-item bg-dark-80"&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class="grid grid-2"&gt;
+                    &lt;div class="grid-item bg-dark-90"&gt;&lt;/div&gt;
+                    &lt;div class="grid-item bg-dark-90"&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class="grid"&gt;
+                    &lt;div class="grid-item bg-dark"&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+                </code>
+              </pre>
               <div class="information grid-information letter-spacing-5">
                 <p><span class="text-red">.grid-6</span> is grid-template-columns: repeat(6, 1fr).</p>
                 <p>Similarly grid-5 is repeat 5, grid-4 is repeat 4 and so on.</p>
@@ -719,6 +1195,14 @@
               <input type="range" class="slider" min="0" max="100" step="1">
             </div>
             <p class="percentage fs-500"></p>
+            <pre>
+              <code class="language-html">
+                &lt;div class="slider-container"&gt;
+                  &lt;input type="range" class="slider" min="0" max="100" step="1"&gt;
+                &lt;/div&gt;
+                &lt;p class="percentage fs-500"&gt;&lt;/p&gt;
+              </code>
+            </pre>
             <div class="information toast-information letter-spacing-5">
               <p><span class="text-red">.slider</span> is used to design the range slider</p>
               <p><span class="text-red">.percentage</span> is used to get the <span class="text-red">value</span> of the slider between which is anywhere between<span class="text-red"> min </span>and<span class="text-red"> max</span></p>
@@ -789,10 +1273,40 @@
                   <p>You can go to the network tab and check disable cache to see the different images being downloaded for different screen widths</p>
                 </div>
             </div>
+            <pre>
+              <code class="language-html">
+                &lt;div class="image_wrapper"&gt;
+                  &lt;picture&gt;
+                    &lt;source media="(min-width: 960px)"
+                            srcset="./images/large.webp 534w,
+                                    ./images/large.jpg 534w,
+                                    ./images/large@2x.webp 1068w,
+                                    ./images/large@2x.jpg 1068w,
+                                    ./images/large@3x.webp 1602w,
+                                    ./images/large@3x.jpg 1602w"
+                            &gt;
+                    &lt;source media="(min-width: 600px)"
+                            srcset="./images/medium.webp 474w,
+                                    ./images/medium.jpg 474w,
+                                    ./images/medium@2x.webp 984w,
+                                    ./images/medium@2x.jpg 984w,
+                                    ./images/medium@3x.webp 1422w,
+                                    ./images/medium@3x.jpg 1422w"&gt;
+                    &lt;source srcset="./images/small.webp 273w
+                                    ./images/small.jpg 273w,
+                                    ./images/small@2x.webp 546w,
+                                    ./images/small@2x.jpg 546w,
+                                    ./images/small@3x.webp 819w,
+                                    ./images/small@3x.jpg 819w"&gt;
+                    &lt;img class="responsive-round-image" src="./images/small.jpg" loading="lazy" alt="responsive-image"&gt;
+                  &lt;/picture&gt;
+                &lt;/div&gt;
+              </code>
+            </pre>
           </section>
           <section class="submenus">
-            <h2 class="uppercase letter-spacing-2 fs-600">Navigation and Submenus</h2>
-              <div class="navigation-area d-grid grid-3">
+            <h2 class="submenu-heading uppercase letter-spacing-2 fs-600">Navigation and Submenus</h2>
+                <div class="navigation-area d-grid grid-3">
                   <h3 class="uppercase letter-spacing-4">Google</h3>
                   <div class="input-search d-flex">
                     <label for="search" class="sr-only" >Search</label>
@@ -809,13 +1323,40 @@
                         <li class="submenu-item"><a href="#">Logout</a></li>
                       </ul>
                     </div>
-              </div>
+                </div>
+                <pre>
+                  <code class="language-html">
+                    &lt;div class="navigation-area d-grid grid-3"&gt;
+                      &lt;h3 class="uppercase letter-spacing-4"&gt;Google&lt;/h3&gt;
+                      &lt;div class="input-search d-flex"&gt;
+                        &lt;label for="search" class="sr-only" &gt;Search&lt;/label&gt;
+                        &lt;input type="text" id="search" class="search" placeholder="Search"&gt;
+                        &lt;i class="fas fa-search fa-lg"&gt;&lt;/i&gt;
+                      &lt;/div&gt;
+                        &lt;div class="submenu d-flex p-relative"&gt;
+                          &lt;div class="submenu-drop-btn d-flex"&gt;Profile
+                            &lt;i class="fa fa-caret-down"&gt;&lt;/i&gt;
+                          &lt;/div&gt;
+                          &lt;ul class="dropdown-content p-absolute" role="list"&gt;
+                            &lt;li class="submenu-item"&gt;&lt;a href="#"&gt;Cart&lt;i class="fas fa-shopping-cart fa-sm"&gt;&lt;/i&gt;
+                            &lt;/a&gt;&lt;/li&gt;
+                            &lt;li class="submenu-item"&gt;&lt;a href="#"&gt;Logout&lt;/a&gt;&lt;/li&gt;
+                          &lt;/ul&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                  </code>
+                </pre>
               <div class="information submenu-information letter-spacing-5">
                 <p>On hover to Profile the <span class="text-red">submenu</span> drops down</p>
               </div>
+
           </section>
+          <footer>
+      
+          </footer>
         </article>
     </main>
+
 
 </body>
 </html>

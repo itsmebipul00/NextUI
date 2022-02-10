@@ -6,6 +6,10 @@
   align-items: center;
 }
 
+.submenu-heading {
+  margin-top: 2rem;
+}
+
 .fa-search {
   align-self: center;
   margin: -0.25rem 0 0 0.25rem;

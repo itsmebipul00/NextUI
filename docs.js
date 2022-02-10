@@ -61,10 +61,10 @@ closeVIcon.addEventListener("click", () => {
 
 const tabHorizontal = document.querySelector(".tab-horizontal")
 const tabVerticle = document.querySelector(".tab-verticle")
-const cardsHorizontal = document.querySelector(".cards-horizontal-autofit")
-const cardsVerticle = document.querySelector(".cards-verticle-autofit")
-const codeVerticle = document.querySelector(".code-verticle")
-const codeHorizontal = document.querySelector(".code-horizontal")
+const cardsHorizontal = document.querySelector(".cards-horizontal")
+const cardsVerticle = document.querySelector(".cards-verticle")
+const codeVerticle = document.querySelector(".code-cards-verticle")
+const codeHorizontal = document.querySelector(".code-cards-horizontal")
 
 tabHorizontal.addEventListener("click", () => {
   tabVerticle.setAttribute("data-visible", false)

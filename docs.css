@@ -92,16 +92,26 @@ code {
   font-family: inherit;
 }
 
-.code::-webkit-scrollbar {
-  width: 10px;
+.code-toolbar::-webkit-scrollbar {
+  width: 5px;
 }
 
-.code::-webkit-scrollbar-track {
+.language-html::-webkit-scrollbar {
+  height: 2px;
+}
+
+.code-toolbar::-webkit-scrollbar-track,
+.language-html::-webkit-scrollbar-track {
   background: hsl(var(--clr-white));
 }
 
-.code::-webkit-scrollbar-thumb {
+.code-toolbar::-webkit-scrollbar-thumb,
+.language-html::-webkit-scrollbar-thumb {
   background: hsl(var(--clr-dark));
+}
+
+.language-html {
+  margin: 0 !important;
 }
 
 .primary-colors,
@@ -198,4 +208,8 @@ code {
   .information {
     width: 100%;
   }
+}
+
+footer {
+  padding: 2rem;
 }
