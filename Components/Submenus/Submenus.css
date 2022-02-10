@@ -58,6 +58,10 @@
   text-decoration: underline;
 }
 
+.submenu-information {
+  margin-bottom: 1rem !important;
+}
+
 @media (max-width: 60em) {
   .navigation-area {
     width: 100%;
