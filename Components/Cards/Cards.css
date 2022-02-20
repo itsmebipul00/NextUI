@@ -167,6 +167,10 @@ picture,
   transform: scale(1.01);
 }
 
+.card-information {
+  margin-top: 0;
+}
+
 .card-information > * {
   margin: 1rem;
 }

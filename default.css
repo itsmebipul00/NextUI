@@ -151,6 +151,10 @@ select {
   display: none;
 }
 
+.d-inline {
+  display: inline;
+}
+
 .text-underline {
   text-decoration: underline;
 }
@@ -360,6 +364,18 @@ select {
   color: hsl(var(--clr-red));
 }
 
+.text-yellow {
+  color: hsl(var(--clr-yellow));
+}
+
+.text-green {
+  color: hsl(var(--clr-green));
+}
+
+.text-blue {
+  color: hsl(var(--clr-blue));
+}
+
 /* typography */
 
 .letter-spacing-1 {
@@ -438,4 +454,12 @@ select {
 .fs-700,
 .fs-600 {
   line-height: 1.1;
+}
+
+.margin-r-auto {
+  margin-right: auto;
+}
+
+.margin-l-auto {
+  margin-left: auto;
 }

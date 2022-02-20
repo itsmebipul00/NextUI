@@ -3,7 +3,6 @@ aside {
 }
 
 article {
-  margin-top: 4rem;
   width: 100%;
 }
 
@@ -17,7 +16,7 @@ article {
   }
 
   aside ul {
-    height: 90vh;
+    height: 85vh;
     overflow: auto;
   }
 
@@ -26,18 +25,12 @@ article {
     width: 10px;
   }
 
-  aside ul::-webkit-scrollbar-track {
-    background: hsl(var(--clr-red));
-  }
-
+  aside ul::-webkit-scrollbar-track,
   article::-webkit-scrollbar-track {
     background: hsl(var(--clr-white));
   }
 
-  aside ul::-webkit-scrollbar-thumb {
-    background: hsl(var(--clr-dark));
-  }
-
+  aside ul::-webkit-scrollbar-thumb,
   article::-webkit-scrollbar-thumb {
     background: hsl(var(--clr-red));
   }
@@ -47,23 +40,33 @@ article {
     margin: 0;
   }
 
-  aside li:hover {
+  /* aside li:hover {
     cursor: pointer;
     background: hsl(var(--clr-light));
-  }
+  } */
 
   article {
     width: 82%;
     position: fixed;
-    inset: 13% 0 0 18%;
+    inset: 15% 0 0 18%;
     overflow: auto;
   }
 
-  .secondary-navigation li {
-    padding: 1.5rem 0 1.5rem 1rem;
+  .getting-started,
+  .components-title {
+    padding: 0 0 0 0.5rem;
+    margin-bottom: 0;
   }
 
   .secondary-navigation a {
     color: hsl(var(--clr-dark));
+    padding: 1.5rem 0rem 1.5rem 0.5rem;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .secondary-navigation a:hover {
+    cursor: pointer;
+    background: hsl(var(--clr-light));
   }
 }
