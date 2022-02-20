@@ -13,7 +13,7 @@
 .rating > label {
   width: 1.5rem;
   aspect-ratio: 1;
-  color: hsl(var(--clr-dark));
+  color: hsl(var(--clr-red));
 }
 
 .rating label::before {

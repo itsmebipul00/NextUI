@@ -12,7 +12,7 @@
     <!-- PRISM CSS -->
     <link rel="stylesheet" href="prism.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="docs.css">
+    <link rel="stylesheet" href="nextui.css">
     <!-- PRISM JS -->
     <script defer src="prism.js"></script>
     <!-- FONT AWESOME JS -->
@@ -22,52 +22,94 @@
 </head>
 <body>
     <header>
-        <div class="header-container d-grid">
+        <div class="header-container d-flex">
             <h1 class="header-title letter-spacing-2 fs-700">NextUI</h1>
-            <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only"
-                aria-expanded="false">Menu</span></button>
-            <nav>
-              <ul id="primary-navigation" data-visible="false" class="primary-navigation uppercase letter-spacing-1" role="list">
-                <li><a href="#"><span aria-hidden="true">Colors</span></a></li>
-                <li><a href="#"><span aria-hidden="true">Typography</span></a></li>
-                <li><a href="#"><span aria-hidden="true">Utilities</span></a></li>
-                <li><a href="#"><span aria-hidden="true">Avatar</span></a></li>
-                <li><a href="#"><span aria-hidden="true">Alert</span></a></li>
-                <li><a href="#"><span aria-hidden="true">Badge</span></a></li>
-                <li><a href="#"><span aria-hidden="true">Button</span></a></li>
-                <li><a href="#"><span aria-hidden="true">Card</span></a></li>
-                <li><a href="#"><span aria-hidden="true">Input</span></a></li>
-                <li><a href="#"><span aria-hidden="true">List</span></a></li>
-                <li><a href="#"><span aria-hidden="true">Toast</span></a></li>
-                <li><a href="#"><span aria-hidden="true">Modal</span></a></li>
-                <li><a href="#"><span aria-hidden="true">Slider</span></a></li>
-                
-              </ul>
-            </nav>
+                <div class="margin-l-auto d-flex">
+                  <a href="https://github.com/itsmebipul00" class="linkto-github width-5rem">
+                    <img src="images/icons8-github.svg" alt="github_svg">
+                  </a>
+                  <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only"
+                    aria-expanded="false">Menu</span></button>
+                  <nav>
+                    <ul id="primary-navigation" data-visible="false" class="primary-navigation uppercase letter-spacing-1" role="list">
+                      <li><a href="#usage"><span aria-hidden="true">Usage</span></a></li>
+                      <li><a href="#colors"><span aria-hidden="true">Colors</span></a></li>
+                      <li><a href="#typography"><span aria-hidden="true">Typography</span></a></li>
+                      <li><a href="#alert-container"><span aria-hidden="true">Alert</span></a></li>
+                      <li><a href="#avatars"><span aria-hidden="true">Avatar</span></a></li>
+                      <li><a href="#badges"><span aria-hidden="true">Badge</span></a></li>
+                      <li><a href="#cards-container"><span aria-hidden="true">Card</span></a></li>
+                      <li><a href="#buttons"><span aria-hidden="true">Button</span></a></li>
+                      <li><a href="#form"><span aria-hidden="true">Input</span></a></li>
+                      <li><a href="#list-group"><span aria-hidden="true">List</span></a></li>
+                      <li><a href="#modal"><span aria-hidden="true">Modal</span></a></li>
+                      <li><a href="#ratings"><span aria-hidden="true">Ratings</span></a></li>
+                      <li><a href="#toasts"><span aria-hidden="true">Toast</span></a></li>
+                      <li><a href="#grids"><span aria-hidden="true">Grids</span></a></li>
+                      <li><a href="#input-slider"><span aria-hidden="true">Slider</span></a></li>
+                      <li><a href="#images"><span aria-hidden="true">Images</span></a></li>
+                      <li><a href="#navigation"><span aria-hidden="true">Navigation</span></a></li>
+                      <li><a href="#submenus"><span aria-hidden="true">Submenus</span></a></li>
+                    </ul>
+                  </nav>
+                </div>
         </div>
     </header>
     <main>
         <aside>
             <ul id="secondary-navigation"  class="secondary-navigation uppercase letter-spacing-2 d-grid" role="list">
-                <li><a href="#"><span>Colors</span></a></li>
-                <li><a href="#"><span>Typography</span></a></li>
-                <li><a href="#"><span>Utilities</span></a></li>
-                <li><a href="#"><span>Avatar</span></a></li>
-                <li><a href="#"><span>Alert</span></a></li>
-                <li><a href="#"><span>Badge</span></a></li>
-                <li><a href="#"><span>Button</span></a></li>
-                <li><a href="#"><span>Card</span></a></li>
-                <li><a href="#"><span>Input</span></a></li>
-                <li><a href="#"><span>List</span></a></li>
-                <li><a href="#"><span>Toast</span></a></li>
-                <li><a href="#"><span>Modal</span></a></li>
-                <li><a href="#"><span>Slider</span></a></li>
+                <h2 class="getting-started fs-400">Getting Started</h2>
+                <li><a href="#usage"><span>Usage</span></a></li>
+                <li><a href="#colors"><span>Colors</span></a></li>
+                <li><a href="#typography"><span>Typography</span></a></li>
+                <h2 class="components-title fs-400">Components</h2>
+                <li><a href="#alert-container"><span>Alert</span></a></li>
+                <li><a href="#avatars"><span>Avatar</span></a></li>
+                <li><a href="#badges"><span>Badge</span></a></li>
+                <li><a href="#cards-container"><span>Card</span></a></li>
+                <li><a href="#buttons"><span>Button</span></a></li>
+                <li><a href="#form"><span>Input</span></a></li>
+                <li><a href="#list-group"><span>List</span></a></li>
+                <li><a href="#modal"><span>Modal</span></a></li>
+                <li><a href="#ratings"><span>Ratings</span></a></li>
+                <li><a href="#toasts"><span>Toast</span></a></li>
+                <li><a href="#grids"><span>Grids</span></a></li>
+                <li><a href="#input-slider"><span>Slider</span></a></li>
+                <li><a href="#images"><span>Images</span></a></li>
+                <li><a href="#navigation"><span>Navigation</span></a></li>
+                <li><a href="#submenus"><span>Submenus</span></a></li>
             </ul>
         </aside>
-        <article class="container">
-          <section class="colors  fs-300">
+        <article class="container" id="container">
+          <section class="usage" id="usage">
+            <h2 class="usage-heading uppercase letter-spacing-2 fs-600">Usage</h2>
+            <div class="information usage-information letter-spacing-5">
+              <p> <span class="text-red">NextUI</span> is a <span class="text-red">pleasing, minimal</span> and <span class="text-red">modern</span> UI library</p>
+              <p>It consists of a ton of <span class="text-red">Custom properties, Utility classes</span> and <span class="text-red">UI components</span> for your basic uses</p>
+            </div>
+            <pre>
+              <code class="language-css">
+                //CSS
+
+                @import url("https://nextui.netlify.app/nextui.css");
+
+              </code>
+            </pre>
+            <pre>
+              <code class="language-html">
+                // HTML
+
+                &lt;link rel="stylesheet" href="https://nextui.netlify.app/nextui.css"&gt;
+              </code>
+            </pre>
+          </section>
+          <section class="colors" id="colors">
             <h2 class="uppercase letter-spacing-2 fs-600">Colors</h2>
-            <div class="primary-colors d-grid grid-6 .grid-row-1 letter-spacing-5">
+            <div class="information colors-information letter-spacing-5">
+              <p><span class="text-red">NextUI</span> uses  <span class="text-red">HSL colors</span></p>
+              <p> HSL colors are <span class="text-red">easy to understand</span> from reading them and to create a <span class="text-red">lighter or darker shade</span> of a color quickly</p>
+            </div>
+            <div class="primary-colors d-grid grid-6 .grid-row-1 letter-spacing-5 fs-300">
               <div class="primary-color">
                 <div class="primary-color-red bg-red"></div>
                 <p class="clr-hsl bg-white">hsl(338, 81%, 41%)</p>
@@ -93,7 +135,7 @@
                 <p class="clr-hsl bg-white">hsl(46, 100%, 90%)</p>
               </div>
             </div>
-            <div class="primary-colors-light d-grid grid-5 .grid-row-2 letter-spacing-5">
+            <div class="primary-colors-light d-grid grid-5 .grid-row-2 letter-spacing-5 fs-300">
               <div class="primary-color">
                 <div class="primary-color-light bg-white"></div>
                 <p class="clr-hsl bg-white">hsl(0 0% 100%)</p>
@@ -135,7 +177,7 @@
                 <p class="clr-hsl bg-white">hsl(0 0% 100% / 0.1)</p>
               </div>
             </div>
-            <div class="primary-colors-dark d-grid grid-5 .grid-row-2 letter-spacing-5">
+            <div class="primary-colors-dark d-grid grid-5 .grid-row-2 letter-spacing-5 fs-300">
               <div class="primary-color">
                 <div class="primary-color-dark bg-dark-10"></div>
                 <p class="clr-hsl bg-white">hsl(230 35% 7% / 0.1)</p>
@@ -177,13 +219,14 @@
                 <p class="clr-hsl bg-white">hsl(230 35% 7%)</p>
               </div>
             </div>
-            <div>
-          </div>
-          <section class="typography">
+          </section>
+          <section class="typography" id="typography">
              <h2 class="uppercase letter-spacing-2 fs-600">Typography</h2>
-             <p class="typography-subheading letter-spacing-4 fs-500">NextUI uses Open-Sans font family.</p>
+             <p class="typography-subheading letter-spacing-4 fs-400">NextUI uses 
+              <span class="text-red">Open-Sans</span>  font family.</p>
              <div class="font-sizes bg-white letter-spacing-5">
               <p class="fs-800">This is <span class="text-red">.fs-800</span>: <span class="text-red">4.5rem</span></p>
+              <p class="fs-800 text-dark-50">This is .fs-800 gray text</p>
               <p class="fs-700">This is <span class="text-red">.fs-700</span>: <span class="text-red">3.5rem</span></p>
               <p class="fs-600">This is <span class="text-red">.fs-600</span>: <span class="text-red">2rem</span></p>
               <p class="fs-500">This is <span class="text-red">.fs-500</span>: <span class="text-red">1.75rem</span></p>
@@ -193,23 +236,32 @@
              </div>
              <div class="text-utilities">
                 <h3 class="uppercase letter-spacing-2 fs-500">Text Utilities</h3>
-                <div class="text-colors bg-white fs-600 letter-spacing-3">
-                   <p class="text-dark-90">This is 10% lighter than black</p>
-                   <p class="text-dark-80">This is 20% lighter than black</p>
-                   <p class="text-dark-70">This is 30% lighter than black</p>
-                   <p class="text-dark-60">This is 40% lighter than black</p>
-                   <p class="text-dark-50">This is 50% lighter than black</p>
-                   <p class="text-dark-40">This is 60% lighter than black</p>
-                   <p class="text-dark-30">This is 70% lighter than black</p>
-                   <p class="text-dark-20">This is 80% lighter than black</p>
-                   <p class="text-dark-10">This is 90% lighter than black</p>
+                <div class="text-colors bg-white fs-400 letter-spacing-5">
+                   <p class="text-dark-90">This is 10% lighter than black : <span class="text-red">text-dark-90</span></p>
+                   <p class="text-dark-80">This is 20% lighter than black : <span class="text-red">text-dark-80</span></p>
+                   <p class="text-dark-70">This is 30% lighter than black : <span class="text-red">text-dark-70</span></p>
+                   <p class="text-dark-60">This is 40% lighter than black : <span class="text-red">text-dark-60</span></p>
+                   <p class="text-dark-50">This is 50% lighter than black : <span class="text-red">text-dark-50</span></p>
+                   <p class="text-dark-40">This is 60% lighter than black : <span class="text-red">text-dark-40</span></p>
+                   <p class="text-dark-30">This is 70% lighter than black : <span class="text-red">text-dark-30</span></p>
+                   <p class="text-dark-20">This is 80% lighter than black : <span class="text-red">text-dark-20</span></p>
+                   <p class="text-dark-10">This is 90% lighter than black : <span class="text-red">text-dark-10</span></p>
                 </div>
              </div>
-             <p class="text-center center-text bg-white fs-500 letter-spacing-4">This is a center aligned text</p>
+             <p class="text-center center-text bg-white fs-400 letter-spacing-5">This is a center aligned text</p>
+         
           </section>
-          </section>
-            <section class="alert-container">
+          <section class="alert-container" id="alert-container">
                 <h2 class="uppercase letter-spacing-2 fs-600">Alerts</h2>
+                <div class="information alert-information letter-spacing-5">
+                  <p class="">Alerts are feedbacks for an action triggered by the users</p>
+                  <p>Four basic types of alerts are: </p>
+                  <p>Error alert uses .bg-red which is background: <span class="bg-red">hsl(338, 81%, 41%)</span></p>
+                  <p>Warning alert uses .bg-blue which is background: <span class="bg-blue">hsl(198, 74%, 47%)</span></p>
+                  <p>Information alert uses .bg-yellow which is background: <span class="bg-yellow">hsl(46, 100%, 90%)</span></p>
+                  <p>Success alert uses .bg-green which is background: <span class="bg-green">hsl(153, 57%, 82%)</span></p>
+                  <p></p>
+                </div>
                 <p class="alert bg-red">
                     <i class="fas fa-exclamation-circle"></i>
                     <span class="alert-message">This is a error alert</span>
@@ -286,28 +338,37 @@
                     &lt;/p&gt;
                   </code>
                 </pre>
-                    <div class="information alert-information letter-spacing-5">
-                        <p>.bg-red is background: <span class="bg-red">hsl(338, 81%, 41%)</span></p>
-                        <p>.bg-blue is background: <span class="bg-blue">hsl(198, 74%, 47%)</span></p>
-                        <p>.bg-yellow is background: <span class="bg-yellow">hsl(46, 100%, 90%)</span></p>
-                        <p>.bg-green is background: <span class="bg-green">hsl(153, 57%, 82%)</span></p>
-                    </div>
-            </section>
-            <section class="avatars">
-              <h2 class="uppercase letter-spacing-2 fs-600 text-underline">Avatars and badges</h2>            
+          </section>
+            <section class="avatars" id="avatars">
+              <h2 class="uppercase letter-spacing-2 fs-600 text-underline">Avatars</h2>
+              <div class="information avatar-information fs-400 letter-spacing-5">
+                <p> <span class="text-red">Avatars</span> are used to potray people or objects.</p>
+                <p>They have 5 sizes: <span class="text-red">width-5rem, width-6rem, width-7rem, width-8rem, width-9rem</span></p>
+                <p>.width-5rem is <span class="text-red">width: 5rem</span></p>
+                <p>.width-6rem is <span class="text-red">width: 6rem</span></p>
+                <p>.width-7rem is <span class="text-red">width: 7rem</span></p>
+                <p>.width-8rem is <span class="text-red">width: 8rem</span></p>
+                <p>.width-9rem is <span class="text-red">width: 9rem</span></p>
+                <p><span class="text-red">.radius-50</span> is border-radius to 50</p>
+              </div>            
               <div class="avatar avatar-image">
                 <div class="width-5rem">
                     <img class="radius-50" src="./images/avatar.jpg" alt="random_picture">
                 </div>
+                <div class="width-6rem">
+                  <img class="radius-50" src="./images/avatar.jpg" alt="random_picture">
+              </div>
                 <div class="width-7rem">
                     <img class="radius-50" src="./images/avatar.jpg" alt="random_picture">
                 </div>
-                <div class="width-9rem">
+                <div class="width-8rem">
                     <img class="radius-50" src="./images/avatar.jpg" alt="random_picture">
                 </div>
-                <div class="width-10rem p-relative notification notification-color-yellow">
-                    <img class="radius-50" src="./images/avatar.jpg" alt="random_picture">
-                </div>
+                <div class="width-8rem">
+                  <div class="placeholder fs-700 letter-spacing-3">
+                      BK
+                  </div>
+              </div>
             </div>
             <pre>
               <code class="language-html">
@@ -320,35 +381,49 @@
                 &lt;div class="width-9rem"&gt;
                     &lt;img class="radius-50" src="....." alt="random_picture"&gt;
                 &lt;/div&gt;
-                &lt;div class="width-10rem p-relative notification notification-color-yellow"&gt;
+                &lt;div class="width-10rem notification notification-color-yellow"&gt;
                     &lt;img class="radius-50" src="....." alt="random_picture"&gt;
                 &lt;/div&gt;
               </code>
             </pre>
+          </section>
+          <section class="badges" id="badges">
+            <h2 class="badge-heading uppercase letter-spacing-2 fs-600 text-underline">Badges</h2>
+            <div class="information badge-information letter-spacing-5">
+              <p><span class="text-red">Badges</span> indicates a status informations from a component</p>
+              <p>Here <span class="text-red">blue, green, yellow and red</span> badges are used with different components</p>
+              <p><span class="text-red">.notification</span> is used to design the notification content</p>
+              <p><span class="text-red">.notification-color-blue</span> gives background: hsl(198, 74%, 47%) to its pseudo element</p>
+              <p> <span class="text-red">.notification-color-green</span> gives background: hsl(153, 57%, 82%) to its pseudo element</p>
+              <p> <span class="text-red">.notification-color-yellow</span> gives background: hsl(46, 100%, 90%) to its pseudo element</p>
+              <p> <span class="text-red">.placeholder, .placeholder-face and .placeholder-hands</span> are used to design the placeholder</p>
+            </div>
             <div class="avatar avatar-placeholder">
-                <div class="width-5rem">
+                <div class="width-5rem p-relative notification notification-color-red">
                     <div class="placeholder">
                         <div class="placeholder-face"></div>
                         <div class="placeholder-hands"></div>
                     </div>
                 </div>
-                <div class="width-7rem p-relative notification notification-color-green">
+                <div class="width-6rem p-relative notification notification-color-green">
                     <div class="placeholder">
                         <div class="placeholder-face"></div>
                         <div class="placeholder-hands"></div>
                     </div>
                 </div>
-                <div class="width-9rem p-relative notification notification-color-blue">
+                <div class="width-7rem p-relative notification notification-color-blue">
                     <div class="placeholder">
                         <div class="placeholder-face"></div>
                         <div class="placeholder-hands"></div>
                     </div>
                 </div>
-                <div class="width-10rem">
-                    <div class="placeholder fs-700 letter-spacing-3">
-                        BK
-                    </div>
-                </div>
+
+                <div class="width-8rem avatar-image p-relative notification notification-color-yellow">
+                  <img class="radius-50" src="./images/avatar.jpg" alt="random_picture">
+              </div>
+              <div class="width-9rem avatar-image p-relative notification notification-color-red">
+                <img class="radius-50" src="./images/avatar.jpg" alt="random_picture">
+            </div>
             </div>
             <pre>
               <code class="language-html">
@@ -358,13 +433,13 @@
                       &lt;div class="placeholder-hands"&gt;&lt;/div&gt;
                   &lt;/div&gt;
                 &lt;/div&gt;
-                &lt;div class="width-7rem p-relative notification notification-color-green"&gt;
+                &lt;div class="width-7rem notification notification-color-green"&gt;
                   &lt;div class="placeholder"&gt;
                       &lt;div class="placeholder-face"&gt;&lt;/div&gt;
                       &lt;div class="placeholder-hands"&gt;&lt;/div&gt;
                   &lt;/div&gt;
                 &lt;/div&gt;
-                &lt;div class="width-9rem p-relative notification notification-color-blue"&gt;
+                &lt;div class="width-9rem notification notification-color-blue"&gt;
                     &lt;div class="placeholder"&gt;
                       &lt;div class="placeholder-face"&gt;&lt;/div&gt;
                       &lt;div class="placeholder-hands"&gt;&lt;/div&gt;
@@ -391,32 +466,26 @@
            </div>
            <pre>
               <code class="language-html">
-                &lt;div class="p-relative notification notification-color-green"&gt;
+                &lt;div class="notification notification-color-green"&gt;
                   &lt;i class="fas fa-shopping-cart fa-5x"&gt;&lt;/i&gt;
                 &lt;/div&gt;
-                &lt;div class="p-relative notification notification-color-blue"&gt;
+                &lt;div class="notification notification-color-blue"&gt;
                   &lt;i class="fas fa-trash fa-5x"&gt;&lt;/i&gt;
                 &lt;/div&gt;
-                &lt;div class="p-relative notification notification-color-yellow"&gt;
+                &lt;div class="notification notification-color-yellow"&gt;
                   &lt;i class="fas fa-bell fa-5x"&gt;&lt;/i&gt; 
                 &lt;/div&gt;
               </code>
            </pre>
-           <div class="information avatar-information fs-400 letter-spacing-5">
-            <p>.width-5rem is <span class="text-red">width: 5rem</span></p>
-            <p>.width-7rem is <span class="text-red">width: 7rem</span></p>
-            <p>.width-9rem is <span class="text-red">width: 9rem</span></p>
-            <p>.width-10rem is <span class="text-red">width: 10rem</span></p>
-            <p>.notification is <span class="text-red">relative</span> positioned and its <span class="text-red">pseudo elements</span> are <span class="text-red">absolute</span> positioned</p>
-            <p>.notification-color-blue gives background: <span class="bg-blue">hsl(198, 74%, 47%)</span> to its pseudo element</p>
-            <p>.notification-color-green gives background: <span class="bg-green">hsl(153, 57%, 82%)</span> to its pseudo element</p>
-            <p>.notification-color-yellow gives background: <span class="bg-yellow">hsl(46, 100%, 90%)</span> to its pseudo element</p>
-            <p><span class="text-red">.placeholder</span>, <span class="text-red">.placeholder-face</span> and <span class="text-red">.placeholder-hands</span> are used to design the placeholder</p>
-            <p><span class="text-red">.radius-50</span> is border-radius to 50</p>
-          </div>
           </section>
-            <section class="cards-container d-grid">
+          <section class="cards-container d-grid" id="cards-container">
                 <h2 class="uppercase letter-spacing-2 fs-600">Cards</h2>
+                <div class="information card-information letter-spacing-5">
+                  <p><span class="text-red">Cards</span> are content container with wide variety of content</p>
+                  <p>Cards maybe Verticle, Horizontal, text overlayed or text-only</p>
+                  <p>.close-icon is a letter<span class="text-red fs-500"> X</span></p>
+                  <p>.card-overlay is set to <span class="text-red">filter: blur(0.12rem)</span> and <span class="text-red">opacity: 0.2</span> </p>
+          </div>
                 <div class="cards-tab d-flex fs-500 letter-spacing-5">
                     <p class="tab-horizontal bg-white text-center" data-visible="true">Horizontal </p>
                     <p class="tab-verticle bg-white text-center" data-visible="false">Verticle</p>
@@ -599,62 +668,62 @@
                 <div class="code-cards-horizontal" data-visible="true">
                   <pre>
                     <code class="language-html">
-                      &lt;div class="card card-horizontal d-flex"&gt;
-                        &lt;div class="img-container img-container-width"&gt;
+                      &lt;div class="card card-horizontal"&gt;
+                        &lt;div class="img-container"&gt;
                           &lt;picture&gt;
                               &lt;source srcset="./images/tech.webp" type="image/webp"&gt;
                               &lt;source srcset="./images/tech.jpg" type="image/jpg" &gt; 
                               &lt;img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img"&gt;
                           &lt;/picture&gt;
                         &lt;/div&gt;
-                        &lt;div class="card-content card-content-width d-flex f-col"&gt;
-                          &lt;h3 class="card-title fs-600"&gt;iPhone&lt;/h3&gt;
-                          &lt;p class="card-body letter-spacing-5"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
+                        &lt;div class="card-content"&gt;
+                          &lt;h3 class="card-title"&gt;iPhone&lt;/h3&gt;
+                          &lt;p class="card-body"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
                             instruct, inform, and inspire.&lt;/p&gt;
                           &lt;div class="card-footer"&gt;
-                            &lt;p class="card-price fs-400"&gt;Price: &#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt;
+                            &lt;p class="card-price"&gt;Price: &#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt;
                             &lt;i class="fas fa-shopping-cart fa-lg"&gt;&lt;/i&gt;
                             &lt;i class="far fa-heart fa-lg"&gt;&lt;/i&gt;
                             &lt;i class="far fa-share-square fa-lg"&gt;&lt;/i&gt;
                           &lt;/div&gt;
                         &lt;/div&gt;
                       &lt;/div&gt;
-                      &lt;div class="card card-horizontal d-flex"&gt;
-                        &lt;div class="img-container img-container-width"&gt;
-                          &lt;p class="img-badge letter-spacing-3 letter-spacing-3"&gt;BESTSELLER&lt;/p&gt;
+                      &lt;div class="card card-horizontal"&gt;
+                        &lt;div class="img-container"&gt;
+                          &lt;p class="img-badge"&gt;BESTSELLER&lt;/p&gt;
                           &lt;picture&gt;
                               &lt;source srcset="./images/tech.webp" type="image/webp"&gt;
                               &lt;source srcset="./images/tech.jpg" type="image/jpg" &gt; 
                               &lt;img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img"&gt;
                           &lt;/picture&gt;  
                         &lt;/div&gt;                
-                        &lt;div class="card-content card-content-width d-flex f-col"&gt;
-                          &lt;h3 class="card-title fs-600"&gt;iPhone&lt;/h3&gt;
-                          &lt;p class="card-body letter-spacing-5"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
+                        &lt;div class="card-content"&gt;
+                          &lt;h3 class="card-title"&gt;iPhone&lt;/h3&gt;
+                          &lt;p class="card-body"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
                             instruct, inform, and inspire.&lt;/p&gt;
                           &lt;div class="card-footer"&gt;
-                            &lt;p class="card-price fs-400"&gt;Price: &#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt;
+                            &lt;p class="card-price"&gt;Price: &#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt;
                             &lt;i class="fas fa-shopping-cart fa-lg"&gt;&lt;/i&gt;
                             &lt;i class="far fa-heart fa-lg"&gt;&lt;/i&gt;
                             &lt;i class="far fa-share-square fa-lg"&gt;&lt;/i&gt;
                           &lt;/div&gt;
                         &lt;/div&gt;
                       &lt;/div&gt;
-                      &lt;div class="card card-horizontal card-dismiss-horizontal d-flex"&gt;
-                        &lt;div class="img-container img-container-width"&gt;
-                          &lt;p class="img-badge letter-spacing-3"&gt;BESTSELLER&lt;/p&gt;
+                      &lt;div class="card card-horizontal card-dismiss-horizontal"&gt;
+                        &lt;div class="img-container"&gt;
+                          &lt;p class="img-badge"&gt;BESTSELLER&lt;/p&gt;
                           &lt;picture&gt;
                               &lt;source srcset="./images/tech.webp" type="image/webp"&gt;
                               &lt;source srcset="./images/tech.jpg" type="image/jpg" &gt; 
                               &lt;img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img"&gt;
                           &lt;/picture&gt;                  
                         &lt;/div&gt;
-                        &lt;div class="card-content card-content-width d-flex f-col"&gt;
-                          &lt;h3 class="card-title fs-600"&gt;iPhone&lt;/h3&gt;
-                          &lt;p class="card-body letter-spacing-5"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
+                        &lt;div class="card-content"&gt;
+                          &lt;h3 class="card-title"&gt;iPhone&lt;/h3&gt;
+                          &lt;p class="card-body"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
                             instruct, inform, and inspire.&lt;/p&gt;
                           &lt;div class="card-footer"&gt;
-                            &lt;p class="card-price fs-400"&gt;Price: &#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt;
+                            &lt;p class="card-price"&gt;Price: &#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt;
                             &lt;i class="fas fa-shopping-cart fa-lg"&gt;&lt;/i&gt;
                             &lt;i class="far fa-heart fa-lg"&gt;&lt;/i&gt;
                             &lt;i class="far fa-share-square fa-lg"&gt;&lt;/i&gt;
@@ -662,20 +731,20 @@
                         &lt;/div&gt;
                         &lt;p class="close-icon close-icon-horizontal fs-300"&gt;X&lt;/p&gt;
                       &lt;/div&gt;
-                      &lt;div class="card card-horizontal d-flex card-shadow"&gt;
-                        &lt;div class="img-container img-container-width"&gt;
+                      &lt;div class="card card-horizontal card-shadow"&gt;
+                        &lt;div class="img-container"&gt;
                           &lt;picture&gt;
                               &lt;source srcset="./images/tech.webp" type="image/webp"&gt;
                               &lt;source srcset="./images/tech.jpg" type="image/jpg" &gt; 
                               &lt;img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img"&gt;
                           &lt;/picture&gt;                  
                         &lt;/div&gt;
-                        &lt;div class="card-content card-content-width d-flex f-col"&gt;
-                          &lt;h3 class="card-title fs-600"&gt;iPhone&lt;/h3&gt;
-                          &lt;p class="card-body letter-spacing-5"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
+                        &lt;div class="card-content"&gt;
+                          &lt;h3 class="card-title"&gt;iPhone&lt;/h3&gt;
+                          &lt;p class="card-body"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
                             instruct, inform, and inspire.&lt;/p&gt;
                           &lt;div class="card-footer"&gt;
-                            &lt;p class="card-price fs-400"&gt;Price: &#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt;
+                            &lt;p class="card-price"&gt;Price: &#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt;
                             &lt;i class="fas fa-shopping-cart fa-lg"&gt;&lt;/i&gt;
                             &lt;i class="far fa-heart fa-lg"&gt;&lt;/i&gt;
                             &lt;i class="far fa-share-square fa-lg"&gt;&lt;/i&gt;
@@ -683,8 +752,8 @@
                         &lt;/div&gt;
                       &lt;/div&gt;
                     &lt;div class="card card-textonly"&gt;
-                      &lt;h3 class="card-title fs-600"&gt;Text Only Card&lt;/h3&gt;
-                      &lt;p class="card-body letter-spacing-5"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
+                      &lt;h3 class="card-title"&gt;Text Only Card&lt;/h3&gt;
+                      &lt;p class="card-body"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
                         instruct, inform, and inspire.&lt;/p&gt;
                       &lt;button class="btn"&gt;Next&lt;/button&gt;
                     &lt;/div&gt;  
@@ -702,11 +771,11 @@
                               &lt;img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img"&gt;
                           &lt;/picture&gt;                  &lt;/div&gt;
                         &lt;div class="card-content"&gt;
-                          &lt;h3 class="card-title fs-600"&gt;iPhone&lt;/h3&gt;
-                          &lt;p class="card-body letter-spacing-5"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
+                          &lt;h3 class="card-title"&gt;iPhone&lt;/h3&gt;
+                          &lt;p class="card-body"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
                             instruct, inform, and inspire.&lt;/p&gt;
                           &lt;div class="card-footer"&gt;
-                            &lt;p class="card-price fs-400"&gt;Price: &#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt;
+                            &lt;p class="card-price"&gt;Price: &#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt;
                             &lt;i class="fas fa-shopping-cart fa-lg"&gt;&lt;/i&gt;
                             &lt;i class="far fa-heart fa-lg"&gt;&lt;/i&gt;
                             &lt;i class="far fa-share-square fa-lg"&gt;&lt;/i&gt;
@@ -715,7 +784,7 @@
                       &lt;/div&gt;
                       &lt;div class="card card-verticle"&gt;
                         &lt;div class="img-container"&gt;
-                          &lt;p class="img-badge letter-spacing-3"&gt;BESTSELLER&lt;/p&gt;
+                          &lt;p class="img-badge"&gt;BESTSELLER&lt;/p&gt;
                           &lt;picture&gt;
                               &lt;source srcset="./images/tech.webp" type="image/webp"&gt;
                               &lt;source srcset="./images/tech.jpg" type="image/jpg" &gt; 
@@ -723,11 +792,11 @@
                           &lt;/picture&gt;
                         &lt;/div&gt;
                         &lt;div class="card-content"&gt;
-                          &lt;h3 class="card-title fs-600"&gt;iPhone&lt;/h3&gt;
-                          &lt;p class="card-body letter-spacing-5"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
+                          &lt;h3 class="card-title"&gt;iPhone&lt;/h3&gt;
+                          &lt;p class="card-body"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
                             instruct, inform, and inspire.&lt;/p&gt;
                           &lt;div class="card-footer"&gt;
-                            &lt;p class="card-price fs-400"&gt;Price: &#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt;
+                            &lt;p class="card-price"&gt;Price: &#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt;
                             &lt;i class="fas fa-shopping-cart fa-lg"&gt;&lt;/i&gt;
                             &lt;i class="far fa-heart fa-lg"&gt;&lt;/i&gt;
                             &lt;i class="far fa-share-square fa-lg"&gt;&lt;/i&gt;
@@ -737,7 +806,7 @@
                       &lt;div class="card card-verticle card-dismiss-verticle"&gt;
                         &lt;p class="close-icon close-icon-verticle fs-300"&gt;X&lt;/p&gt;
                         &lt;div class="img-container"&gt;
-                          &lt;p class="img-badge letter-spacing-3"&gt;BESTSELLER&lt;/p&gt;
+                          &lt;p class="img-badge"&gt;BESTSELLER&lt;/p&gt;
                           &lt;picture&gt;
                               &lt;source srcset="./images/tech.webp" type="image/webp"&gt;
                               &lt;source srcset="./images/tech.jpg" type="image/jpg" &gt; 
@@ -745,11 +814,11 @@
                             &lt;/picture&gt;
                         &lt;/div&gt;
                         &lt;div class="card-content"&gt;
-                          &lt;h3 class="card-title fs-600"&gt;iPhone&lt;/h3&gt;
-                          &lt;p class="card-body letter-spacing-5"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
+                          &lt;h3 class="card-title"&gt;iPhone&lt;/h3&gt;
+                          &lt;p class="card-body"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
                             instruct, inform, and inspire.&lt;/p&gt;
                           &lt;div class="card-footer"&gt;
-                            &lt;p class="card-price fs-400"&gt;Price: &#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt;
+                            &lt;p class="card-price"&gt;Price: &#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt;
                             &lt;i class="fas fa-shopping-cart fa-lg"&gt;&lt;/i&gt;
                             &lt;i class="far fa-heart fa-lg"&gt;&lt;/i&gt;
                             &lt;i class="far fa-share-square fa-lg"&gt;&lt;/i&gt;
@@ -765,8 +834,8 @@
                                   &lt;img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img"&gt;
                               &lt;/picture&gt;                    &lt;/div&gt;
                           &lt;div class="card-content"&gt;
-                            &lt;h3 class="card-title fs-600"&gt;iPhone&lt;/h3&gt;
-                            &lt;p class="card-body letter-spacing-5"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
+                            &lt;h3 class="card-title"&gt;iPhone&lt;/h3&gt;
+                            &lt;p class="card-body"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
                             instruct, inform, and inspire.&lt;/p&gt;
                             &lt;div class="card-footer"&gt;
                               &lt;p class="card-price"&gt;Price: &#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt;
@@ -779,103 +848,148 @@
                         &lt;p class="overlay-text"&gt;OUT OF STOCK&lt;/p&gt;
                       &lt;/div&gt;
                       &lt;div class="card card-textonly"&gt;
-                        &lt;h3 class="card-title fs-600"&gt;Text Only Card&lt;/h3&gt;
-                        &lt;p class="card-body letter-spacing-5"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
+                        &lt;h3 class="card-title"&gt;Text Only Card&lt;/h3&gt;
+                        &lt;p class="card-body"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
                           instruct, inform, and inspire.&lt;/p&gt;
                           &lt;button class="btn"&gt;Next&lt;/button&gt;
                       &lt;/div&gt;  
                     </code>
                  </pre>
                  </div>
-                <div class="information card-information letter-spacing-5">
-                        <p>.cards-horizontal-autofit is grid-template-columns: <span class="text-red">repeat(auto-fit, minmax(25rem, 1fr))</span></p>
-                        <p>.cards-verticle-autofit is grid-template-columns: <span class="text-red">repeat(auto-fit, minmax(20rem, 1fr))</span></p>
-                        <p>.card background is <span class="text-red">hsl(var(--clr-white) / 0.8)</span> and color is <span class="text-red">hsl(var(--clr-dark) / 0.8)</span></p>
-                        <p>.card-content-width is of <span class="text-red">width: 65%</span></p>
-                        <p>.img-container-width is of <span class="text-red">width: 35%</span></p>
-                        <p>.close-icon is a letter<span class="text-red fs-500"> X</span></p>
-                        <p>.card-overlay is set to <span class="text-red">filter: blur(0.12rem)</span> and <span class="text-red">opacity: 0.2</span> </p>
-                </div>
             </section>
-            <section class="buttons fs-400 d-grid">
+            <section class="buttons fs-400 d-grid" id="buttons">
               <h2 class="uppercase letter-spacing-2 fs-600">Buttons</h2>
-              <div class="primary-buttons">
+              <div class="information button-information letter-spacing-4 fs-400 d-grid">
+                <p><span class="text-red">Buttons allow users to take actions</span></p>
+                <p>Buttons maybe <span class="text-red">primary, disabled, button icons, button links or floating buttons</span></p>
+                <p><span class="text-red">.btn</span> is for a button</p>
+                <p><span class="text-red">.icon</span> acts as a button</p>
+                <p><span class="text-red">.btn-outlined</span> has an outline</p>
+                <p><span class="text-red">.btn-disabled</span> is for a disabled button, where cursor is not allowed</p>
+                <p><span class="text-red">.btn-float</span> could be fixed anywhere on the screen to act as a floating button</p>
+          </div>
+             
                 <button class="btn btn-primary letter-spacing-3 uppercase">Primary</button>
+                <pre>
+                  <code class="language-html">
+                    &lt;button class="btn btn-primary"&gt;
+                      Primary
+                    &lt;/button&gt;
+                  </code>
+                </pre>
                 <button class="btn btn-disabled letter-spacing-3 uppercase" disabled>Disabled</button>
-              </div>
-              <div class="outlined-btn">
+                <pre>
+                  <code class="language-html">
+                    &lt;button class="btn btn-disabled" disabled&gt;
+                      Disabled
+                    &lt;/button&gt;
+                  </code>
+                </pre>
+              
                 <button class="btn btn-outlined uppercase letter-spacing-3">
                   <i class="fas fa-trash"></i>
                   Delete
                 </button>
+                <pre>
+                  <code class="language-html">
+                  &lt;button class="btn btn-outlined"&gt;
+                    &lt;i class="fas fa-trash"&gt;&lt;/i&gt;
+                       Delete
+                  &lt;/button&gt;
+                  </code>
+                </pre>
+
                 <button class="btn btn-outlined uppercase letter-spacing-3">
                   <i class="fas fa-paper-plane"></i>
                   Send
                 </button>
-              </div>
-            <div class="icon-btn">
-              <button class="icon"><i class="fas fa-trash fa-lg"></i></button>
+                <pre>
+                  <code class="language-html">
+                    &lt;button class="btn btn-outlined "&gt;
+                      &lt;i class="fas fa-paper-plane"&gt;&lt;/i&gt;
+                      Send
+                    &lt;/button&gt;
+                  </code>
+                </pre>
+             
               <button class="icon"><i class="fas fa-paper-plane fa-lg"></i></button>
-              <button class="btn btn-float btn-float-cta" aria-expanded="false" aria-controls="float-buttons">
-                <i class="fas fa-plus fa-lg"></i>              
-              </button>
-              <div class="float-buttons" id="float-buttons" data-visible="false">
-                <button class="btn btn-float btn-float-camera"><i class="fas fa-camera fa-lg"></i></button>
-                <button class="btn btn-float btn-float-video"><i class="fas fa-video fa-lg"></i></button>
-                <button class="btn btn-float btn-float-star"><i class="far fa-star fa-lg"></i></button>
+              <pre>
+                <code class="language-html">
+                  &lt;button class="icon"&gt;
+                    &lt;i class="fas fa-trash fa-lg"&gt;&lt;/i&gt;
+                  &lt;/button&gt;
+                </code>
+              </pre>
+
+              <div class="information float-button-info letter-spacing-4 fs-400 ">
+                <p>Onclick on the float button, float buttons show up.</p>
+                <p>These could be placed anywhere on the screen</p>
               </div>
-            </div>
+
+              <div class="d-inline">
+                <button class="btn btn-float btn-float-cta" aria-expanded="false" aria-controls="float-buttons">
+                  <i class="fas fa-plus fa-lg"></i>              
+                </button>
+                <div class="float-buttons" id="float-buttons" data-visible="false">
+                  <button class="btn btn-float btn-float-camera"><i class="fas fa-camera fa-lg"></i></button>
+                  <button class="btn btn-float btn-float-video"><i class="fas fa-video fa-lg"></i></button>
+                  <button class="btn btn-float btn-float-star"><i class="far fa-star fa-lg"></i></button>
+                </div>
+              </div>
+
+
+              <pre>
+                <code class="language-html">
+                  &lt;button class="btn btn-float"&gt;
+                    &lt;i class="fas fa-plus fa-lg"&gt;&lt;/i&gt;              
+                  &lt;/button&gt;
+                  &lt;div class="float-buttons" id="float-buttons" data-visible="false"&gt;
+                    &lt;button class="btn btn-float"&gt;
+                      &lt;i class="fas fa-camera fa-lg"&gt;&lt;/i&gt;
+                    &lt;/button&gt;
+                    &lt;button class="btn btn-float"&gt;
+                      &lt;i class="fas fa-video fa-lg"&gt;&lt;/i&gt;
+                    &lt;/button&gt;
+                    &lt;button class="btn btn-float"&gt;
+                      &lt;i class="far fa-star fa-lg"&gt;&lt;/i&gt;
+                    &lt;/button&gt;
+                  &lt;/div&gt;
+                </code>
+              </pre>
+
               <div class="link-button">
                 <a href="#" class="btn-link fs-600 letter-spacing-5">This is a link</a>
               </div>
               <pre>
                 <code class="language-html">
-                  &lt;button class="btn btn-primary letter-spacing-3 uppercase"&gt;Primary&lt;/button&gt;
-                  &lt;button class="btn btn-disabled letter-spacing-3 uppercase" disabled&gt;Disabled&lt;/button&gt;
-                  &lt;button class="btn btn-outlined uppercase letter-spacing-3"&gt;
-                    &lt;i class="fas fa-trash"&gt;&lt;/i&gt;
-                    Delete
-                  &lt;/button&gt;
-                  &lt;button class="btn btn-outlined uppercase letter-spacing-3"&gt;
-                    &lt;i class="fas fa-paper-plane"&gt;&lt;/i&gt;
-                    Send
-                  &lt;/button&gt;
-                  &lt;button class="icon"&gt;
-                    &lt;i class="fas fa-trash fa-lg"&gt;&lt;/i&gt;
-                  &lt;/button&gt;
-                  &lt;button class="icon"&gt;
-                    &lt;i class="fas fa-paper-plane fa-lg"&gt;&lt;/i&gt;
-                  &lt;/button&gt;
-                  &lt;button class="btn btn-float btn-float-cta" 
-                          aria-expanded="false"
-                          aria-controls="float-buttons"&gt;
-                    &lt;i class="fas fa-plus fa-lg"&gt;&lt;/i&gt;              
-                  &lt;/button&gt;
-                  &lt;div class="float-buttons" id="float-buttons" data-visible="false"&gt;
-                    &lt;button class="btn btn-float btn-float-camera"&gt;
-                      &lt;i class="fas fa-camera fa-lg"&gt;&lt;/i&gt;
-                    &lt;/button&gt;
-                    &lt;button class="btn btn-float btn-float-video"&gt;
-                      &lt;i class="fas fa-video fa-lg"&gt;&lt;/i&gt;
-                    &lt;/button&gt;
-                    &lt;button class="btn btn-float btn-float-star"&gt;
-                      &lt;i class="far fa-star fa-lg"&gt;&lt;/i&gt;
-                    &lt;/button&gt;
-                  &lt;/div&gt;
-                  &lt;a href="#" class="btn-link fs-600 letter-spacing-5"&gt;This is a link&lt;/a&gt;
+                  &lt;a href="#" class="btn-link"&gt;
+                    This is a link
+                  &lt;/a&gt;
                 </code>
               </pre>
-              <div class="information button-information letter-spacing-4 fs-400 d-grid">
-                    <p><span class="text-red">.btn</span> is for a button</p>
-                    <p><span class="text-red">.icon</span> acts as a button</p>
-                    <p><span class="text-red">.btn-outlined</span> has a border</p>
-                    <p><span class="text-red">.btn-disabled</span> is for a disabled button, where cursor is not allowed</p>
-                    <p><span class="text-red">.btn-float</span> could be fixed anywhere on the screen to act as a floating button</p>
-              </div>
             </div>
             </section> 
-            <section class="form">
+
+            <section class="form" id="form">
               <h2 class="uppercase letter-spacing-2 fs-600 text-underline">INPUT</h2>
+
+              <div class="input-container d-grid">
+                <label for="input" class="input letter-spacing-3">Input</label>
+                <input id="input" class="form-input" type="text">
+              </div>
+
+              <pre>
+                <code class="language-html">
+                  &lt;label for="input" class="input"&gt;&lt;/label&gt;
+                  &lt;input id="input" class="form-input" type="text"&gt;
+                </code>
+              </pre>
+
+              <div class="information information-form letter-spacing-4 fs-400">
+                <p>Username, Email, Create Password, Confirm Password and the checkbox are <span class="text-red">required</span>.</p>
+                <p>An error <span class="text-red">"Passwords do not match"</span> drops down if passwords do not match</p>
+              </div>
+
               <form class="form-login fs-400 letter-spacing-3">
                   
                   <label for="username" class="username">Username<span class="text-red">*</span></label>
@@ -899,36 +1013,42 @@
               </form> 
               <pre>
                 <code class="language-html">
-                  &lt;form class="form-login fs-400 letter-spacing-3"&gt;
+                  &lt;form class="form-login"&gt;
                   
-                    &lt;label for="username" class="username"&gt;Username&lt;span class="text-red"&gt;*&lt;/span&gt;&lt;/label&gt;
+                    &lt;!-- Example input username --&gt;
+                    &lt;label for="username" class="username"&gt;Username&lt;/label&gt;
                     &lt;input id="username" class="form-username" type="text" required&gt;
             
-                    &lt;label for="email" class="email"&gt;Email&lt;span class="text-red"&gt;*&lt;/span&gt;&lt;span class="form__tooltip" data-tooltip="Please enter your email address"&gt;&lt;/span&gt;&lt;/label&gt;
+                    &lt;!-- Example input Email --&gt;
+                    &lt;label for="email" class="email"&gt;Email&lt;/span&gt;&lt;/label&gt;
                     &lt;input id="email" class="form-email" type="email" required&gt;
             
-                    &lt;label for="password" class="password"&gt;Create Password&lt;span class="text-red"&gt;*&lt;/span&gt;&lt;span class="form__tooltip" data-tooltip="Minimum 8 characters"&gt;&lt;/span&gt;&lt;/label&gt;
-                    &lt;input id="password" class="form-password" type="password" minlength="8" required&gt;
+                    &lt;!-- Example input Password --&gt;
+                    &lt;label for="password" class="password"&gt;Create Password&lt;/span&gt;&lt;/label&gt;
+                    &lt;input id="password" class="form-password" type="password" minlength=".." required&gt;
                   
+                    &lt;!-- Example input Confirm Password --&gt;
                     &lt;p class="confirm-password"&gt;
-                      &lt;label for="reenter-password" class="reenter-password"&gt;Confirm Password&lt;span class="text-red"&gt;*&lt;/span&gt;&lt;/label&gt;
+                      &lt;label for="reenter-password" class="reenter-password"&gt;Confirm Password&lt;/label&gt;
                       &lt;input id="reenter-password" class="form-reenter-password" type="password" required&gt;  
                     &lt;/p&gt;
                     
+                    &lt;!-- Example checkbox --&gt;
                     &lt;input class="form__checkbox" type="checkbox" id="agreement" name="agreement" required&gt;
-                    &lt;span for="agreement"&gt;I am 13 years of age or older AND agree to the &lt;a href="#"&gt;terms and serivces&lt;/a&gt;.&lt;span class="text-red"&gt;*&lt;/span&gt;&lt;/span&gt;
+                    &lt;span for="agreement"&gt;I am 13 years of age or older AND agree to the &lt;a href="#"&gt;terms and serivces&lt;/a&gt;&lt;/span&gt;
                     
                     &lt;button class="btn btn-signUp uppercase letter-spacing-1"&gt;Sign up&lt;/button&gt;
                   &lt;/form&gt;
                 </code>
               </pre>
-              <div class="information information-form letter-spacing-4 fs-400">
-                <p>Username, Email, Create Password, Confirm Password and the checkbox are <span class="text-red">required</span>.</p>
-                <p>An error <span class="text-red">"Passwords do not match"</span> drops down if passwords do not match</p>
-              </div>
           </section>
-          <section class="list-group">
+          <section class="list-group" id="list-group">
             <h2 class="uppercase letter-spacing-2 fs-600">List</h2>
+            <div class="information list-information letter-spacing-4 fs-400 d-grid">
+              <p>Lists are a continuous group of text or images.</p>
+              <p>You can toggle between <span class="text-red">Normal list</span> and <span class="text-red">Stacked list</span></p>
+              <p><span class="text-red">.stackList-item-more</span> is used on <span class="text-red">Show more</span> to hide and show stacked list items.</p>
+          </div>
             <div class="d-flex">
               <ul role="list" class="list">
                 <li class="list-item list-subtitle-normal" aria-controls="normal-list" data-visible="true">Normal List</li>
@@ -952,30 +1072,26 @@
           </div>
           <pre>
             <code class="language-html">
-              &lt;ul role="list" class="list list-normal" aria-hidden="false" id="normal-list" data-visible="true"&gt;
+              &lt;ul role="list" class="list list-normal"&gt;
                 &lt;li class="list-item list-item-1"&gt;List 1&lt;/li&gt;
                 &lt;li class="list-item list-item-2"&gt;List 2&lt;/li&gt;
                 &lt;li class="list-item list-item-3"&gt;List 3&lt;/li&gt;
-                &lt;li class="list-item list-item-4"&gt;List 4&lt;/li&gt;
-                &lt;li class="list-item list-item-5"&gt;List 5&lt;/li&gt;
               &lt;/ul&gt;
-              &lt;ul role="list" class="list list-stacked" aria-hidden="true" id="stacked-list" data-visible="false"&gt;
+              &lt;ul role="list" class="list list-stacked"&gt;
                 &lt;li class="list-item stackList-item-1"&gt;List 1&lt;/li&gt;
                 &lt;li class="list-item stackList-item-2"&gt;List 2&lt;/li&gt;
+                &lt;li class="list-item stackList-item-more"&gt;Show more&lt;/li&gt;
                 &lt;li class="list-item stackList-item-3"&gt;List 3&lt;/li&gt;
-                &lt;li class="list-item stackList-item-more" data-visible="false"&gt;Show more&lt;/li&gt;
-                &lt;li class="list-item stackList-item-4" data-visible="false"&gt;List 4&lt;/li&gt;
-                &lt;li class="list-item stackList-item-5" data-visible="false"&gt;List 5&lt;/li&gt;
               &lt;/ul&gt;
             </code>
           </pre>
-            <div class="information list-information letter-spacing-4 fs-400 d-grid">
-              <p>You can toggle between <span class="text-red">Normal list</span> and <span class="text-red">Stacked list</span></p>
-              <p><span class="text-red">.stackList-item-more</span> is used on <span class="text-red">Show more</span> to hide and show stacked list items.</p>
-          </div>
           </section>
-          <section class="modal">
+          <section class="modal" id="modal">
             <h2 class="uppercase letter-spacing-2 fs-600">Modal</h2>
+            <div class="information modal-information letter-spacing-4">
+              <p>Modals are separate windows within an application for providing information or requiring confirmation</p>
+              <p><span class="text-red">.modal-fixed</span> is positioned <span class="text-red">fixed</span></p>
+          </div>
             <button class="btn modal-display letter-spacing-2 uppercase fs-400" aria-controls="modal-fixed">Open modal</button>
             <div class="modal-fixed text-center" data-visible="false" id="modal-fixed">
                 <i class="far fa-times-circle fa-4x"></i>
@@ -985,22 +1101,19 @@
             </div>
             <pre>
               <code class="language-html">
-                &lt;button class="btn modal-display letter-spacing-2 uppercase fs-400" aria-controls="modal-fixed"&gt;Open modal&lt;/button&gt;
-                &lt;div class="modal-fixed text-center" data-visible="false" id="modal-fixed"&gt;
-                    &lt;i class="far fa-times-circle fa-4x"&gt;&lt;/i&gt;
-                    &lt;p class="modal-subtitle fs-700 letter-spacing-4"&gt;We've a special offer only for you 🎊🎊&lt;/p&gt;
-                    &lt;h2 class="modal-title fs-700 letter-spacing-3"&gt;FLAT 90% OFF ON ALL ITEMS&lt;/h2&gt;
-                    &lt;button class="btn btn-modal letter-spacing-3 fs-600"&gt;TAKE ME THERE&lt;/button&gt;
+                &lt;div class="modal-fixed"&gt;
+                    &lt;h2 class="modal-title"&gt;MODAL TITLE HERE&lt;/h2&gt;
+                    &lt;p class="modal-subtitle"&gt;MODAL INFORMATION HERE&lt;/p&gt;
                 &lt;/div&gt;
               </code>
             </pre>
-            <div class="information modal-information letter-spacing-4">
-              <p><span class="text-red">.modal-fixed</span> is positioned <span class="text-red">fixed</span> and displayed <span class="text-red">flex-column</span> when visible</p>
-              <p><span class="text-red">Icon X</span> is used to close the Modal.</p>
-          </div>
           </section>
-          <section class="ratings">
+          <section class="ratings" id="ratings">
             <h2 class="uppercase letter-spacing-2 fs-600">Rating</h2>
+            <div class="information rating-information letter-spacing-4">
+              <p>Rating component helps capture the user feedback in form of rating.</p>
+              <p><span class="text-red">psedo elements of label</span> and <span class="text-red">radio inputs</span> are used to create stars for rating</p>
+            </div>
             <div class="rating">
               <input type="radio" name="stars" id="five-stars" value="5" class="five-stars"/>
               <label for="five-stars" class="fs-700"></label>
@@ -1020,27 +1133,29 @@
             <pre>
               <code class="language-html">
                 &lt;input type="radio" name="stars" id="five-stars" value="5" class="five-stars"/&gt;
-                &lt;label for="five-stars" class="fs-700"&gt;&lt;/label&gt;
+                &lt;label for="five-stars"&gt;&lt;/label&gt;
           
                 &lt;input type="radio" name="stars" id="four-stars" value="4" class="four-stars" /&gt;
-                &lt;label for="four-stars" class="fs-700"&gt;&lt;/label&gt;
+                &lt;label for="four-stars"&gt;&lt;/label&gt;
             
                 &lt;input type="radio" name="stars" id="three-stars" value="3" class="three-stars"/&gt;
-                &lt;label for="three-stars" class="fs-700"&gt;&lt;/label&gt;
+                &lt;label for="three-stars"&gt;&lt;/label&gt;
             
                 &lt;input type="radio" name="stars" id="two-stars" value="2" class="two-stars"/&gt;
-                &lt;label for="two-stars" class="fs-700"&gt;&lt;/label&gt;
+                &lt;label for="two-stars"&gt;&lt;/label&gt;
             
                 &lt;input type="radio" name="stars" id="one-stars" value="1" class="one-stars"/&gt;
-                &lt;label for="one-stars" class="fs-700"&gt;&lt;/label&gt;
+                &lt;label for="one-stars"&gt;&lt;/label&gt;
               </code>
             </pre>
-            <div class="information rating-information letter-spacing-4">
-              <p><span class="text-red">psedo elements of label</span> and <span class="text-red">radio inputs</span> are used to create stars for rating</p>
-            </div>
           </section>
-          <section class="toats">
+          <section class="toats" id="toasts">
             <h2 class="uppercase letter-spacing-2 fs-600">TOAST</h2>
+            <div class="information toast-information letter-spacing-5">
+              <p>The toast component provides quick, at-a-glance feedback on the outcome of an action.</p>
+              <p><span class="text-red">.btn-toast</span> is used as a toast button</p>
+              <p><span class="text-red">.toast-notification</span> is positioned <span class="text-red">fixed</span> and visible on the screen for<span class="text-red"> 2 seconds</span></p>
+            </div>
             <button class="btn btn-toast letter-spacing-4 uppercase">Show Toast</button>
             <p class="alert bg-green toast-notification fs-600" data-visible="false">
               <i class="far fa-check-circle"></i>
@@ -1048,72 +1163,19 @@
             </p>
           <pre>
             <code class="language-html">
-              &lt;button class="btn btn-toast letter-spacing-4 uppercase"&gt;Show Toast&lt;/button&gt;
-              &lt;p class="alert bg-green toast-notification fs-600" data-visible="false"&gt;
+              &lt;p class="alert bg-green toast-notification"&gt;
                 &lt;i class="far fa-check-circle"&gt;&lt;/i&gt;
-                &lt;span class="alert-message"&gt;Your order was succesfully placed&lt;/span&gt;
+                &lt;span class="alert-message"&gt;Your toast message&lt;/span&gt;
               &lt;/p&gt;
             </code>
           </pre>
-          <div class="information toast-information letter-spacing-5">
-            <p><span class="text-red">.btn-toast</span> is used as a toast button</p>
-            <p><span class="text-red">.toast-notification</span> is positioned <span class="text-red">fixed</span> and visible on the screen for<span class="text-red"> 2 seconds</span></p>
-          </div>
           </section>
-          <section class="grids">
+          <section class="grids" id="grids">
               <h2 class="uppercase letter-spacing-2 fs-600">Grids</h2>
-              <div class="grid grid-autofit-breaks">
-                <div class="bg-white"></div>
-                <div class="bg-white-90"></div>
-                <div class="bg-white-80"></div>
-                <div class="bg-white-70"></div>
-                <div class="bg-white-60"></div>
-                <div class="bg-white-50"></div>
-                <div class="bg-white-40"></div>
-                <div class="bg-white-30"></div>
-                <div class="bg-white-20"></div>
-                <div class="bg-white-10"></div>
-                <div class="bg-dark-10"></div>
-                <div class="bg-dark-20"></div>
-                <div class="bg-dark-30"></div>
-                <div class="bg-dark-40"></div>
-                <div class="bg-dark-50"></div>
-                <div class="bg-dark-60"></div>
-                <div class="bg-dark-70"></div>
-                <div class="bg-dark-80"></div>
-                <div class="bg-dark-90"></div>
-                <div class="bg-dark"></div>
-            </div>
-            <pre>
-              <code class="language-html">
-                &lt;div class="grid grid-autofit-breaks">
-                  &lt;div class="bg-white"&gt;&lt;/div&gt;
-                  &lt;div class="bg-white-90"&gt;&lt;/div&gt;
-                  &lt;div class="bg-white-80"&gt;&lt;/div&gt;
-                  &lt;div class="bg-white-70"&gt;&lt;/div&gt;
-                  &lt;div class="bg-white-60"&gt;&lt;/div&gt;
-                  &lt;div class="bg-white-50"&gt;&lt;/div&gt;
-                  &lt;div class="bg-white-40"&gt;&lt;/div&gt;
-                  &lt;div class="bg-white-30"&gt;&lt;/div&gt;
-                  &lt;div class="bg-white-20"&gt;&lt;/div&gt;
-                  &lt;div class="bg-white-10"&gt;&lt;/div&gt;
-                  &lt;div class="bg-dark-10"&gt;&lt;/div&gt;
-                  &lt;div class="bg-dark-20"&gt;&lt;/div&gt;
-                  &lt;div class="bg-dark-30"&gt;&lt;/div&gt;
-                  &lt;div class="bg-dark-40"&gt;&lt;/div&gt;
-                  &lt;div class="bg-dark-50"&gt;&lt;/div&gt;
-                  &lt;div class="bg-dark-60"&gt;&lt;/div&gt;
-                  &lt;div class="bg-dark-70"&gt;&lt;/div&gt;
-                  &lt;div class="bg-dark-80"&gt;&lt;/div&gt;
-                  &lt;div class="bg-dark-90"&gt;&lt;/div&gt;
-                  &lt;div class="bg-dark"&gt;&lt;/div&gt;
-              &lt;/div&gt;
-              </code>
-            </pre>
-            <div class="information grid-information letter-spacing-4">
-              <p>The above grid can be <span class="text-red">resized</span></p>
-             <p><span class="text-red">.grid-autofit-breaks</span> is used to autofit grid-items based on <span class="text-red">minmax</span> and <span class="text-red"> breakpoints</span></p>
-            </div>
+              <div class="information grid-information letter-spacing-4">
+                <p>This is a simple grid layout</p>
+                <p>grid-2 for 2 columns, grid-3 for 3 columns, grid-4 for 4 columns, grid-5 for 5 columns and grid-6 for 6 columns</p>
+              </div>
               <div class="grid grid-6">
                 <div class="grid-item bg-dark-50"></div>
                 <div class="grid-item bg-dark-50"></div>
@@ -1184,13 +1246,149 @@
                   &lt;/div&gt;
                 </code>
               </pre>
-              <div class="information grid-information letter-spacing-5">
-                <p><span class="text-red">.grid-6</span> is grid-template-columns: repeat(6, 1fr).</p>
-                <p>Similarly grid-5 is repeat 5, grid-4 is repeat 4 and so on.</p>
+              <div class="information grid-information letter-spacing-4">
+                <p>The above grid can be <span class="text-red">resized</span></p>
+                <p><span class="text-red">.grid-autofit-breaks</span> is used to autofit grid-items based on <span class="text-red">minmax</span> and <span class="text-red"> breakpoints</span></p>
+                <p>This is usually used in grids when number of grid items are unknown</p>
               </div>
+              <div class="grid grid-autofit-breaks grid-size">
+                <div class="bg-white"></div>
+                <div class="bg-white-90"></div>
+                <div class="bg-white-80"></div>
+                <div class="bg-white-70"></div>
+                <div class="bg-white-60"></div>
+                <div class="bg-white-50"></div>
+                <div class="bg-white-40"></div>
+                <div class="bg-white-30"></div>
+                <div class="bg-white-20"></div>
+                <div class="bg-white-10"></div>
+                <div class="bg-dark-10"></div>
+                <div class="bg-dark-20"></div>
+                <div class="bg-dark-30"></div>
+                <div class="bg-dark-40"></div>
+                <div class="bg-dark-50"></div>
+                <div class="bg-dark-60"></div>
+                <div class="bg-dark-70"></div>
+                <div class="bg-dark-80"></div>
+                <div class="bg-dark-90"></div>
+                <div class="bg-dark"></div>
+            </div>
+            <pre>
+              <code class="language-html">
+                &lt;div class="grid grid-autofit-breaks">
+                  &lt;div class="bg-white"&gt;&lt;/div&gt;
+                  &lt;div class="bg-white-90"&gt;&lt;/div&gt;
+                  &lt;div class="bg-white-80"&gt;&lt;/div&gt;
+                  &lt;div class="bg-white-70"&gt;&lt;/div&gt;
+                  &lt;div class="bg-white-60"&gt;&lt;/div&gt;
+                  &lt;div class="bg-white-50"&gt;&lt;/div&gt;
+                  &lt;div class="bg-white-40"&gt;&lt;/div&gt;
+                  &lt;div class="bg-white-30"&gt;&lt;/div&gt;
+                  &lt;div class="bg-white-20"&gt;&lt;/div&gt;
+                  &lt;div class="bg-white-10"&gt;&lt;/div&gt;
+                  &lt;div class="bg-dark-10"&gt;&lt;/div&gt;
+                  &lt;div class="bg-dark-20"&gt;&lt;/div&gt;
+                  &lt;div class="bg-dark-30"&gt;&lt;/div&gt;
+                  &lt;div class="bg-dark-40"&gt;&lt;/div&gt;
+                  &lt;div class="bg-dark-50"&gt;&lt;/div&gt;
+                  &lt;div class="bg-dark-60"&gt;&lt;/div&gt;
+                  &lt;div class="bg-dark-70"&gt;&lt;/div&gt;
+                  &lt;div class="bg-dark-80"&gt;&lt;/div&gt;
+                  &lt;div class="bg-dark-90"&gt;&lt;/div&gt;
+                  &lt;div class="bg-dark"&gt;&lt;/div&gt;
+              &lt;/div&gt;
+              </code>
+            </pre>
+            <div class="information grid-information letter-spacing-4">
+              <p>This grid is used when the number of grid items are known</p>
+              <p><span class="text-red">g-6lg-3md-2sm</span>  shows 6 items in large screens, 3 in medium and 2 in small</p>
+              <p><span class="text-red">g-3lg-2md-1sm</span> shows 3 items in large screens, 2 in medium and 1 in small</p>
+              <p><span class="text-red">g-12xlg-9lg-6md-3sm-1xsm</span> shows 12 items in extra-large screens, 9 in large screens, 6 in medium screens, 3 in small screens and 1 in extra small screens</p>
+            </div>
+            <div class="grid g-12xlg-9lg-6md-3sm-1xsm">
+              <div class="grid-item bg-dark-40"></div>
+              <div class="grid-item bg-dark-40"></div>
+              <div class="grid-item bg-dark-40"></div>
+              <div class="grid-item bg-dark-40"></div>
+              <div class="grid-item bg-dark-40"></div>
+              <div class="grid-item bg-dark-40"></div>
+              <div class="grid-item bg-dark-40"></div>
+              <div class="grid-item bg-dark-40"></div>
+              <div class="grid-item bg-dark-40"></div>
+              <div class="grid-item bg-dark-40"></div>
+              <div class="grid-item bg-dark-40"></div>
+              <div class="grid-item bg-dark-40"></div>
+            </div>
+            <div class="grid g-6lg-3md-2sm">
+              <div class="grid-item bg-dark-50"></div>
+              <div class="grid-item bg-dark-50"></div>
+              <div class="grid-item bg-dark-50"></div>
+              <div class="grid-item bg-dark-50"></div>
+              <div class="grid-item bg-dark-50"></div>
+              <div class="grid-item bg-dark-50"></div>
+            </div>
+            <div class="grid g-4lg-2md-1sm">
+              <div class="grid-item bg-dark-60"></div>
+              <div class="grid-item bg-dark-60"></div>
+              <div class="grid-item bg-dark-60"></div>
+              <div class="grid-item bg-dark-60"></div>
+            </div>
+            <pre>
+              <code class="language-html">
+                &lt;div class="grid g-12xlg-9lg-6md-3sm-1xsm"&gt;
+                  &lt;div class="grid-item bg-dark-40"&gt;&lt;/div&gt;
+                  &lt;div class="grid-item bg-dark-40"&gt;&lt;/div&gt;
+                  &lt;div class="grid-item bg-dark-40"&gt;&lt;/div&gt;
+                  &lt;div class="grid-item bg-dark-40"&gt;&lt;/div&gt;
+                  &lt;div class="grid-item bg-dark-40"&gt;&lt;/div&gt;
+                  &lt;div class="grid-item bg-dark-40"&gt;&lt;/div&gt;
+                  &lt;div class="grid-item bg-dark-40"&gt;&lt;/div&gt;
+                  &lt;div class="grid-item bg-dark-40"&gt;&lt;/div&gt;
+                  &lt;div class="grid-item bg-dark-40"&gt;&lt;/div&gt;
+                  &lt;div class="grid-item bg-dark-40"&gt;&lt;/div&gt;
+                  &lt;div class="grid-item bg-dark-40"&gt;&lt;/div&gt;
+                  &lt;div class="grid-item bg-dark-40"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="grid g-6lg-3md-2sm"&gt;
+                  &lt;div class="grid-item bg-dark-50"&gt;&lt;/div&gt;
+                  &lt;div class="grid-item bg-dark-50"&gt;&lt;/div&gt;
+                  &lt;div class="grid-item bg-dark-50"&gt;&lt;/div&gt;
+                  &lt;div class="grid-item bg-dark-50"&gt;&lt;/div&gt;
+                  &lt;div class="grid-item bg-dark-50"&gt;&lt;/div&gt;
+                  &lt;div class="grid-item bg-dark-50"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="grid g-4lg-2md-1sm"&gt;
+                  &lt;div class="grid-item bg-dark-60"&gt;&lt;/div&gt;
+                  &lt;div class="grid-item bg-dark-60"&gt;&lt;/div&gt;
+                  &lt;div class="grid-item bg-dark-60"&gt;&lt;/div&gt;
+                  &lt;div class="grid-item bg-dark-60"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+              </code>
+            </pre>
+            <div class="information grid-information letter-spacing-4">
+              <p>Stacked grids are used for overlapping contents in the grid</p>
+              <p>All elements under grid-stacked is <span class="text-red">grid-column: 1/-1</span> , <span>grid-row: 1/-1</span></p>
+            </div>
+            <div class="grid grid-stacked grid-card">
+                <div class="primary-color-dark bg-dark"></div>
+                <p class="clr-hsl bg-white letter-spacing-4">GRID CARD</p>
+            </div>
+            <pre>
+              <code class="language-html">
+                &lt;div class="grid grid-stacked"&gt;
+                  &lt;div&gt;CONTENT&lt;/div&gt;
+                  &lt;p&gt;CONTENT&lt;/p&gt;
+                &lt;/div&gt;
+              </code>
+            </pre>
           </section>
-          <section class="input-slider">
+          <section class="input-slider" id="input-slider">
             <h2 class="uppercase letter-spacing-2 fs-600">Slider</h2>
+            <div class="information toast-information letter-spacing-5">
+              <p>Sliders allow users to make selections from a range of values.</p>
+              <p><span class="text-red">.slider</span> is used to design the range slider</p>
+              <p><span class="text-red">.percentage</span> is used to get the <span class="text-red">value</span> of the slider between which is anywhere between<span class="text-red"> min </span>and<span class="text-red"> max</span></p>
+            </div>
             <div class="slider-container">
               <input type="range" class="slider" min="0" max="100" step="1">
             </div>
@@ -1200,20 +1398,15 @@
                 &lt;div class="slider-container"&gt;
                   &lt;input type="range" class="slider" min="0" max="100" step="1"&gt;
                 &lt;/div&gt;
-                &lt;p class="percentage fs-500"&gt;&lt;/p&gt;
               </code>
             </pre>
-            <div class="information toast-information letter-spacing-5">
-              <p><span class="text-red">.slider</span> is used to design the range slider</p>
-              <p><span class="text-red">.percentage</span> is used to get the <span class="text-red">value</span> of the slider between which is anywhere between<span class="text-red"> min </span>and<span class="text-red"> max</span></p>
-            </div>
           </section>
-          <section class="images">
+          <section class="images" id="images">
             <h2 class="uppercase letter-spacing-2 fs-600">Responsive Images</h2>
             <div class="responsive-round-picture">
-              <div class="image_wrapper">
+              <div class="image_wrapper d-flex">
                 <picture>
-                  <source media="(min-width: 960px)"
+                  <source media="(min-width: 60em)"
                           srcset="./images/large.webp 534w,
                                   ./images/large.jpg 534w,
                                   ./images/large@2x.webp 1068w,
@@ -1221,7 +1414,7 @@
                                   ./images/large@3x.webp 1602w,
                                   ./images/large@3x.jpg 1602w"
                           >
-                  <source media="(min-width: 600px)"
+                  <source media="(min-width: 40em)"
                           srcset="./images/medium.webp 474w,
                                   ./images/medium.jpg 474w,
                                   ./images/medium@2x.webp 984w,
@@ -1237,13 +1430,13 @@
                   <img class="responsive-round-image" src="./images/small.jpg" loading="lazy" alt="responsive-image">
                 </picture>
               </div>
-              <div class="information picture-round-information letter-spacing-5">
-                <p>img is given <span class="text-red">border-radius: 50%</span> and <span class="text-red">object-fit: cover</span></p>
+              <div class="information picture-information">
+                <p>For all images used <span class="text-red">max-width: 100%</span> so that its width is  always less that or equal to 100% even for varying screen sizes</p>
               </div>
             </div>
             <div class="responsive-pictures">
                 <picture>
-                  <source media="(min-width: 960px)"
+                  <source media="(min-width: 60em)"
                           srcset="./images/large.webp 534w,
                                   ./images/large.jpg 534w,
                                   ./images/large@2x.webp 1068w,
@@ -1251,7 +1444,7 @@
                                   ./images/large@3x.webp 1602w,
                                   ./images/large@3x.jpg 1602w"
                           >
-                  <source media="(min-width: 600px)"
+                  <source media="(min-width: 40em)"
                           srcset="./images/medium.webp 474w,
                                   ./images/medium.jpg 474w,
                                   ./images/medium@2x.webp 984w,
@@ -1267,7 +1460,8 @@
                   <img class="responsive-image" src="./images/small.jpg" loading="lazy" alt="responsive-image">
                 </picture>
                 <div class="information picture-information letter-spacing-5">
-                  <p>img is given <span class="text-red">max-width: 100%</span> so that its width is  always less that or equal to 100% even for varying screen sizes</p>
+                  <p>For higher resolution screens and larger displays you'll need images with larger dimensions.</p>
+                  <p>devicePixelRatio defines the relationship between device pixels and CSS pixels for a particular device. A 192 ppi device has a devicePixelRatio of 2 (192 ppi/96 ppi = 2) because "2 of its display pixels are the size of 1 CSS pixel"</p>
                   <p>While using <span class="text-red"> width descriptor(w) </span>, the browser calculates the <span class="text-red">density pixel ratio (dpr)</span> for each image size and applies the image that best fits according to the image size and device resolution</p>
                   <p>fallbacks for <span class="text-red">jpegs</span> are also available if browser doesnt support <span class="text-red"> webp</span></p>
                   <p>You can go to the network tab and check disable cache to see the different images being downloaded for different screen widths</p>
@@ -1275,37 +1469,107 @@
             </div>
             <pre>
               <code class="language-html">
+
                 &lt;div class="image_wrapper"&gt;
                   &lt;picture&gt;
-                    &lt;source media="(min-width: 960px)"
-                            srcset="./images/large.webp 534w,
-                                    ./images/large.jpg 534w,
-                                    ./images/large@2x.webp 1068w,
-                                    ./images/large@2x.jpg 1068w,
-                                    ./images/large@3x.webp 1602w,
-                                    ./images/large@3x.jpg 1602w"
+                    &lt;source media="(min-width: XXem)"
+                            srcset="large.webp XXXw,
+                                    large.jpg XXXw,
+                                    large@2x.webp XXXXw,
+                                    large@2x.jpg XXXXw,
+                                    large@3x.webp XXXXw,
+                                    large@3x.jpg XXXXw"
                             &gt;
-                    &lt;source media="(min-width: 600px)"
-                            srcset="./images/medium.webp 474w,
-                                    ./images/medium.jpg 474w,
-                                    ./images/medium@2x.webp 984w,
-                                    ./images/medium@2x.jpg 984w,
-                                    ./images/medium@3x.webp 1422w,
-                                    ./images/medium@3x.jpg 1422w"&gt;
-                    &lt;source srcset="./images/small.webp 273w
-                                    ./images/small.jpg 273w,
-                                    ./images/small@2x.webp 546w,
-                                    ./images/small@2x.jpg 546w,
-                                    ./images/small@3x.webp 819w,
-                                    ./images/small@3x.jpg 819w"&gt;
-                    &lt;img class="responsive-round-image" src="./images/small.jpg" loading="lazy" alt="responsive-image"&gt;
+                    &lt;source media="(min-width: XXem)"
+                            srcset="medium.webp XXXw,
+                                    medium.jpg XXXw,
+                                    medium@2x.webp XXXw,
+                                    medium@2x.jpg XXXw,
+                                    medium@3x.webp XXXXw,
+                                    medium@3x.jpg XXXXw"&gt;
+                    &lt;source srcset="small.webp XXXw
+                                    small.jpg XXXw,
+                                    small@2x.webp XXXw,
+                                    small@2x.jpg XXXw,
+                                    small@3x.webp XXXw,
+                                    small@3x.jpg XXXw"&gt;
+                    &lt;img class="responsive-image" src="......"  alt="responsive-image"&gt;
                   &lt;/picture&gt;
                 &lt;/div&gt;
               </code>
             </pre>
           </section>
-          <section class="submenus">
-            <h2 class="submenu-heading uppercase letter-spacing-2 fs-600">Navigation and Submenus</h2>
+          <section class="navigation" id="navigation">
+            <h2 class="navigation-heading uppercase letter-spacing-2 fs-600">Navigation</h2>
+            <div class="information desktop-nav-info letter-spacing-4">
+              <p>This is a navigation for large screen sizes</p>
+              <p><span class="text-red">.margin-l-auto</span> is a utility for margin-left: auto</p>
+            </div>
+            <div class="nav navigation-area d-grid grid-3">
+              <h3 class="uppercase letter-spacing-4">NextCart</h3>
+              <div class="input-search d-flex">
+                <label for="search" class="sr-only" >Search</label>
+                <input type="text" id="search" class="search" placeholder="Search">
+                <i class="fas fa-search fa-lg"></i>
+              </div>
+                <div class="margin-l-auto d-flex side-navigation">
+                  <a href="#">Login</a>
+                  <a href="#">Cart</a>
+                </div>
+            </div>
+            <pre>
+              <code class="language-html">
+                &lt;div class="navigation-area d-grid grid-3"&gt;
+                  &lt;h3&gt;TITLE&lt;/h3&gt;
+                  &lt;div class="input-search"&gt;
+                    &lt;label for="..."&gt;Search&lt;/label&gt;
+                    &lt;input type="..." id="..." class="..." placeholder="..."&gt;
+                    &lt;i class="fas fa-search fa-lg"&gt;&lt;/i&gt;
+                  &lt;/div&gt;
+                    &lt;div class="margin-l-auto side-navigation"&gt;
+                      &lt;a href="#"&gt;LINK 1&lt;/a&gt;
+                      &lt;a href="#"&gt;LINK 2&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;   
+              </code>
+            </pre>
+            <div class="information desktop-nav-info letter-spacing-4">
+              <p>This is a navigation for small screen sizes</p>
+              <p>Hamburger menu is used in the NEXTUI component library</p>
+            </div>
+            <div class="nav navigation-area d-grid grid-3">
+              <h3 class="uppercase letter-spacing-4">NextCart</h3>
+              <div class="input-search d-flex">
+                <label for="search" class="sr-only" >Search</label>
+                <input type="text" id="search" class="search" placeholder="Search">
+                <i class="fas fa-search fa-lg"></i>
+              </div>
+                <div class="margin-l-auto side-navigation">
+                  <button class="demo-nav-toggle" disabled></button>
+                </div>
+            </div>
+            <pre>
+              <code class="language-html">
+                &lt;div class="navigation-area d-grid grid-3"&gt;
+                  &lt;h3&gt;TITLE&lt;/h3&gt;
+                  &lt;div class="input-search"&gt;
+                    &lt;label for="..." &gt;Search&lt;/label&gt;
+                    &lt;input type="..." id="..." class="..." placeholder="..."&gt;
+                    &lt;i class="fas fa-search fa-lg"&gt;&lt;/i&gt;
+                  &lt;/div&gt;
+                    &lt;div class="margin-l-auto side-navigation"&gt;
+                      &lt;button class="mobile-nav-toggle" &gt;&lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+              </code>
+            </pre>
+            
+          </section>
+          <section class="submenus" id="submenus">
+            <h2 class="submenu-heading uppercase letter-spacing-2 fs-600">Submenus</h2>
+                <div class="information submenu-information letter-spacing-5">
+                  <p>On hover to Profile the <span class="text-red">submenu</span> drops down</p>
+                </div>
                 <div class="navigation-area d-grid grid-3">
                   <h3 class="uppercase letter-spacing-4">Google</h3>
                   <div class="input-search d-flex">
@@ -1324,32 +1588,25 @@
                       </ul>
                     </div>
                 </div>
-              <div class="information submenu-information letter-spacing-5">
-                <p>On hover to Profile the <span class="text-red">submenu</span> drops down</p>
-              </div>
-              <pre>
-                <code class="language-html">
-                  &lt;div class="navigation-area d-grid grid-3"&gt;
-                    &lt;h3 class="uppercase letter-spacing-4"&gt;Google&lt;/h3&gt;
-                    &lt;div class="input-search d-flex"&gt;
-                      &lt;label for="search" class="sr-only" &gt;Search&lt;/label&gt;
-                      &lt;input type="text" id="search" class="search" placeholder="Search"&gt;
-                      &lt;i class="fas fa-search fa-lg"&gt;&lt;/i&gt;
-                    &lt;/div&gt;
-                      &lt;div class="submenu d-flex p-relative"&gt;
-                        &lt;div class="submenu-drop-btn d-flex"&gt;Profile
-                          &lt;i class="fa fa-caret-down"&gt;&lt;/i&gt;
-                        &lt;/div&gt;
-                        &lt;ul class="dropdown-content p-absolute" role="list"&gt;
-                          &lt;li class="submenu-item"&gt;&lt;a href="#"&gt;Cart&lt;i class="fas fa-shopping-cart fa-sm"&gt;&lt;/i&gt;
-                          &lt;/a&gt;&lt;/li&gt;
-                          &lt;li class="submenu-item"&gt;&lt;a href="#"&gt;Logout&lt;/a&gt;&lt;/li&gt;
-                        &lt;/ul&gt;
+                <pre>
+                  <code class="language-html">
+                    &lt;div class="navigation-area"&gt;
+                      &lt;h3&gt;HEADING&lt;/h3&gt;
+                      &lt;div class="input-search"&gt;
+                        INPUT AND SEARCH
                       &lt;/div&gt;
-                  &lt;/div&gt;
-                </code>
-              </pre>
-
+                      &lt;!-- Submenu --&gt;
+                        &lt;div class="submenu"&gt;
+                          &lt;div class="submenu-drop-btn"&gt;SUBMENU TITLE
+                          &lt;/div&gt;
+                          &lt;ul class="dropdown-content" role="list"&gt;
+                            &lt;li class="submenu-item"&gt;SUBMENU ITEM 1&lt;/li&gt;
+                            &lt;li class="submenu-item"&gt;SUBMENU ITEM 2&lt;/li&gt;
+                          &lt;/ul&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                  </code>
+                </pre>
           </section>
           <footer>
       

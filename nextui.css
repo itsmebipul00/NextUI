@@ -1,0 +1,21 @@
+@import "https://fonts.gstatic.com";
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css";
+
+@import "./default.css";
+@import "./docs.css";
+@import "./Components/Navigation/Navigation.css";
+@import "./Components/Aside/Aside.css";
+@import "./Components/Avatars/Avatars.css";
+@import "./Components/Alerts/Alerts.css";
+@import "./Components/Cards/Cards.css";
+@import "./Components/Buttons/Buttons.css";
+@import "./Components/Form/Form.css";
+@import "./Components/Lists/Lists.css";
+@import "./Components/Modal/Modal.css";
+@import "./Components/Ratings/Ratings.css";
+@import "./Components/Toasts/Toasts.css";
+@import "./Components/Grid/Grid.css";
+@import "./Components/Slider/Slider.css";
+@import "./Components/ResposiveImages/ResponsiveImages.css";
+@import "./Components/Submenus/Submenus.css";

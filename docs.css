@@ -1,29 +1,11 @@
-@import "./default.css";
-@import "./Components/Navigation/Navigation.css";
-@import "./Components/Aside/Aside.css";
-@import "./Components/Avatars/Avatars.css";
-@import "./Components/Alerts/Alerts.css";
-@import "./Components/Cards/Cards.css";
-@import "./Components/Buttons/Buttons.css";
-@import "./Components/Form/Form.css";
-@import "./Components/Lists/Lists.css";
-@import "./Components/Modal/Modal.css";
-@import "./Components/Ratings/Ratings.css";
-@import "./Components/Toasts/Toasts.css";
-@import "./Components/Grid/Grid.css";
-@import "./Components/Slider/Slider.css";
-@import "./Components/ResposiveImages/ResponsiveImages.css";
-@import "./Components/Submenus/Submenus.css";
-
-/* HEADER STYLES */
+/* * HEADER STYLES  */
 
 header {
-  background: hsl(var(--clr-light));
+  background: hsl(var(--clr-white));
 }
 
 .header-container {
-  position: relative;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 2rem 2rem;
 }
 
 .header-title {
@@ -33,14 +15,19 @@ header {
 
 @media (min-width: 60em) {
   header {
-    background: hsl(var(--clr-white));
+    height: 15vh;
+  }
+}
+
+@media (max-width: 60em) {
+  .header-title {
+    align-self: center;
   }
 }
 
 .container {
   padding-inline: 5rem;
   margin-inline: auto;
-  max-width: 80rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,7 +51,7 @@ section {
   background: hsl(var(--clr-white) / 0.9);
   color: hsl(var(--clr-dark) / 0.9);
   padding: 1rem;
-  margin: 1rem 0 2rem 0;
+  margin: 1rem 0;
   width: 80%;
 }
 
@@ -78,6 +65,10 @@ section {
 
 .alert-information > * {
   margin: 1rem;
+}
+
+.usage-heading {
+  margin-top: 2rem;
 }
 
 .code {
@@ -129,11 +120,6 @@ code {
   margin-bottom: 1rem;
 }
 
-.primary-color > * {
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
-}
-
 .clr-hsl {
   align-self: flex-end;
   border: 3px solid hsl(var(--clr-dark));
@@ -164,10 +150,6 @@ code {
   width: 80%;
 }
 
-.typography > p {
-  margin-bottom: 1rem;
-}
-
 .font-sizes > p {
   margin-bottom: 1rem;
 }
@@ -187,7 +169,7 @@ code {
 }
 
 .text-colors {
-  padding: 3rem;
+  padding: 2rem;
   width: 80%;
 }
 
@@ -212,4 +194,8 @@ code {
 
 footer {
   padding: 2rem;
+}
+
+.usage-information {
+  margin-bottom: 1rem;
 }

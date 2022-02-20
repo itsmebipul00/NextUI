@@ -1,3 +1,10 @@
+.input-container {
+  padding: 2rem;
+  background: hsl(var(--clr-white) / 0.7);
+  width: 80%;
+  margin-bottom: 1rem;
+}
+
 .form-login {
   background: hsl(var(--clr-white) / 0.7);
   padding: 2rem;

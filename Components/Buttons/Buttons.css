@@ -2,12 +2,17 @@ button {
   margin-right: 1rem;
 }
 
+.button-information {
+  margin-top: 0;
+}
+
 .btn {
   background: hsl(var(--clr-dark));
   color: hsl(var(--clr-white));
   padding: 1.5rem 4rem;
   transform: scale(1);
   font-weight: bold;
+  width: fit-content;
   border: 0;
 }
 
@@ -29,11 +34,8 @@ button {
   color: hsl(var(--clr-white));
 }
 
-.btn-primary {
-  border: 3px solid hsl(var(--clr-dark));
-}
-
 .icon {
+  width: fit-content;
   border: 3px solid hsl(var(--clr-dark));
   background: hsl(var(--clr-white));
   color: hsl(var(--clr-dark));
@@ -110,4 +112,8 @@ button {
 .outlined-btn,
 .icon-btn {
   margin-bottom: 1rem;
+}
+
+.float-button-info {
+  margin-top: 0;
 }
