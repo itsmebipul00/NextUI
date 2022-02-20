@@ -33,7 +33,6 @@
 @media (max-width: 60em) {
   .mobile-nav-toggle {
     display: block;
-    /* position: absolute; */
     z-index: 2000;
     background: hsl(var(--clr-dark));
     background-image: url(../../images/icon-hamburger.svg);
