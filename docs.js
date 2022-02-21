@@ -18,13 +18,13 @@ navToggle.addEventListener("click", () => {
 })
 
 // ALERTS
-const alertError = document.querySelector(".bg-error")
+const alertError = document.querySelector(".error-alert")
 const closeError = document.querySelector(".closeError")
-const alertWarning = document.querySelector(".bg-warning")
+const alertWarning = document.querySelector(".warning-alert")
 const closeWarning = document.querySelector(".closeWarning")
-const alertInfo = document.querySelector(".bg-info")
+const alertInfo = document.querySelector(".info-alert")
 const closeInfo = document.querySelector(".closeInfo")
-const alertSuccess = document.querySelector(".bg-success")
+const alertSuccess = document.querySelector(".success-alert")
 const closeSuccess = document.querySelector(".closeSuccess")
 
 const hideError = () => {
@@ -230,7 +230,6 @@ const enableDarkMode = () => {
 
 const disableDarkMode = () => {
   document.documentElement.classList.remove("dark-mode")
-
   document.querySelectorAll(".original-theme").forEach((theme) => {
     theme.classList.remove("theme-original")
   })

@@ -154,7 +154,6 @@ img {
 .avatar-information {
   margin-top: 1rem;
   width: 80%;
-  background: hsl(var(--clr-white) / 0.7);
   padding: 2rem;
 }
 

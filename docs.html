@@ -228,7 +228,7 @@
                   <p>Success alert uses .bg-green which is background: <span class="bg-green">hsl(153, 57%, 82%)</span></p>
                   <p></p>
                 </div>
-                <p class="alert bg-red original-theme">
+                <p class="alert error-alert bg-red original-theme">
                     <i class="fas fa-exclamation-circle"></i>
                     <span class="alert-message">This is a error alert</span>
                     <i class="closeError fas fa-times"></i>
@@ -237,7 +237,7 @@
                     <i class="fas fa-exclamation-circle"></i>
                     <span class="alert-message">This is a error alert</span>
                 </p>
-                <p class="alert bg-yellow original-theme">
+                <p class="alert warning-alert bg-yellow original-theme">
                     <i class="fas fa-exclamation"></i>
                     <span class="alert-message">This is a warning alert</span>
                     <i class="closeWarning fas fa-times"></i>
@@ -246,7 +246,7 @@
                     <i class="fas fa-exclamation"></i>
                     <span class="alert-message">This is a warning alert</span>
                 </p>
-                <p class="alert bg-blue original-theme">
+                <p class="alert info-alert bg-blue original-theme">
                     <i class="fas fa-info"></i>
                     <span class="alert-message">This is a Info alert</span>
                     <i class="closeInfo fas fa-times"></i>
@@ -255,7 +255,7 @@
                     <i class="fas fa-info"></i>
                     <span class="alert-message">This is a Info alert</span>
                 </p>
-                <p class="alert bg-green original-theme">
+                <p class="alert success-alert bg-green original-theme">
                     <i class="far fa-check-circle"></i>
                     <span class="alert-message">This is a Success alert</span>
                     <i class="closeSuccess fas fa-times"></i>
@@ -267,39 +267,31 @@
                 <pre>
                   <code class="language-html">
                     &lt;p class="alert bg-red"&gt;
-                        &lt;i class="fas fa-exclamation-circle"&gt;&lt;/i&gt;
                         &lt;span class="alert-message"&gt;This is a error alert&lt;/span&gt;
                         &lt;i class="closeError fas fa-times"&gt;&lt;/i&gt;
                     &lt;/p&gt;
                     &lt;p class="alert bg-red"&gt;
-                        &lt;i class="fas fa-exclamation-circle"&gt;&lt;/i&gt;
                         &lt;span class="alert-message"&gt;This is a error alert&lt;/span&gt;
                     &lt;/p&gt;
                     &lt;p class="alert bg-yellow"&gt;
-                        &lt;i class="fas fa-exclamation"&gt;&lt;/i&gt;
                         &lt;span class="alert-message"&gt;This is a warning alert&lt;/span&gt;
                         &lt;i class="closeWarning fas fa-times"&gt;&lt;/i&gt;
                     &lt;/p&gt;
                     &lt;p class="alert bg-yellow"&gt;
-                        &lt;i class="fas fa-exclamation"&gt;&lt;/i&gt;
                         &lt;span class="alert-message"&gt;This is a warning alert&lt;/span&gt;
                     &lt;/p&gt;
                     &lt;p class="alert bg-blue"&gt;
-                        &lt;i class="fas fa-info"&gt;&lt;/i&gt;
                         &lt;span class="alert-message"&gt;This is a Info alert&lt;/span&gt;
                         &lt;i class="closeInfo fas fa-times"&gt;&lt;/i&gt;
                     &lt;/p&gt;
                     &lt;p class="alert bg-blue"&gt;
-                        &lt;i class="fas fa-info"&gt;&lt;/i&gt;
                         &lt;span class="alert-message"&gt;This is a Info alert&lt;/span&gt;
                     &lt;/p&gt;
                     &lt;p class="alert bg-green"&gt;
-                        &lt;i class="far fa-check-circle"&gt;&lt;/i&gt;
                         &lt;span class="alert-message"&gt;This is a Success alert&lt;/span&gt;
                         &lt;i class="closeSuccess fas fa-times"&gt;&lt;/i&gt;
                     &lt;/p&gt;
                     &lt;p class="alert bg-green"&gt;
-                        &lt;i class="far fa-check-circle"&gt;&lt;/i&gt;
                         &lt;span class="alert-message"&gt;This is a Success alert&lt;/span&gt;
                     &lt;/p&gt;
                   </code>
@@ -412,7 +404,7 @@
                   &lt;/div&gt;
                 &lt;/div&gt;
               &lt;div class="width-10rem"&gt;
-                  &lt;div class="placeholder fs-700 letter-spacing-3"&gt;
+                  &lt;div class="placeholder"&gt;
                       BK
                   &lt;/div&gt;
               &lt;/div&gt;
@@ -433,13 +425,13 @@
            <pre>
               <code class="language-html">
                 &lt;div class="notification notification-color-green"&gt;
-                  &lt;i class="fas fa-shopping-cart fa-5x"&gt;&lt;/i&gt;
+                  ICON
                 &lt;/div&gt;
                 &lt;div class="notification notification-color-blue"&gt;
-                  &lt;i class="fas fa-trash fa-5x"&gt;&lt;/i&gt;
+                  ICON
                 &lt;/div&gt;
                 &lt;div class="notification notification-color-yellow"&gt;
-                  &lt;i class="fas fa-bell fa-5x"&gt;&lt;/i&gt; 
+                  ICON 
                 &lt;/div&gt;
               </code>
            </pre>
@@ -462,7 +454,7 @@
                           <picture>
                               <source srcset="./images/tech.webp" type="image/webp">
                               <source srcset="./images/tech.jpg" type="image/jpg" > 
-                              <img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img">
+                              <img src="./images/tech.jpg" alt="..." type="image/jpeg" loading="lazy" class="card-img">
                           </picture>
                         </div>
                         <div class="card-content card-content-width d-flex f-col">
@@ -637,41 +629,33 @@
                       &lt;div class="card card-horizontal"&gt;
                         &lt;div class="img-container"&gt;
                           &lt;picture&gt;
-                              &lt;source srcset="./images/tech.webp" type="image/webp"&gt;
-                              &lt;source srcset="./images/tech.jpg" type="image/jpg" &gt; 
-                              &lt;img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img"&gt;
+                              &lt;source srcset="...webp" type="image/webp"&gt;
+                              &lt;source srcset="...jpg" type="image/jpg" &gt; 
+                              &lt;img src="...jpg" alt="..." type="image/jpeg" loading="lazy" class="card-img"&gt;
                           &lt;/picture&gt;
                         &lt;/div&gt;
                         &lt;div class="card-content"&gt;
-                          &lt;h3 class="card-title"&gt;iPhone&lt;/h3&gt;
-                          &lt;p class="card-body"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
-                            instruct, inform, and inspire.&lt;/p&gt;
+                          &lt;h3 class="card-title"&gt;CARD TITLE&lt;/h3&gt;
+                          &lt;p class="card-body"&gt;CARD BODY&lt;/p&gt;
                           &lt;div class="card-footer"&gt;
-                            &lt;p class="card-price"&gt;Price: &#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt;
-                            &lt;i class="fas fa-shopping-cart fa-lg"&gt;&lt;/i&gt;
-                            &lt;i class="far fa-heart fa-lg"&gt;&lt;/i&gt;
-                            &lt;i class="far fa-share-square fa-lg"&gt;&lt;/i&gt;
+                            CARD FOOTER
                           &lt;/div&gt;
                         &lt;/div&gt;
                       &lt;/div&gt;
                       &lt;div class="card card-horizontal"&gt;
                         &lt;div class="img-container"&gt;
-                          &lt;p class="img-badge"&gt;BESTSELLER&lt;/p&gt;
+                          &lt;p class="img-badge"&gt;BADGE&lt;/p&gt;
                           &lt;picture&gt;
-                              &lt;source srcset="./images/tech.webp" type="image/webp"&gt;
-                              &lt;source srcset="./images/tech.jpg" type="image/jpg" &gt; 
-                              &lt;img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img"&gt;
+                              &lt;source srcset="...webp" type="image/webp"&gt;
+                              &lt;source srcset="...jpg" type="image/jpg" &gt; 
+                              &lt;img src="...jpg" alt="..." type="image/jpeg" loading="lazy" class="card-img"&gt;
                           &lt;/picture&gt;  
                         &lt;/div&gt;                
                         &lt;div class="card-content"&gt;
-                          &lt;h3 class="card-title"&gt;iPhone&lt;/h3&gt;
-                          &lt;p class="card-body"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
-                            instruct, inform, and inspire.&lt;/p&gt;
+                          &lt;h3 class="card-title"&gt;TITLE&lt;/h3&gt;
+                          &lt;p class="card-body"&gt;CARD BODY&lt;/p&gt;
                           &lt;div class="card-footer"&gt;
-                            &lt;p class="card-price"&gt;Price: &#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt;
-                            &lt;i class="fas fa-shopping-cart fa-lg"&gt;&lt;/i&gt;
-                            &lt;i class="far fa-heart fa-lg"&gt;&lt;/i&gt;
-                            &lt;i class="far fa-share-square fa-lg"&gt;&lt;/i&gt;
+                              CARD FOOTER
                           &lt;/div&gt;
                         &lt;/div&gt;
                       &lt;/div&gt;
@@ -679,48 +663,39 @@
                         &lt;div class="img-container"&gt;
                           &lt;p class="img-badge"&gt;BESTSELLER&lt;/p&gt;
                           &lt;picture&gt;
-                              &lt;source srcset="./images/tech.webp" type="image/webp"&gt;
-                              &lt;source srcset="./images/tech.jpg" type="image/jpg" &gt; 
-                              &lt;img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img"&gt;
+                              &lt;source srcset="..." type="image/webp"&gt;
+                              &lt;source srcset="..." type="image/jpg" &gt; 
+                              &lt;img src="..." alt="..." type="image/jpeg" loading="lazy" class="card-img"&gt;
                           &lt;/picture&gt;                  
                         &lt;/div&gt;
                         &lt;div class="card-content"&gt;
-                          &lt;h3 class="card-title"&gt;iPhone&lt;/h3&gt;
-                          &lt;p class="card-body"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
-                            instruct, inform, and inspire.&lt;/p&gt;
+                          &lt;h3 class="card-title"&gt;CARD TITLE&lt;/h3&gt;
+                          &lt;p class="card-body"&gt;CARD BODY&lt;/p&gt;
                           &lt;div class="card-footer"&gt;
-                            &lt;p class="card-price"&gt;Price: &#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt;
-                            &lt;i class="fas fa-shopping-cart fa-lg"&gt;&lt;/i&gt;
-                            &lt;i class="far fa-heart fa-lg"&gt;&lt;/i&gt;
-                            &lt;i class="far fa-share-square fa-lg"&gt;&lt;/i&gt;
+                              CARD FOOTER
                           &lt;/div&gt;
                         &lt;/div&gt;
-                        &lt;p class="close-icon close-icon-horizontal fs-300"&gt;X&lt;/p&gt;
+                        &lt;p class="close-icon close-icon-horizontal"&gt;X&lt;/p&gt;
                       &lt;/div&gt;
                       &lt;div class="card card-horizontal card-shadow"&gt;
                         &lt;div class="img-container"&gt;
                           &lt;picture&gt;
-                              &lt;source srcset="./images/tech.webp" type="image/webp"&gt;
-                              &lt;source srcset="./images/tech.jpg" type="image/jpg" &gt; 
-                              &lt;img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img"&gt;
+                              &lt;source srcset="..." type="image/webp"&gt;
+                              &lt;source srcset="..." type="image/jpg" &gt; 
+                              &lt;img src="..." alt="..." type="image/jpeg" loading="lazy" class="card-img"&gt;
                           &lt;/picture&gt;                  
                         &lt;/div&gt;
                         &lt;div class="card-content"&gt;
-                          &lt;h3 class="card-title"&gt;iPhone&lt;/h3&gt;
-                          &lt;p class="card-body"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
-                            instruct, inform, and inspire.&lt;/p&gt;
+                          &lt;h3 class="card-title"&gt;CARD TITLE&lt;/h3&gt;
+                          &lt;p class="card-body"&gt;CARD BODY&lt;/p&gt;
                           &lt;div class="card-footer"&gt;
-                            &lt;p class="card-price"&gt;Price: &#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt;
-                            &lt;i class="fas fa-shopping-cart fa-lg"&gt;&lt;/i&gt;
-                            &lt;i class="far fa-heart fa-lg"&gt;&lt;/i&gt;
-                            &lt;i class="far fa-share-square fa-lg"&gt;&lt;/i&gt;
+                              CARD FOOTER
                           &lt;/div&gt;
                         &lt;/div&gt;
                       &lt;/div&gt;
                     &lt;div class="card card-textonly"&gt;
-                      &lt;h3 class="card-title"&gt;Text Only Card&lt;/h3&gt;
-                      &lt;p class="card-body"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
-                        instruct, inform, and inspire.&lt;/p&gt;
+                      &lt;h3 class="card-title"&gt;CARD TITLE&lt;/h3&gt;
+                      &lt;p class="card-body"&gt;CARD BODY&lt;/p&gt;
                       &lt;button class="btn"&gt;Next&lt;/button&gt;
                     &lt;/div&gt;  
                     </code>
@@ -732,62 +707,50 @@
                       &lt;div class="card card-verticle card-shadow-onhover"&gt;
                         &lt;div class="img-container"&gt;
                           &lt;picture&gt;
-                              &lt;source srcset="./images/tech.webp" type="image/webp"&gt;
-                              &lt;source srcset="./images/tech.jpg" type="image/jpg" &gt; 
-                              &lt;img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img"&gt;
+                              &lt;source srcset="..." type="image/webp"&gt;
+                              &lt;source srcset="..." type="image/jpg" &gt; 
+                              &lt;img src="..." alt="..." type="image/jpeg" loading="lazy" class="card-img"&gt;
                           &lt;/picture&gt;                  &lt;/div&gt;
                         &lt;div class="card-content"&gt;
-                          &lt;h3 class="card-title"&gt;iPhone&lt;/h3&gt;
-                          &lt;p class="card-body"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
-                            instruct, inform, and inspire.&lt;/p&gt;
+                          &lt;h3 class="card-title"&gt;CARD TITLE&lt;/h3&gt;
+                          &lt;p class="card-body"&gt;CARD BODY&lt;/p&gt;
                           &lt;div class="card-footer"&gt;
-                            &lt;p class="card-price"&gt;Price: &#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt;
-                            &lt;i class="fas fa-shopping-cart fa-lg"&gt;&lt;/i&gt;
-                            &lt;i class="far fa-heart fa-lg"&gt;&lt;/i&gt;
-                            &lt;i class="far fa-share-square fa-lg"&gt;&lt;/i&gt;
+                              CARD FOOTER
                           &lt;/div&gt;
                         &lt;/div&gt;
                       &lt;/div&gt;
                       &lt;div class="card card-verticle"&gt;
                         &lt;div class="img-container"&gt;
-                          &lt;p class="img-badge"&gt;BESTSELLER&lt;/p&gt;
+                          &lt;p class="img-badge"&gt;BADGE&lt;/p&gt;
                           &lt;picture&gt;
-                              &lt;source srcset="./images/tech.webp" type="image/webp"&gt;
-                              &lt;source srcset="./images/tech.jpg" type="image/jpg" &gt; 
-                              &lt;img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img"&gt;
+                              &lt;source srcset="..." type="image/webp"&gt;
+                              &lt;source srcset="..." type="image/jpg" &gt; 
+                              &lt;img src="..." alt="..." type="image/jpeg" loading="lazy" class="card-img"&gt;
                           &lt;/picture&gt;
                         &lt;/div&gt;
                         &lt;div class="card-content"&gt;
-                          &lt;h3 class="card-title"&gt;iPhone&lt;/h3&gt;
-                          &lt;p class="card-body"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
-                            instruct, inform, and inspire.&lt;/p&gt;
+                          &lt;h3 class="card-title"&gt;TITLE&lt;/h3&gt;
+                          &lt;p class="card-body"&gt;CARD BODY&lt;/p&gt;
                           &lt;div class="card-footer"&gt;
-                            &lt;p class="card-price"&gt;Price: &#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt;
-                            &lt;i class="fas fa-shopping-cart fa-lg"&gt;&lt;/i&gt;
-                            &lt;i class="far fa-heart fa-lg"&gt;&lt;/i&gt;
-                            &lt;i class="far fa-share-square fa-lg"&gt;&lt;/i&gt;
+                              CARD FOOTER
                           &lt;/div&gt;
                         &lt;/div&gt;
                       &lt;/div&gt;
                       &lt;div class="card card-verticle card-dismiss-verticle"&gt;
                         &lt;p class="close-icon close-icon-verticle fs-300"&gt;X&lt;/p&gt;
                         &lt;div class="img-container"&gt;
-                          &lt;p class="img-badge"&gt;BESTSELLER&lt;/p&gt;
+                          &lt;p class="img-badge"&gt;BADGE&lt;/p&gt;
                           &lt;picture&gt;
-                              &lt;source srcset="./images/tech.webp" type="image/webp"&gt;
-                              &lt;source srcset="./images/tech.jpg" type="image/jpg" &gt; 
-                              &lt;img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img"&gt;
+                              &lt;source srcset="..." type="image/webp"&gt;
+                              &lt;source srcset="..." type="image/jpg" &gt; 
+                              &lt;img src="..." alt="..." type="image/jpeg" loading="lazy" class="card-img"&gt;
                             &lt;/picture&gt;
                         &lt;/div&gt;
                         &lt;div class="card-content"&gt;
-                          &lt;h3 class="card-title"&gt;iPhone&lt;/h3&gt;
-                          &lt;p class="card-body"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
-                            instruct, inform, and inspire.&lt;/p&gt;
+                          &lt;h3 class="card-title"&gt;CARD TITLE&lt;/h3&gt;
+                          &lt;p class="card-body"&gt;CARD BODY&lt;/p&gt;
                           &lt;div class="card-footer"&gt;
-                            &lt;p class="card-price"&gt;Price: &#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt;
-                            &lt;i class="fas fa-shopping-cart fa-lg"&gt;&lt;/i&gt;
-                            &lt;i class="far fa-heart fa-lg"&gt;&lt;/i&gt;
-                            &lt;i class="far fa-share-square fa-lg"&gt;&lt;/i&gt;
+                              CARD FOOTER
                           &lt;/div&gt;
                         &lt;/div&gt;
                       &lt;/div&gt;
@@ -795,29 +758,23 @@
                         &lt;div class="card-overlay"&gt;
                           &lt;div class="img-container"&gt;
                               &lt;picture&gt;
-                                  &lt;source srcset="./images/tech.webp" type="image/webp"&gt;
-                                  &lt;source srcset="./images/tech.jpg" type="image/jpg" &gt; 
-                                  &lt;img src="./images/tech.jpg" alt="an-iphone" type="image/jpeg" loading="lazy" class="card-img"&gt;
+                                  &lt;source srcset="..." type="image/webp"&gt;
+                                  &lt;source srcset="..." type="image/jpg" &gt; 
+                                  &lt;img src="..." alt="..." type="image/jpeg" loading="lazy" class="card-img"&gt;
                               &lt;/picture&gt;                    &lt;/div&gt;
                           &lt;div class="card-content"&gt;
-                            &lt;h3 class="card-title"&gt;iPhone&lt;/h3&gt;
-                            &lt;p class="card-body"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
-                            instruct, inform, and inspire.&lt;/p&gt;
+                            &lt;h3 class="card-title"&gt;TITLE&lt;/h3&gt;
+                            &lt;p class="card-body"&gt;CARD BODY&lt;/p&gt;
                             &lt;div class="card-footer"&gt;
-                              &lt;p class="card-price"&gt;Price: &#36;&lt;span&gt;1000&lt;/span&gt;&lt;/p&gt;
-                              &lt;i class="fas fa-shopping-cart fa-lg"&gt;&lt;/i&gt;
-                              &lt;i class="far fa-heart fa-lg"&gt;&lt;/i&gt;
-                              &lt;i class="far fa-share-square fa-lg"&gt;&lt;/i&gt;
+                              CARD FOOTER
                             &lt;/div&gt;
                           &lt;/div&gt;
                         &lt;/div&gt;
-                        &lt;p class="overlay-text"&gt;OUT OF STOCK&lt;/p&gt;
+                        &lt;p class="overlay-text"&gt;OVERLAY TEXT&lt;/p&gt;
                       &lt;/div&gt;
                       &lt;div class="card card-textonly"&gt;
-                        &lt;h3 class="card-title"&gt;Text Only Card&lt;/h3&gt;
-                        &lt;p class="card-body"&gt;iPhone, the world's most powerful personal device stands for internet, individual,
-                          instruct, inform, and inspire.&lt;/p&gt;
-                          &lt;button class="btn"&gt;Next&lt;/button&gt;
+                        &lt;h3 class="card-title"&gt;CARD TITLE&lt;/h3&gt;
+                        &lt;p class="card-body"&gt;CARD BODY&lt;/p&gt;
                       &lt;/div&gt;  
                     </code>
                  </pre>
@@ -907,17 +864,17 @@
               <pre>
                 <code class="language-html">
                   &lt;button class="btn btn-float"&gt;
-                    &lt;i class="fas fa-plus fa-lg"&gt;&lt;/i&gt;              
+                    FLOAT ICON              
                   &lt;/button&gt;
                   &lt;div class="float-buttons" id="float-buttons" data-visible="false"&gt;
                     &lt;button class="btn btn-float"&gt;
-                      &lt;i class="fas fa-camera fa-lg"&gt;&lt;/i&gt;
+                      FLOAT ICON 
                     &lt;/button&gt;
                     &lt;button class="btn btn-float"&gt;
-                      &lt;i class="fas fa-video fa-lg"&gt;&lt;/i&gt;
+                      FLOAT ICON
                     &lt;/button&gt;
                     &lt;button class="btn btn-float"&gt;
-                      &lt;i class="far fa-star fa-lg"&gt;&lt;/i&gt;
+                      FLOAT ICON
                     &lt;/button&gt;
                   &lt;/div&gt;
                 </code>
@@ -979,7 +936,6 @@
               </form> 
               <pre>
                 <code class="language-html">
-                  &lt;form class="form-login"&gt;
                   
                     &lt;!-- Example input username --&gt;
                     &lt;label for="username" class="username"&gt;Username&lt;/label&gt;
@@ -1004,7 +960,7 @@
                     &lt;span for="agreement"&gt;I am 13 years of age or older AND agree to the &lt;a href="#"&gt;terms and serivces&lt;/a&gt;&lt;/span&gt;
                     
                     &lt;button class="btn btn-signUp uppercase letter-spacing-1"&gt;Sign up&lt;/button&gt;
-                  &lt;/form&gt;
+
                 </code>
               </pre>
           </section>
@@ -1129,8 +1085,7 @@
             </p>
           <pre>
             <code class="language-html">
-              &lt;p class="alert bg-green toast-notification"&gt;
-                &lt;i class="far fa-check-circle"&gt;&lt;/i&gt;
+              &lt;p class="alert toast-notification"&gt;
                 &lt;span class="alert-message"&gt;Your toast message&lt;/span&gt;
               &lt;/p&gt;
             </code>
@@ -1335,7 +1290,7 @@
               <p>Stacked grids are used for overlapping contents in the grid</p>
               <p>All elements under grid-stacked is <span class="text-red">grid-column: 1/-1</span> , <span>grid-row: 1/-1</span></p>
             </div>
-            <div class="grid grid-stacked grid-card original-theme">
+            <div class="grid grid-stacked grid-card">
                 <div class="grid-content bg-dark"></div>
                 <p class="clr-hsl bg-white letter-spacing-4">GRID CARD</p>
             </div>
