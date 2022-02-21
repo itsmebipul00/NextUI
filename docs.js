@@ -18,13 +18,13 @@ navToggle.addEventListener("click", () => {
 })
 
 // ALERTS
-const alertError = document.querySelector(".bg-error")
+const alertError = document.querySelector(".error-alert")
 const closeError = document.querySelector(".closeError")
-const alertWarning = document.querySelector(".bg-warning")
+const alertWarning = document.querySelector(".warning-alert")
 const closeWarning = document.querySelector(".closeWarning")
-const alertInfo = document.querySelector(".bg-info")
+const alertInfo = document.querySelector(".info-alert")
 const closeInfo = document.querySelector(".closeInfo")
-const alertSuccess = document.querySelector(".bg-success")
+const alertSuccess = document.querySelector(".success-alert")
 const closeSuccess = document.querySelector(".closeSuccess")
 
 const hideError = () => {
@@ -213,3 +213,38 @@ slider.oninput = function () {
   const value = this.value
   percentage.innerHTML = `${value}%`
 }
+
+// Dark mode
+
+let button = document.querySelector(".dark-mode-toggle")
+let darkMode = localStorage.getItem("darkMode")
+const darkModeToggle = document.querySelector("#dark-mode-toggle")
+
+const enableDarkMode = () => {
+  document.documentElement.classList.add("dark-mode")
+  document.querySelectorAll(".original-theme").forEach((theme) => {
+    theme.classList.add("theme-original")
+  })
+  localStorage.setItem("darkMode", "enabled")
+}
+
+const disableDarkMode = () => {
+  document.documentElement.classList.remove("dark-mode")
+  document.querySelectorAll(".original-theme").forEach((theme) => {
+    theme.classList.remove("theme-original")
+  })
+  localStorage.setItem("darkMode", null)
+}
+
+if (darkMode === "enabled") {
+  enableDarkMode()
+}
+
+button.addEventListener("click", () => {
+  darkMode = localStorage.getItem("darkMode")
+  if (darkMode !== "enabled") {
+    enableDarkMode()
+  } else {
+    disableDarkMode()
+  }
+})

@@ -2,6 +2,8 @@
   margin: 0 !important;
   margin-bottom: 0 !important;
   width: 100% !important;
+  height: fit-content;
+  align-self: flex-end;
 }
 
 .responsive-pictures {
@@ -18,10 +20,13 @@
   .picture-information {
     align-self: start;
   }
+  .picture-round-information {
+    align-self: center;
+  }
 }
 
 .image_wrapper {
-  width: 30%;
+  width: 100%;
   aspect-ratio: 1;
   margin: 0;
 }
@@ -38,13 +43,14 @@
   object-fit: cover;
 }
 
-.picture-round-information {
-  align-self: flex-end;
-  width: 70% !important;
-}
-
 @media (max-width: 60em) {
   .responsive-pictures {
     width: 100%;
+  }
+  .responsive-round-picture {
+    width: 100%;
+  }
+  .image-wrapper {
+    width: 30%;
   }
 }

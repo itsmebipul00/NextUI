@@ -1,0 +1,8 @@
+.dark-mode-toggle {
+  width: 3rem;
+  border: 0;
+  background: inherit;
+  cursor: pointer;
+  margin-right: 1rem;
+  padding: 0;
+}

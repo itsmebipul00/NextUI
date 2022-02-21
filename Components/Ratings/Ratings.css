@@ -37,4 +37,7 @@
   .rating > label {
     width: 3rem;
   }
+  .rating > *:where(:not(:last-child)) {
+    margin-left: 0;
+  }
 }

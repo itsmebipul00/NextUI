@@ -204,12 +204,11 @@ script[type="text/plain"][class*="language-"] {
 }
 div.code-toolbar {
   position: relative;
-  height: 25vh;
   width: 80%;
-  overflow: auto;
+  overflow: hidden;
   margin: 1rem 0;
   background-color: #fdfdfd;
-  padding: 2rem 2rem 0 2rem;
+  padding: 2rem;
 }
 
 @media (max-width: 60em) {

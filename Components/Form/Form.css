@@ -1,12 +1,18 @@
 .input-container {
   padding: 2rem;
-  background: hsl(var(--clr-white) / 0.7);
+  background: hsl(var(--clr-white) / 0.9);
   width: 80%;
   margin-bottom: 1rem;
 }
 
+@media (max-width: 60em) {
+  .input-container {
+    width: 100%;
+  }
+}
+
 .form-login {
-  background: hsl(var(--clr-white) / 0.7);
+  background: hsl(var(--clr-white) / 0.9);
   padding: 2rem;
   width: 80%;
 }
