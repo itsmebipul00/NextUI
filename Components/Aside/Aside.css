@@ -40,11 +40,6 @@ article {
     margin: 0;
   }
 
-  /* aside li:hover {
-    cursor: pointer;
-    background: hsl(var(--clr-light));
-  } */
-
   article {
     width: 82%;
     position: fixed;

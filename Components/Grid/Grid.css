@@ -123,6 +123,20 @@
   aspect-ratio: 1;
 }
 
+.grid-content {
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+@media (max-width: 60em) {
+  .grid-card {
+    width: 30%;
+  }
+  .grid-content {
+    aspect-ratio: 1/1.5;
+  }
+}
+
 .grid-stacked > * {
   grid-column: 1/-1;
   grid-row: 1/-1;

@@ -63,4 +63,14 @@
   .navigation-area {
     width: 100%;
   }
+  .nav-demo-heading {
+    font-size: var(--fs-300);
+    letter-spacing: 0;
+  }
+  .search {
+    width: 5rem;
+  }
+  .side-navigation > * {
+    margin-left: 0.5rem;
+  }
 }

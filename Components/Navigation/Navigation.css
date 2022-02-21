@@ -41,6 +41,7 @@
     width: 4rem;
     aspect-ratio: 1;
     border: 0;
+    margin: 0;
   }
 
   .mobile-nav-toggle[aria-expanded="true"] {

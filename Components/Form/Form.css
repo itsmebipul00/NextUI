@@ -5,6 +5,12 @@
   margin-bottom: 1rem;
 }
 
+@media (max-width: 60em) {
+  .input-container {
+    width: 100%;
+  }
+}
+
 .form-login {
   background: hsl(var(--clr-white) / 0.7);
   padding: 2rem;

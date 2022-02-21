@@ -8,6 +8,12 @@ header {
   padding: 1rem 2rem 2rem 2rem;
 }
 
+@media (max-width: 60em) {
+  .header-container {
+    padding: 0;
+  }
+}
+
 .header-title {
   width: fit-content;
   z-index: 9999;
@@ -31,6 +37,12 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (max-width: 60em) {
+  .container {
+    padding-inline: 1rem;
+  }
 }
 
 h2 {
@@ -122,8 +134,7 @@ code {
 
 .clr-hsl {
   align-self: flex-end;
-  border: 3px solid hsl(var(--clr-dark));
-  padding: 0.25rem;
+  border: 2px solid hsl(var(--clr-dark));
 }
 
 .primary-color-white,
@@ -135,7 +146,23 @@ code {
 .primary-color-yellow,
 .primary-color-light {
   width: 100%;
-  aspect-ratio: 1.15/1;
+  aspect-ratio: 1/2;
+}
+
+@media (min-width: 60em) {
+  .primary-color-white,
+  .primary-color-dark,
+  .primary-color-red,
+  .primary-color-light,
+  .primary-color-blue,
+  .primary-color-green,
+  .primary-color-yellow,
+  .primary-color-light {
+    aspect-ratio: 1;
+  }
+  .clr-hsl {
+    padding: 1rem;
+  }
 }
 
 /* typography */

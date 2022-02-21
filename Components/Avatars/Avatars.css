@@ -1,9 +1,21 @@
 .avatar {
   display: flex;
-  gap: 5rem;
+  gap: 3rem;
   margin-bottom: 1rem;
   width: 80%;
   align-items: flex-end;
+}
+
+@media (max-width: 60em) {
+  .avatar {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 40em) {
+  .avatar {
+    gap: 0.5rem;
+  }
 }
 
 .badge-heading {
@@ -127,6 +139,12 @@ img {
 .icons {
   margin: 1rem;
   gap: 20%;
+}
+
+@media (max-width: 60em) {
+  .icons {
+    gap: 10%;
+  }
 }
 
 .icons > .notification {
