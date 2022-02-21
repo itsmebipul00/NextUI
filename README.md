@@ -90,10 +90,10 @@ Alerts are feedbacks for an action triggered by the users.
 
 NextUI contains the following types of Alerts with or without actionable close icons:
 
-- Info Alert
+- Information Alert
 - Success Alert
 - Warning Alert
-- Danger Alert
+- Error Alert
 
 ## [BUTTONS](https://nextui.netlify.app/docs.html#buttons)
 
