@@ -24,10 +24,13 @@
     <header>
         <div class="header-container d-flex">
             <h1 class="header-title letter-spacing-2 fs-700">NextUI</h1>
-                <div class="margin-l-auto d-flex">
-                  <a href="https://github.com/itsmebipul00" class="linkto-github width-5rem">
+                <div class="home-navigation margin-l-auto d-flex">
+                  <a href="https://github.com/itsmebipul00" class="linkto-github width-4rem">
                     <img src="images/icons8-github.svg" alt="github_svg">
                   </a>
+                  <button id="dark-mode-toggle" class="dark-mode-toggle">
+                    <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg>
+                  </button>
                   <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only"
                     aria-expanded="false">Menu</span></button>
                   <nav>
@@ -83,7 +86,7 @@
         <article class="container" id="container">
           <section class="usage" id="usage">
             <h2 class="usage-heading uppercase letter-spacing-2 fs-600">Usage</h2>
-            <div class="information usage-information letter-spacing-5">
+            <div class="information usage-information letter-spacing-5 original-theme">
               <p> <span class="text-red">NextUI</span> is a <span class="text-red">pleasing, minimal</span> and <span class="text-red">modern</span> UI library</p>
               <p>It consists of a ton of <span class="text-red">Custom properties, Utility classes</span> and <span class="text-red">UI components</span> for your basic uses</p>
             </div>
@@ -96,7 +99,7 @@
               </code>
             </pre>
             <pre>
-              <code class="language-html">
+              <code class="language-html ">
                 // HTML
 
                 &lt;link rel="stylesheet" href="https://nextui.netlify.app/nextui.css"&gt;
@@ -105,11 +108,11 @@
           </section>
           <section class="colors" id="colors">
             <h2 class="uppercase letter-spacing-2 fs-600">Colors</h2>
-            <div class="information colors-information letter-spacing-5">
+            <div class="information colors-information letter-spacing-5 original-theme">
               <p><span class="text-red">NextUI</span> uses  <span class="text-red">HSL colors</span></p>
               <p> HSL colors are <span class="text-red">easy to understand</span> from reading them and to create a <span class="text-red">lighter or darker shade</span> of a color quickly</p>
             </div>
-            <div class="primary-colors d-grid grid-4 .grid-row-1 fs-200">
+            <div class="primary-colors d-grid grid-4 .grid-row-1 fs-200 original-theme">
               <div class="d-grid grid-stacked">
                 <div class="primary-color-red bg-red"></div>
                 <p class="clr-hsl bg-white">hsl(338, 81%, 41%)</p>
@@ -127,7 +130,7 @@
                 <p class="clr-hsl bg-white">hsl(46, 100%, 90%)</p>
               </div>
             </div>
-            <div class="primary-colors-light d-grid grid-5 .grid-row-2 fs-200">
+            <div class="primary-colors-light d-grid grid-5 .grid-row-2 fs-200 original-theme">
               <div class="d-grid grid-stacked">
                 <div class="primary-color-light bg-white"></div>
                 <p class="clr-hsl bg-white">hsl(0 0% 100%)</p>
@@ -169,7 +172,7 @@
                 <p class="clr-hsl bg-white">hsl(0 0% 100% / 0.1)</p>
               </div>
             </div>
-            <div class="primary-colors-dark d-grid grid-5 .grid-row-2 fs-200">
+            <div class="primary-colors-dark d-grid grid-5 .grid-row-2 fs-200 original-theme">
               <div class="d-grid grid-stacked">
                 <div class="primary-color-dark bg-dark-10"></div>
                 <p class="clr-hsl bg-white">hsl(230 35% 7% / 0.1)</p>
@@ -216,7 +219,7 @@
           </section>
           <section class="alert-container" id="alert-container">
                 <h2 class="uppercase letter-spacing-2 fs-600">Alerts</h2>
-                <div class="information alert-information letter-spacing-5">
+                <div class="information alert-information letter-spacing-5 original-theme">
                   <p class="">Alerts are feedbacks for an action triggered by the users</p>
                   <p>Four basic types of alerts are: </p>
                   <p>Error alert uses .bg-red which is background: <span class="bg-red">hsl(338, 81%, 41%)</span></p>
@@ -225,39 +228,39 @@
                   <p>Success alert uses .bg-green which is background: <span class="bg-green">hsl(153, 57%, 82%)</span></p>
                   <p></p>
                 </div>
-                <p class="alert bg-red">
+                <p class="alert bg-red original-theme">
                     <i class="fas fa-exclamation-circle"></i>
                     <span class="alert-message">This is a error alert</span>
                     <i class="closeError fas fa-times"></i>
                 </p>
-                <p class="alert bg-red">
+                <p class="alert bg-red original-theme">
                     <i class="fas fa-exclamation-circle"></i>
                     <span class="alert-message">This is a error alert</span>
                 </p>
-                <p class="alert bg-yellow">
+                <p class="alert bg-yellow original-theme">
                     <i class="fas fa-exclamation"></i>
                     <span class="alert-message">This is a warning alert</span>
                     <i class="closeWarning fas fa-times"></i>
                 </p>
-                <p class="alert bg-yellow">
+                <p class="alert bg-yellow original-theme">
                     <i class="fas fa-exclamation"></i>
                     <span class="alert-message">This is a warning alert</span>
                 </p>
-                <p class="alert bg-blue">
+                <p class="alert bg-blue original-theme">
                     <i class="fas fa-info"></i>
                     <span class="alert-message">This is a Info alert</span>
                     <i class="closeInfo fas fa-times"></i>
                 </p>
-                <p class="alert bg-blue">
+                <p class="alert bg-blue original-theme">
                     <i class="fas fa-info"></i>
                     <span class="alert-message">This is a Info alert</span>
                 </p>
-                <p class="alert bg-green">
+                <p class="alert bg-green original-theme">
                     <i class="far fa-check-circle"></i>
                     <span class="alert-message">This is a Success alert</span>
                     <i class="closeSuccess fas fa-times"></i>
                 </p>
-                <p class="alert bg-green">
+                <p class="alert bg-green original-theme">
                     <i class="far fa-check-circle"></i>
                     <span class="alert-message">This is a Success alert</span>
                 </p>
@@ -304,7 +307,7 @@
           </section>
             <section class="avatars" id="avatars">
               <h2 class="uppercase letter-spacing-2 fs-600 text-underline">Avatars</h2>
-              <div class="information avatar-information fs-400 letter-spacing-5">
+              <div class="information avatar-information fs-400 letter-spacing-5 original-theme">
                 <p> <span class="text-red">Avatars</span> are used to potray people or objects.</p>
                 <p>They have 5 sizes: <span class="text-red">width-5rem, width-6rem, width-7rem, width-8rem, width-9rem</span></p>
                 <p>.width-5rem is <span class="text-red">width: 5rem</span></p>
@@ -314,13 +317,13 @@
                 <p>.width-9rem is <span class="text-red">width: 9rem</span></p>
                 <p><span class="text-red">.radius-50</span> is border-radius to 50</p>
               </div>            
-              <div class="avatar avatar-image">
+              <div class="avatar avatar-image original-theme">
                 <div class="width-5rem">
                     <img class="radius-50" src="./images/avatar.jpg" alt="random_picture">
                 </div>
                 <div class="width-6rem">
                   <img class="radius-50" src="./images/avatar.jpg" alt="random_picture">
-              </div>
+                </div>
                 <div class="width-7rem">
                     <img class="radius-50" src="./images/avatar.jpg" alt="random_picture">
                 </div>
@@ -352,7 +355,7 @@
           </section>
           <section class="badges" id="badges">
             <h2 class="badge-heading uppercase letter-spacing-2 fs-600 text-underline">Badges</h2>
-            <div class="information badge-information letter-spacing-5">
+            <div class="information badge-information letter-spacing-5 original-theme">
               <p><span class="text-red">Badges</span> indicates a status informations from a component</p>
               <p>Here <span class="text-red">blue, green, yellow and red</span> badges are used with different components</p>
               <p><span class="text-red">.notification</span> is used to design the notification content</p>
@@ -361,7 +364,7 @@
               <p> <span class="text-red">.notification-color-yellow</span> gives background: hsl(46, 100%, 90%) to its pseudo element</p>
               <p> <span class="text-red">.placeholder, .placeholder-face and .placeholder-hands</span> are used to design the placeholder</p>
             </div>
-            <div class="avatar avatar-placeholder">
+            <div class="avatar avatar-placeholder original-theme">
                 <div class="width-5rem p-relative notification notification-color-red">
                     <div class="placeholder">
                         <div class="placeholder-face"></div>
@@ -417,14 +420,14 @@
             </pre>
            
             <div class="icons f-row">
-              <div class="p-relative notification notification-color-green">
-                <i class="fas fa-shopping-cart fa-5x"></i>
+              <div class="p-relative notification notification-color-green original-theme">
+                <i class="fas fa-shopping-cart fa-5x original-theme"></i>
               </div>
               <div class="p-relative notification notification-color-blue">
                 <i class="fas fa-trash fa-5x"></i>
               </div>
-              <div class="p-relative notification notification-color-yellow">
-                <i class="fas fa-bell fa-5x"></i> 
+              <div class="p-relative notification notification-color-yellow original-theme">
+                <i class="fas fa-bell fa-5x original-theme"></i> 
               </div>
            </div>
            <pre>
@@ -443,17 +446,17 @@
           </section>
           <section class="cards-container d-grid" id="cards-container">
                 <h2 class="uppercase letter-spacing-2 fs-600">Cards</h2>
-                <div class="information card-information letter-spacing-5">
+                <div class="information card-information letter-spacing-5 original-theme">
                   <p><span class="text-red">Cards</span> are content container with wide variety of content</p>
                   <p>Cards maybe Verticle, Horizontal, text overlayed or text-only</p>
                   <p>.close-icon is a letter<span class="text-red fs-500"> X</span></p>
                   <p>.card-overlay is set to <span class="text-red">filter: blur(0.12rem)</span> and <span class="text-red">opacity: 0.2</span> </p>
           </div>
-                <div class="cards-tab d-flex fs-500 letter-spacing-5">
+                <div class="cards-tab d-flex fs-500 letter-spacing-5 original-theme">
                     <p class="tab-horizontal bg-white text-center" data-visible="true">Horizontal </p>
                     <p class="tab-verticle bg-white text-center" data-visible="false">Verticle</p>
                 </div>
-                <div class="cards cards-horizontal cards-horizontal-autofit" data-visible="true">
+                <div class="cards cards-horizontal cards-horizontal-autofit original-theme" data-visible="true">
                     <div class="card card-horizontal d-flex">
                         <div class="img-container img-container-width">
                           <picture>
@@ -536,7 +539,7 @@
                         </div>
                       </div>
                 </div>
-                <div class="cards cards-verticle cards-verticle-autofit" data-visible="false">
+                <div class="cards cards-verticle cards-verticle-autofit original-theme" data-visible="false">
                     <div class="card card-verticle card-shadow-onhover">
                         <div class="img-container">
                           <picture>
@@ -622,11 +625,11 @@
                         <p class="overlay-text">OUT OF STOCK</p>
                       </div>    
                 </div> 
-                <div class="card card-textonly">
+                <div class="card card-textonly original-theme">
                   <h3 class="card-title fs-600">Text Only Card</h3>
                   <p class="card-body letter-spacing-5">iPhone, the world's most powerful personal device stands for internet, individual,
                     instruct, inform, and inspire.</p>
-                    <button class="btn">Next</button>
+                    <button class="btn ">Next</button>
                 </div>  
                 <div class="code-cards-horizontal" data-visible="true">
                   <pre>
@@ -822,7 +825,7 @@
           </section>
             <section class="buttons fs-400 d-grid" id="buttons">
               <h2 class="uppercase letter-spacing-2 fs-600">Buttons</h2>
-              <div class="information button-information letter-spacing-4 fs-400 d-grid">
+              <div class="information button-information letter-spacing-4 fs-400 d-grid original-theme">
                 <p><span class="text-red">Buttons allow users to take actions</span></p>
                 <p>Buttons maybe <span class="text-red">primary, disabled, button icons, button links or floating buttons</span></p>
                 <p><span class="text-red">.btn</span> is for a button</p>
@@ -830,7 +833,7 @@
                 <p><span class="text-red">.btn-outlined</span> has an outline</p>
                 <p><span class="text-red">.btn-disabled</span> is for a disabled button, where cursor is not allowed</p>
                 <p><span class="text-red">.btn-float</span> could be fixed anywhere on the screen to act as a floating button</p>
-          </div>
+              </div>
              
                 <button class="btn btn-primary letter-spacing-3 uppercase">Primary</button>
                 <pre>
@@ -840,7 +843,7 @@
                     &lt;/button&gt;
                   </code>
                 </pre>
-                <button class="btn btn-disabled letter-spacing-3 uppercase" disabled>Disabled</button>
+                <button class="btn btn-disabled letter-spacing-3 uppercase " disabled>Disabled</button>
                 <pre>
                   <code class="language-html">
                     &lt;button class="btn btn-disabled" disabled&gt;
@@ -884,7 +887,7 @@
                 </code>
               </pre>
 
-              <div class="information float-button-info letter-spacing-4 fs-400 ">
+              <div class="information float-button-info letter-spacing-4 fs-400 original-theme">
                 <p>Onclick on the float button, float buttons show up.</p>
                 <p>These could be placed anywhere on the screen</p>
               </div>
@@ -936,7 +939,7 @@
             <section class="form" id="form">
               <h2 class="uppercase letter-spacing-2 fs-600 text-underline">INPUT</h2>
 
-              <div class="input-container d-grid">
+              <div class="input-container d-grid original-theme">
                 <label for="input" class="input letter-spacing-3">Input</label>
                 <input id="input" class="form-input" type="text">
               </div>
@@ -948,12 +951,12 @@
                 </code>
               </pre>
 
-              <div class="information information-form letter-spacing-4 fs-400">
+              <div class="information information-form letter-spacing-4 fs-400 original-theme">
                 <p>Username, Email, Create Password, Confirm Password and the checkbox are <span class="text-red">required</span>.</p>
                 <p>An error <span class="text-red">"Passwords do not match"</span> drops down if passwords do not match</p>
               </div>
 
-              <form class="form-login fs-400 letter-spacing-3">
+              <form class="form-login fs-400 letter-spacing-3 original-theme">
                   
                   <label for="username" class="username">Username<span class="text-red">*</span></label>
                   <input id="username" class="form-username" type="text" required>
@@ -1007,12 +1010,12 @@
           </section>
           <section class="list-group" id="list-group">
             <h2 class="uppercase letter-spacing-2 fs-600">List</h2>
-            <div class="information list-information letter-spacing-4 fs-400 d-grid">
+            <div class="information list-information letter-spacing-4 fs-400 d-grid original-theme">
               <p>Lists are a continuous group of text or images.</p>
               <p>You can toggle between <span class="text-red">Normal list</span> and <span class="text-red">Stacked list</span></p>
               <p><span class="text-red">.stackList-item-more</span> is used on <span class="text-red">Show more</span> to hide and show stacked list items.</p>
           </div>
-            <div class="d-flex">
+            <div class="d-flex original-theme">
               <ul role="list" class="list">
                 <li class="list-item list-subtitle-normal" aria-controls="normal-list" data-visible="true">Normal List</li>
                 <li class="list-item list-subtitle-stacked" aria-controls="stacked-list" data-visible="false">Stacked List</li>
@@ -1051,12 +1054,12 @@
           </section>
           <section class="modal" id="modal">
             <h2 class="uppercase letter-spacing-2 fs-600">Modal</h2>
-            <div class="information modal-information letter-spacing-4">
+            <div class="information modal-information letter-spacing-4 original-theme">
               <p>Modals are separate windows within an application for providing information or requiring confirmation</p>
               <p><span class="text-red">.modal-fixed</span> is positioned <span class="text-red">fixed</span></p>
           </div>
             <button class="btn modal-display letter-spacing-2 uppercase fs-400" aria-controls="modal-fixed">Open modal</button>
-            <div class="modal-fixed text-center" data-visible="false" id="modal-fixed">
+            <div class="modal-fixed text-center original-theme" data-visible="false" id="modal-fixed">
                 <i class="far fa-times-circle fa-4x"></i>
                 <p class="modal-subtitle fs-700 letter-spacing-4">We've a special offer only for you 🎊🎊</p>
                 <h2 class="modal-title fs-700 letter-spacing-3">FLAT 90% OFF ON ALL ITEMS</h2>
@@ -1073,11 +1076,11 @@
           </section>
           <section class="ratings" id="ratings">
             <h2 class="uppercase letter-spacing-2 fs-600">Rating</h2>
-            <div class="information rating-information letter-spacing-4">
+            <div class="information rating-information letter-spacing-4 original-theme">
               <p>Rating component helps capture the user feedback in form of rating.</p>
               <p><span class="text-red">psedo elements of label</span> and <span class="text-red">radio inputs</span> are used to create stars for rating</p>
             </div>
-            <div class="rating">
+            <div class="rating original-theme">
               <input type="radio" name="stars" id="five-stars" value="5" class="five-stars"/>
               <label for="five-stars" class="fs-700"></label>
         
@@ -1114,13 +1117,13 @@
           </section>
           <section class="toats" id="toasts">
             <h2 class="uppercase letter-spacing-2 fs-600">TOAST</h2>
-            <div class="information toast-information letter-spacing-5">
+            <div class="information toast-information letter-spacing-5 original-theme">
               <p>The toast component provides quick, at-a-glance feedback on the outcome of an action.</p>
               <p><span class="text-red">.btn-toast</span> is used as a toast button</p>
               <p><span class="text-red">.toast-notification</span> is positioned <span class="text-red">fixed</span> and visible on the screen for<span class="text-red"> 2 seconds</span></p>
             </div>
             <button class="btn btn-toast letter-spacing-4 uppercase">Show Toast</button>
-            <p class="alert bg-green toast-notification fs-600" data-visible="false">
+            <p class="alert bg-green toast-notification fs-600 original-theme" data-visible="false">
               <i class="far fa-check-circle"></i>
               <span class="alert-message">Your order was succesfully placed</span>
             </p>
@@ -1135,11 +1138,11 @@
           </section>
           <section class="grids" id="grids">
               <h2 class="uppercase letter-spacing-2 fs-600">Grids</h2>
-              <div class="information grid-information letter-spacing-4">
+              <div class="information grid-information letter-spacing-4 original-theme">
                 <p>This is a simple grid layout</p>
                 <p>grid-2 for 2 columns, grid-3 for 3 columns, grid-4 for 4 columns, grid-5 for 5 columns and grid-6 for 6 columns</p>
               </div>
-              <div class="grid grid-6">
+              <div class="grid grid-6 original-theme">
                 <div class="grid-item bg-dark-50"></div>
                 <div class="grid-item bg-dark-50"></div>
                 <div class="grid-item bg-dark-50"></div>
@@ -1147,29 +1150,29 @@
                 <div class="grid-item bg-dark-50"></div>
                 <div class="grid-item bg-dark-50"></div>
               </div>
-              <div class="grid grid-5">
+              <div class="grid grid-5 original-theme">
                 <div class="grid-item bg-dark-60"></div>
                 <div class="grid-item bg-dark-60"></div>
                 <div class="grid-item bg-dark-60"></div>
                 <div class="grid-item bg-dark-60"></div>
                 <div class="grid-item bg-dark-60"></div>
               </div>
-              <div class="grid grid-4">
+              <div class="grid grid-4 original-theme">
                 <div class="grid-item bg-dark-70"></div>
                 <div class="grid-item bg-dark-70"></div>
                 <div class="grid-item bg-dark-70"></div>
                 <div class="grid-item bg-dark-70"></div>
               </div>
-              <div class="grid grid-3">
+              <div class="grid grid-3 original-theme">
                 <div class="grid-item bg-dark-80"></div>
                 <div class="grid-item bg-dark-80"></div>
                 <div class="grid-item bg-dark-80"></div>
               </div>
-              <div class="grid grid-2">
+              <div class="grid grid-2 original-theme">
                 <div class="grid-item bg-dark-90"></div>
                 <div class="grid-item bg-dark-90"></div>
               </div>
-              <div class="grid">
+              <div class="grid original-theme">
                 <div class="grid-item bg-dark"></div>
               </div>
               <pre>
@@ -1209,12 +1212,12 @@
                   &lt;/div&gt;
                 </code>
               </pre>
-              <div class="information grid-information letter-spacing-4">
-                <p>The above grid can be <span class="text-red">resized</span></p>
+              <div class="information grid-information letter-spacing-4 original-theme">
+                <p>The below grid can be <span class="text-red">resized</span></p>
                 <p><span class="text-red">.grid-autofit-breaks</span> is used to autofit grid-items based on <span class="text-red">minmax</span> and <span class="text-red"> breakpoints</span></p>
                 <p>This is usually used in grids when number of grid items are unknown</p>
               </div>
-              <div class="grid grid-autofit-breaks grid-size">
+              <div class="grid grid-autofit-breaks grid-size original-theme">
                 <div class="bg-white"></div>
                 <div class="bg-white-90"></div>
                 <div class="bg-white-80"></div>
@@ -1262,13 +1265,13 @@
               &lt;/div&gt;
               </code>
             </pre>
-            <div class="information grid-information letter-spacing-4">
+            <div class="information grid-information letter-spacing-4 original-theme">
               <p>This grid is used when the number of grid items are known</p>
               <p><span class="text-red">g-6lg-3md-2sm</span>  shows 6 items in large screens, 3 in medium and 2 in small</p>
               <p><span class="text-red">g-3lg-2md-1sm</span> shows 3 items in large screens, 2 in medium and 1 in small</p>
               <p><span class="text-red">g-12xlg-9lg-6md-3sm-1xsm</span> shows 12 items in extra-large screens, 9 in large screens, 6 in medium screens, 3 in small screens and 1 in extra small screens</p>
             </div>
-            <div class="grid g-12xlg-9lg-6md-3sm-1xsm">
+            <div class="grid g-12xlg-9lg-6md-3sm-1xsm original-theme">
               <div class="grid-item bg-dark-40"></div>
               <div class="grid-item bg-dark-40"></div>
               <div class="grid-item bg-dark-40"></div>
@@ -1282,7 +1285,7 @@
               <div class="grid-item bg-dark-40"></div>
               <div class="grid-item bg-dark-40"></div>
             </div>
-            <div class="grid g-6lg-3md-2sm">
+            <div class="grid g-6lg-3md-2sm original-theme">
               <div class="grid-item bg-dark-50"></div>
               <div class="grid-item bg-dark-50"></div>
               <div class="grid-item bg-dark-50"></div>
@@ -1290,7 +1293,7 @@
               <div class="grid-item bg-dark-50"></div>
               <div class="grid-item bg-dark-50"></div>
             </div>
-            <div class="grid g-4lg-2md-1sm">
+            <div class="grid g-4lg-2md-1sm original-theme">
               <div class="grid-item bg-dark-60"></div>
               <div class="grid-item bg-dark-60"></div>
               <div class="grid-item bg-dark-60"></div>
@@ -1328,11 +1331,11 @@
                 &lt;/div&gt;
               </code>
             </pre>
-            <div class="information grid-information letter-spacing-4">
+            <div class="information grid-information letter-spacing-4 original-theme">
               <p>Stacked grids are used for overlapping contents in the grid</p>
               <p>All elements under grid-stacked is <span class="text-red">grid-column: 1/-1</span> , <span>grid-row: 1/-1</span></p>
             </div>
-            <div class="grid grid-stacked grid-card">
+            <div class="grid grid-stacked grid-card original-theme">
                 <div class="grid-content bg-dark"></div>
                 <p class="clr-hsl bg-white letter-spacing-4">GRID CARD</p>
             </div>
@@ -1347,7 +1350,7 @@
           </section>
           <section class="input-slider" id="input-slider">
             <h2 class="uppercase letter-spacing-2 fs-600">Slider</h2>
-            <div class="information toast-information letter-spacing-5">
+            <div class="information toast-information letter-spacing-5 original-theme">
               <p>Sliders allow users to make selections from a range of values.</p>
               <p><span class="text-red">.slider</span> is used to design the range slider</p>
               <p><span class="text-red">.percentage</span> is used to get the <span class="text-red">value</span> of the slider between which is anywhere between<span class="text-red"> min </span>and<span class="text-red"> max</span></p>
@@ -1366,7 +1369,7 @@
           </section>
           <section class="images" id="images">
             <h2 class="uppercase letter-spacing-2 fs-600">Responsive Images</h2>
-            <div class="responsive-round-picture">
+            <div class="responsive-round-picture original-theme">
               <div class="image_wrapper d-flex">
                 <picture>
                   <source media="(min-width: 60em)"
@@ -1397,7 +1400,7 @@
                 <p>For all images used <span class="text-red">max-width: 100%</span> so that its width is  always less that or equal to 100% even for varying screen sizes</p>
               </div>
             </div>
-            <div class="responsive-pictures">
+            <div class="responsive-pictures original-theme">
                 <picture>
                   <source media="(min-width: 60em)"
                           srcset="./images/large.webp 534w,
@@ -1464,11 +1467,11 @@
           </section>
           <section class="navigation" id="navigation">
             <h2 class="navigation-heading uppercase letter-spacing-2 fs-600">Navigation</h2>
-            <div class="information desktop-nav-info letter-spacing-4">
+            <div class="information desktop-nav-info letter-spacing-4 original-theme">
               <p>This is a navigation for large screen sizes</p>
               <p><span class="text-red">.margin-l-auto</span> is a utility for margin-left: auto</p>
             </div>
-            <div class="nav navigation-area d-grid grid-3">
+            <div class="nav navigation-area d-grid grid-3 original-theme">
               <h3 class="nav-demo-heading uppercase letter-spacing-4 margin-r-auto">NextCart</h3>
               <div class="input-search d-flex">
                 <label for="search" class="sr-only" >Search</label>
@@ -1496,11 +1499,11 @@
                 &lt;/div&gt;   
               </code>
             </pre>
-            <div class="information desktop-nav-info letter-spacing-4">
+            <div class="information desktop-nav-info letter-spacing-4 original-theme">
               <p>This is a navigation for small screen sizes</p>
               <p>Hamburger menu is used in the NEXTUI component library</p>
             </div>
-            <div class="nav navigation-area d-grid grid-3">
+            <div class="nav navigation-area d-grid grid-3 original-theme">
               <h3 class="nav-demo-heading uppercase letter-spacing-4">NextCart</h3>
               <div class="input-search d-flex">
                 <label for="search" class="sr-only" >Search</label>
@@ -1530,10 +1533,10 @@
           </section>
           <section class="submenus" id="submenus">
             <h2 class="submenu-heading uppercase letter-spacing-2 fs-600">Submenus</h2>
-                <div class="information submenu-information letter-spacing-5">
+                <div class="information submenu-information letter-spacing-5 original-theme">
                   <p>On hover to Profile the <span class="text-red">submenu</span> drops down</p>
                 </div>
-                <div class="navigation-area d-grid grid-3">
+                <div class="navigation-area d-grid grid-3 original-theme">
                   <h3 class="uppercase letter-spacing-4">Google</h3>
                   <div class="input-search d-flex">
                     <label for="search" class="sr-only" >Search</label>

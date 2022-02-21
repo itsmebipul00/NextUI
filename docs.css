@@ -1,5 +1,13 @@
 /* * HEADER STYLES  */
 
+.dark-mode {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.theme-original {
+  filter: invert(1) hue-rotate(180deg);
+}
+
 header {
   background: hsl(var(--clr-white));
 }
@@ -8,9 +16,9 @@ header {
   padding: 1rem 2rem 2rem 2rem;
 }
 
-@media (max-width: 60em) {
+@media (max-width: 40rem) {
   .header-container {
-    padding: 0;
+    padding: 1rem 1rem 2rem 0.5rem;
   }
 }
 
@@ -28,6 +36,7 @@ header {
 @media (max-width: 60em) {
   .header-title {
     align-self: center;
+    font-size: var(--fs-600);
   }
 }
 

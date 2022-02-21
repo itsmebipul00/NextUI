@@ -213,3 +213,39 @@ slider.oninput = function () {
   const value = this.value
   percentage.innerHTML = `${value}%`
 }
+
+// Dark mode
+
+let button = document.querySelector(".dark-mode-toggle")
+let darkMode = localStorage.getItem("darkMode")
+const darkModeToggle = document.querySelector("#dark-mode-toggle")
+
+const enableDarkMode = () => {
+  document.documentElement.classList.add("dark-mode")
+  document.querySelectorAll(".original-theme").forEach((theme) => {
+    theme.classList.add("theme-original")
+  })
+  localStorage.setItem("darkMode", "enabled")
+}
+
+const disableDarkMode = () => {
+  document.documentElement.classList.remove("dark-mode")
+
+  document.querySelectorAll(".original-theme").forEach((theme) => {
+    theme.classList.remove("theme-original")
+  })
+  localStorage.setItem("darkMode", null)
+}
+
+if (darkMode === "enabled") {
+  enableDarkMode()
+}
+
+button.addEventListener("click", () => {
+  darkMode = localStorage.getItem("darkMode")
+  if (darkMode !== "enabled") {
+    enableDarkMode()
+  } else {
+    disableDarkMode()
+  }
+})
