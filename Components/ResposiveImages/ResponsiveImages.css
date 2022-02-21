@@ -43,11 +43,6 @@
   object-fit: cover;
 }
 
-/* .picture-round-information {
-  align-self: flex-end;
-  width: 70% !important;
-} */
-
 @media (max-width: 60em) {
   .responsive-pictures {
     width: 100%;

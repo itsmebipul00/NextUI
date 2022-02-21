@@ -184,6 +184,7 @@ code {
   padding: 2rem;
   background: hsl(var(--clr-white));
   width: 80%;
+  margin-bottom: 1rem;
 }
 
 .font-sizes > p {
