@@ -1,7 +1,6 @@
 .toast-notification {
   position: fixed;
   inset: 1% 84% 84% 22%;
-  z-index: 99999;
 }
 
 .btn-toast {
