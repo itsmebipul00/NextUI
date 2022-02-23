@@ -8,8 +8,6 @@ A Component library for building beautiful, modern and fast websites. It has a t
 
 https://user-images.githubusercontent.com/67150257/155243949-25e10eb1-1f73-4ed7-b75b-039b506397cd.mp4
 
-
-
 # Demo(Desktop):
 
 https://user-images.githubusercontent.com/67150257/155242616-066fe969-0b8d-43f3-9e4e-847be54cf38e.mp4

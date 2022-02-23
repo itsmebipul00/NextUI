@@ -1,6 +1,6 @@
 .toast-notification {
   position: fixed;
-  inset: 5% 20% 84% 24%;
+  inset: 1% 84% 84% 22%;
 }
 
 .btn-toast {
@@ -23,6 +23,6 @@
 
 @media (max-width: 45em) {
   .toast-notification {
-    inset: 5% 20% 90% 3%;
+    inset: 15% 65% 55% 2%;
   }
 }

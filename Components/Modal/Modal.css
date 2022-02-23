@@ -18,7 +18,7 @@
   inset: 0;
   background-color: hsl(var(--clr-dark) / 0.7);
   color: hsl(var(--clr-white));
-  padding: 4rem;
+  padding: 1rem;
   z-index: 99999;
   backdrop-filter: blur(0.75rem);
 }
@@ -35,7 +35,7 @@
 }
 
 .modal-subtitle {
-  padding: 5rem;
+  padding: 2rem;
 }
 
 .btn-modal {
