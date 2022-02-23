@@ -24,6 +24,15 @@
         justify-content: center;
         align-items: center;
     }
+    @media(max-width: 60em){
+        .homepage{
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .btn{
+            padding: 1.5rem 2rem;
+        }
+    }
 </style>
 <body>
     <div class="d-flex">
@@ -34,8 +43,8 @@
     </div>
 
     <div class="homepage">
-        <button class="btn fs-500 letter-spacing-5"><a href="docs.html#alert-container" >Getting Started</a></button>
-        <button class="btn fs-500 letter-spacing-5"><a href="docs.html#usage" >Documentation</a></button>
+        <button class="btn fs-400 letter-spacing-5"><a href="docs.html#alert-container"  >Getting Started</a></button>
+        <button class="btn fs-400 letter-spacing-5"><a href="docs.html#usage"  >Documentation</a></button>
     </div>
 </body>
 </html>

@@ -4,9 +4,13 @@
 A Component library for building beautiful, modern and fast websites. It has a ton of components, custom properties and utility classes for quick plug and play functionalities.
 </div>
 
-# Demo (Desktop):
+# Demo(Mobile):
 
-# Demo (Mobile):
+https://user-images.githubusercontent.com/67150257/155243949-25e10eb1-1f73-4ed7-b75b-039b506397cd.mp4
+
+# Demo(Desktop):
+
+https://user-images.githubusercontent.com/67150257/155242616-066fe969-0b8d-43f3-9e4e-847be54cf38e.mp4
 
 # Getting Started
 
@@ -90,10 +94,10 @@ Alerts are feedbacks for an action triggered by the users.
 
 NextUI contains the following types of Alerts with or without actionable close icons:
 
-- Info Alert
+- Information Alert
 - Success Alert
 - Warning Alert
-- Danger Alert
+- Error Alert
 
 ## [BUTTONS](https://nextui.netlify.app/docs.html#buttons)
 

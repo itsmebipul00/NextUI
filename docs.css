@@ -1,11 +1,11 @@
 /* * HEADER STYLES  */
 
 .dark-mode {
-  filter: invert(1) hue-rotate(180deg);
+  filter: invert(100%);
 }
 
 .theme-original {
-  filter: invert(1) hue-rotate(180deg);
+  filter: invert(100%);
 }
 
 header {
