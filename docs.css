@@ -16,15 +16,42 @@ header {
   padding: 1rem 2rem 2rem 2rem;
 }
 
+.home-navigation {
+  align-items: center;
+}
+
 @media (max-width: 40rem) {
   .header-container {
     padding: 1rem 1rem 2rem 0.5rem;
   }
 }
 
-.header-title {
+#header-title {
   width: fit-content;
   z-index: 9999;
+  font-size: 3.5rem;
+  font-weight: 900;
+  letter-spacing: 2.7px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header-gradient {
+  background: -webkit-linear-gradient(
+    45deg,
+    rgb(6, 17, 97),
+    rgb(120, 2, 6) 80%
+  );
+  transform: all ease-in-out 0.25s;
+}
+
+.header-gradient-reverse {
+  background: -webkit-linear-gradient(
+    45deg,
+    rgb(120, 2, 6),
+    rgb(6, 17, 97) 80%
+  );
+  transform: all ease-in-out 0.25s;
 }
 
 @media (min-width: 60em) {

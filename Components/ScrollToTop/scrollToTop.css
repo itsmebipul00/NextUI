@@ -1,0 +1,10 @@
+.scroll-to-top{
+    position: fixed;
+    inset: 85% 0 0 85%;
+    width: 5rem;
+    aspect-ratio: 1;
+    background-color: hsl(var(--clr-white));
+    z-index: 99999;
+    border-radius: 50%;
+    cursor: pointer;
+}
