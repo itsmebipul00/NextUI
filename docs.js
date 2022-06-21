@@ -14,7 +14,7 @@ const nav = document.querySelector('.primary-navigation')
 const navToggle = document.querySelector('.mobile-nav-toggle')
 const headingTitle = document.querySelector('.header-title')
 
-function navToggle() {
+function navToggleFun() {
 	const navVisiblity = nav.getAttribute('data-visible')
 	if (navVisiblity === 'false') {
 		nav.setAttribute('data-visible', true)
@@ -27,7 +27,7 @@ function navToggle() {
 	}
 }
 
-navToggle.addEventListener('click', navToggle)
+navToggle.addEventListener('click', navToggleFun)
 
 // ALERTS
 const alertError = document.querySelector('.error-alert')
@@ -266,4 +266,19 @@ button.addEventListener('click', () => {
 	} else {
 		disableDarkMode()
 	}
+})
+
+const primaryLinks = document.querySelectorAll('.primary-link')
+
+primaryLinks.forEach(link =>
+	link.addEventListener('click', navToggleFun)
+)
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+	anchor.addEventListener('click', function (e) {
+		e.preventDefault()
+		document.querySelector(this.getAttribute('href')).scrollIntoView({
+			behavior: 'smooth',
+		})
+	})
 })
