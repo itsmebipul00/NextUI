@@ -1,3 +1,14 @@
+// Header title gradient interval
+const flashText = () => {
+  const hTitle = document.getElementById("header-title")
+  if (hTitle.className === "header-gradient") {
+    hTitle.className = "header-gradient-reverse"
+  } else {
+    hTitle.className = "header-gradient"
+  }
+}
+setInterval(flashText, 250)
+
 // NAVIGATION
 const nav = document.querySelector(".primary-navigation")
 const navToggle = document.querySelector(".mobile-nav-toggle")
